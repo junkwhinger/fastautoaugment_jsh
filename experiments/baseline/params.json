@@ -1,0 +1,19 @@
+{
+  "experiment_title": "baseline",
+
+  "num_epochs": 200,
+  "batch_size": 512,
+
+  "WRN_depth": 40,
+  "WRN_widen_factor": 2,
+  "WRN_dropout_rate": 0.0,
+  "WRN_num_classes": 10,
+
+  "SGD_lr": 0.1,
+  "SGD_momentum":0.9,
+  "SGD_weight_decay": 0.0002,
+  "SGD_nesterov": true,
+
+  "LRS_multiplier": 4,
+  "LRS_epoch": 5
+}
