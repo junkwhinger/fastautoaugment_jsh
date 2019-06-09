@@ -303,9 +303,9 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="FastAutoAugment policy search by Junsik Hwang")
     parser.add_argument("--model_dir", default="fastautoaugment")
-    parser.add_argument("--train_mode", default=False)
-    parser.add_argument("--bayesian_mode", default=False)
-
+    parser.add_argument("--train_mode", action='store_true')
+    parser.add_argument("--bayesian_mode", action='store_true')
+    
     args = parser.parse_args()
 
     # load predefined hyper parameter set

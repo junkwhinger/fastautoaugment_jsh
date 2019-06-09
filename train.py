@@ -99,7 +99,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description="PyTorch FastAutoAugment Implementation by Junsik Hwang")
     parser.add_argument("--model_dir", default="experiments/fastautoaugment")
-    parser.add_argument("--eval_only", default=True)
+    parser.add_argument("--eval_only", action='store_true')
     args = parser.parse_args()
 
     # load predefined hyper parameter set
