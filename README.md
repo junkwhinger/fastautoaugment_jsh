@@ -192,8 +192,6 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
   - It runs validation steps with the same 16 images every 10th epoch (AutoAugment set 7,325 images aside for validation).
   - The images used in the validation phase are augmented with the optimal policies, unlike my previous expectation that we do NOT augment the validation dataset for a normal training loop.
   - The image batches loaded from validloader are as follows:
-    - ![excerpt_1](/assets/batch1.png)
-    - ![excerpt_1](/assets/batch2.png)
     - ![excerpt_1](/assets/batch3.png)
 - On FAA paper, Algorithm 1 decribed on page 5 can be somewhat misleading.
   - ![excerpt_1](/assets/excerpt_1.png)
