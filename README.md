@@ -39,10 +39,10 @@ You can train or test the model with the baseline or optimal augmentation polici
 
 ```bash
 # Baseline
-python train.py --model_dir experiments/baseline --eval_only true
+python train.py --model_dir experiments/baseline --eval_only
 
 # Fast AutoAugment
-python train.py --model_dir experiments/fastautoaugment --eval_only true
+python train.py --model_dir experiments/fastautoaugment --eval_only
 ```
 
 
@@ -51,10 +51,10 @@ python train.py --model_dir experiments/fastautoaugment --eval_only true
 
 ```bash
 # Baseline
-python train.py --model_dir experiments/baseline --eval_only false
+python train.py --model_dir experiments/baseline
 
 # Fast AutoAugment
-python train.py --model_dir experiments/fastautoaugment --eval_only false
+python train.py --model_dir experiments/fastautoaugment
 ```
 
 
