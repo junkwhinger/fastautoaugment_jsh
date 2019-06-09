@@ -192,7 +192,7 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
   - It runs validation steps with the same 16 images every 10th epoch (AutoAugment set 7,325 images aside for validation).
   - The images used in the validation phase are augmented with the optimal policies, unlike my previous expectation that we do NOT augment the validation dataset for a normal training loop.
 - On FAA paper, Algorithm 1 decribed on page 5 can be somewhat misleading.
-  - ![Screen Shot 2019-06-09 at 6.15.51 PM](/Users/jastills/Desktop/Screen%20Shot%202019-06-09%20at%206.15.51%20PM.png)
+  - ![Screen Shot 2019-06-09 at 6.15.51 PM](/assets/excerpt.png)
   - For the number of search width $T$, we select top $N$ policies in $B$. Hence with $T=2$ and $N=10$, we end up with 20(2x10) top policies each split. However, on page 6, the paper says "Select the top N best policies for each split". Either one of these explanations should be corrected.
 
 <br>
