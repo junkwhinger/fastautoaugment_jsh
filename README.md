@@ -212,6 +212,7 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
 1. Fast AutoAugment
    - Paper: https://arxiv.org/abs/1905.00397
    - Codes: https://github.com/kakaobrain/fast-autoaugment
+   - GradualWarmupScheduler: https://github.com/ildoonet/pytorch-gradual-warmup-lr
 2. AutoAugment
    - Paper: https://arxiv.org/abs/1805.09501
    - Codes:https://github.com/tensorflow/models/tree/master/research/autoaugment
