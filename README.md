@@ -173,7 +173,7 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
   - AutoContrast, Invert, Solarize are given near zero probabilities.
   - I chose a uniform distribution between 0 and 1 for the probability and magnitude for the following operations. I wonder if a distribution that excludes regions that barely changes images would lead to a different result. (e.g. Rotate between -30 ~ -10 and +10 ~ 30)
 
-  ![trials_visualized](/Users/jastills/personal_projects/fastautoaugment_jsh/assets/trials_visualized.png)
+  ![trials_visualized](/assets/trials_visualized.png)
 
 <br>
 
