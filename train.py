@@ -20,7 +20,18 @@ from warmup_scheduler import GradualWarmupScheduler
 
 
 def train_epoch(network, loader, loss_function, optimizer, header, device, writer=None):
-    """Method that trains network with train loader"""
+    """
+    Method that trains network with train loader
+    :param network: model to train
+    :param loader: dataloader that has images and labels
+    :param loss_function: loss_function
+    :param optimizer: optimizer
+    :param header: header to log
+    :param device: cpu or cuda
+    :param writer: tensorboardX writer
+    :return: trained_model, average_loss, train_error
+    """
+
     network.train()
 
     metric_watcher = utils.RunningAverage()
@@ -61,8 +72,14 @@ def train_epoch(network, loader, loss_function, optimizer, header, device, write
     return network, avg_loss, error
 
 def evaluate_epoch(network, loader, loss_function, header, device):
-    """Method that evaluates network with valid or test loader
-       This method is also used for fastautoaugment
+    """
+    Method that evaluates network with valid or test loader
+    :param network: model to evaluate
+    :param loader: loader that returns valid or test images / labels
+    :param loss_function: loss_function
+    :param header: header to log
+    :param device: cpu or cuda
+    :return: model, average_loss, valid or test_error
     """
     network.eval()
 

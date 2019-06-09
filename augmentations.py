@@ -315,16 +315,29 @@ def CutoutAbs(img, v):  # [0, 60] => percentage: [0, 0.2]
 
 
 class CustomCompose(TF.Compose):
+    """
+    CustomCompose Class for Bayesian Optimization
+    """
     def __init__(self, base):
         super(CustomCompose, self).__init__(base)
         self.base = base
         self.transforms = base.copy()
 
     def reset(self):
+        """
+        Method that resets self.transforms
+        so that it can take new extra augmentation options
+        :return:
+        """
         self.transforms = None
         self.transforms = self.base
 
     def build(self, sub_policy):
+        """
+        Method that parse the input sub_policy
+        and insert them into the base transform function
+        :param sub_policy: dictionary of a sub_policy
+        """
         print(sub_policy)
         for op_dict in sub_policy['sub_policy']:
             op_key = list(op_dict.keys())[0]
@@ -337,6 +350,10 @@ class CustomCompose(TF.Compose):
 
 
 class FAAaugmentation(object):
+    """
+    FAAaugmentation Class that randomly selects a policy
+    and transforms a given image when it's called
+    """
     def __init__(self, policies):
         self.policies = policies
 

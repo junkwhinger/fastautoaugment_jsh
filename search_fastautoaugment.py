@@ -8,13 +8,14 @@ from collections import defaultdict
 from itertools import combinations
 
 from sklearn.model_selection import StratifiedKFold
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import Subset, DataLoader
-import tensorboardX
 from torchvision.utils import make_grid
 import torchvision.transforms as TF
+import tensorboardX
 
 from hyperopt import fmin, hp, tpe, STATUS_OK, Trials
 
@@ -25,6 +26,11 @@ from model import net, data_loader
 
 
 def prepare_transform_fn(experiment_title):
+    """
+    Method that returns a set of augmentations for experiments
+    :param experiment_title: "baseline" or "fastautoaugment"
+    :return: transform functions for train and validation dataset
+    """
 
     base = TF.Compose([
         TF.RandomHorizontalFlip(0.5),
@@ -53,6 +59,14 @@ def prepare_transform_fn(experiment_title):
 
 
 def generate_cv_sets(dataset, labels, cv_folds, seed=0):
+    """
+    Method that generates cross validation sets
+    :param dataset: dataset to split
+    :param labels: labels to stratify the split
+    :param cv_folds: number of splits
+    :param seed: random seed
+    :return: splitted indicies for D_Ms and D_As
+    """
 
     splitter = StratifiedKFold(n_splits=cv_folds, random_state=seed)
     cv_splitter = splitter.split(np.arange(len(dataset)), labels)
@@ -65,6 +79,12 @@ def generate_cv_sets(dataset, labels, cv_folds, seed=0):
 
 
 def split_dataset_train(dataset, cvs):
+    """
+    Method that splits D_Train into D_Ms and D_As
+    :param dataset: train_dataset
+    :param cvs: cross-validation sets of indices
+    :return: list of D_Ms and D_As
+    """
     ds_m_list = []
     ds_a_list = []
     for cv in cvs:
@@ -80,6 +100,12 @@ def split_dataset_train(dataset, cvs):
 
 
 def update_tranform_fn(dataset, transform_to_update):
+    """
+    Method that overwrites its predefined transform function with a new one
+    :param dataset: target dataset
+    :param transform_to_update: new transform function
+    :return: dataset with a new transform function
+    """
     st = dataset
     while hasattr(st, 'dataset'):
         st = st.dataset
@@ -89,6 +115,10 @@ def update_tranform_fn(dataset, transform_to_update):
 
 # as in FAA
 def fetch_aug_pool():
+    """
+    Method that returns augmentation functions and their corresponding value ranges
+    :return: augmentation list
+    """
     augmentation_list_to_explore = {
         'ShearX': [-0.3, 0.3],
         'ShearY': [-0.3, 0.3],
@@ -112,11 +142,12 @@ def fetch_aug_pool():
 
 def aug_list_to_hp_format(aug_dict):
     """
+    Method that translates augmentation dict into HyperOpt format
     Our search space is similar to previous methods except that we use both continuous values of
     probability p and magnitude λ at [0, 1] ...
 
-    :param aug_dict:
-    :return:
+    :param aug_dict: augmentation dictionary
+    :return: list of augmentations with HyperOpt variables
     """
     hp_format = []
     for aug_name, aug_range in aug_dict.items():
@@ -137,6 +168,12 @@ def aug_list_to_hp_format(aug_dict):
     return hp_format
 
 def convert_to_sub_policies(augmentation_list, num_operations=2):
+    """
+    Method that generates combinations of augmentations
+    :param augmentation_list: augmentation list
+    :param num_operations: number of operations to connect back to back
+    :return: list of sub-policies
+    """
     comb_list = combinations(augmentation_list, num_operations)
     sub_policies_list = []
     for comb in comb_list:
@@ -144,11 +181,17 @@ def convert_to_sub_policies(augmentation_list, num_operations=2):
     return sub_policies_list
 
 def evaluate_error(network, loader, loss_function, header, device, transform_fn=None, writer=None):
-    """Method that evaluates network with valid or test loader
-       This method is also used for fastautoaugment
     """
-    # update transform_fn for fast auto augment
-    # this option is not turned on for simple evaluations
+    Method that evaluates network with valid or test loader
+    :param network: model to evaluate
+    :param loader: dataloader to load images and targets
+    :param loss_function: loss function
+    :param header: phase to log
+    :param device: cpu or cuda
+    :param transform_fn: new transform function to update
+    :param writer: tensorboardX writer
+    :return: model, average_loss, error
+    """
     if transform_fn:
         loader = update_tranform_fn(loader, transform_fn)
 
@@ -188,6 +231,11 @@ def evaluate_error(network, loader, loss_function, header, device, transform_fn=
 
 
 def hyperopt_train_test(space):
+    """
+    HyperOpt eval function
+    :param space: search space
+    :return: error to minimise
+    """
 
     writer = space['writer']
     header = space['header']
@@ -224,6 +272,18 @@ def hyperopt_train_test(space):
 
 
 def bayesian_optimization(dataset, model, batch_size, device, policies_to_search, max_iter, header, txwriter):
+    """
+    Method to run bayesian optimization
+    :param dataset: dataset
+    :param model: network to evaluate
+    :param batch_size: batch_size for evaluation
+    :param device: cpu or cuda
+    :param policies_to_search: list of sub-policy combinations
+    :param max_iter: search depth for optimization
+    :param header: header to log
+    :param txwriter: tensorboard writer
+    :return:
+    """
 
     def f(space):
         val_error = hyperopt_train_test(space)
@@ -250,6 +310,11 @@ def bayesian_optimization(dataset, model, batch_size, device, policies_to_search
 
 
 def decipher_trial(trial):
+    """
+    Method that extract sub-policies and their losses from Trial records
+    :param trial: trials recorded during Bayesian Optimization
+    :return: list of errors, list of sub-policies
+    """
     val_error_list = [t['result']['loss'] for t in trial.trials]
     trial_records = [t['misc']['vals'] for t in trial.trials]
 
@@ -273,6 +338,14 @@ def decipher_trial(trial):
     return val_error_list, sub_policy_list
 
 def extract_best_policies(search_results_folder, cv_folds, search_width, topN):
+    """
+    Method that returns the best augmentation policies from deciphered trials
+    :param search_results_folder: where the trials are saved
+    :param cv_folds: number of splits
+    :param search_width: search width
+    :param topN: top N policies to select at each fold
+    :return: the final set of best policies
+    """
 
     total_best_policies = {}
 
