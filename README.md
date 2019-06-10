@@ -125,7 +125,7 @@ Here are the checkpoints I made during the replication of the paper.
   - <img src="https://latex.codecogs.com/gif.latex?D_{train}"/>: train dataset that contains 42675 images from cifar10.
   - <img src="https://latex.codecogs.com/gif.latex?K"/>: the number of cross validation folds. <img src="https://latex.codecogs.com/gif.latex?K=5"/> in FAA.
   - <img src="https://latex.codecogs.com/gif.latex?T"/>: search width. <img src="https://latex.codecogs.com/gif.latex?T=2"/> in FAA.
-  - <img src="https://latex.codecogs.com/gif.latex?B"/>: search depth. <img src="https://latex.codecogs.com/gif.latex?B = 200"/> in FAA.
+  - <img src="https://latex.codecogs.com/gif.latex?B"/>: search depth. <img src="https://latex.codecogs.com/gif.latex?B=200"/> in FAA.
   - <img src="https://latex.codecogs.com/gif.latex?N"/>: the number of top policies to keep. <img src="https://latex.codecogs.com/gif.latex?N=10"/> in FAA. 
 - Step 1: Shuffle
   - Split <img src="https://latex.codecogs.com/gif.latex?D_{train}"/> into <img src="https://latex.codecogs.com/gif.latex?K"/> sets of <img src="https://latex.codecogs.com/gif.latex?D_M"/> and <img src="https://latex.codecogs.com/gif.latex?D_A"/> using the target labels.
