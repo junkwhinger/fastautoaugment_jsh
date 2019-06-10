@@ -106,8 +106,8 @@ Here are the checkpoints I made during the replication of the paper.
 - Operation $O$: an augmentation function (e.g. Cutout)
   - Probability $p$: (attribute of an operation) the chance that the operation is turned on. This value ranges from 0 to 1, 0 being always off, 1 always on.
   - Magnitude $\lambda$: (attribute of an operation) the amount that the operation transforms a given image. This value ranges from 0 to 1, and gets adjusted according to the corresponding range of its operation. For example, $\lambda=0$ for Rotate means Rotate -30 degree.
-- Sub-policy $\tau$: a random sequence of operations. The length of a sub-policy is determined by Search Width($T=2$ ). For example, a sub-policy that has Cutout and Rotate transforms a given image in 4 ways. 
--  Policy $\mathcal{T}$: a set of sub-policies. FAA aims to find $\mathcal{T}_*$ that contains <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}_*^{k}"/> from $k$th split of the train dataset.
+- Sub-policy $\tau$: a random sequence of operations. The length of a sub-policy is determined by Search Width(<img src="https://latex.codecogs.com/gif.latex?T=2"/>). For example, a sub-policy that has Cutout and Rotate transforms a given image in 4 ways. 
+-  Policy <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}"/>: a set of sub-policies. FAA aims to find $\mathcal{T}_*$ that contains <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}_*^{k}"/> from <img src="https://latex.codecogs.com/gif.latex?k"/>th split of the train dataset.
      
 
 ### Search Space
