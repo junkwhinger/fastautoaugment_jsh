@@ -103,16 +103,16 @@ Here are the checkpoints I made during the replication of the paper.
 
 ### Terminology
 
-- Operation $O$: an augmentation function (e.g. Cutout)
-  - Probability $p$: (attribute of an operation) the chance that the operation is turned on. This value ranges from 0 to 1, 0 being always off, 1 always on.
-  - Magnitude $\lambda$: (attribute of an operation) the amount that the operation transforms a given image. This value ranges from 0 to 1, and gets adjusted according to the corresponding range of its operation. For example, $\lambda=0$ for Rotate means Rotate -30 degree.
-- Sub-policy $\tau$: a random sequence of operations. The length of a sub-policy is determined by Search Width(<img src="https://latex.codecogs.com/gif.latex?T=2"/>). For example, a sub-policy that has Cutout and Rotate transforms a given image in 4 ways. 
--  Policy <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}"/>: a set of sub-policies. FAA aims to find $\mathcal{T}_*$ that contains <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}_*^{k}"/> from <img src="https://latex.codecogs.com/gif.latex?k"/>th split of the train dataset.
+- Operation <img src="https://latex.codecogs.com/gif.latex?O"/>: an augmentation function (e.g. Cutout)
+  - Probability <img src="https://latex.codecogs.com/gif.latex?p"/>: (attribute of an operation) the chance that the operation is turned on. This value ranges from 0 to 1, 0 being always off, 1 always on.
+  - Magnitude <img src="https://latex.codecogs.com/gif.latex?\lambda"/>: (attribute of an operation) the amount that the operation transforms a given image. This value ranges from 0 to 1, and gets adjusted according to the corresponding range of its operation. For example, <img src="https://latex.codecogs.com/gif.latex?\lambda=0"/> for Rotate means Rotate -30 degree.
+- Sub-policy <img src="https://latex.codecogs.com/gif.latex?\tau"/>: a random sequence of operations. The length of a sub-policy is determined by Search Width(<img src="https://latex.codecogs.com/gif.latex?T=2"/>). For example, a sub-policy that has Cutout and Rotate transforms a given image in 4 ways. 
+-  Policy <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}"/>: a set of sub-policies. FAA aims to find <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}_*"/> that contains <img src="https://latex.codecogs.com/gif.latex?\mathcal{T}_*^{k}"/> from <img src="https://latex.codecogs.com/gif.latex?k"/>th split of the train dataset.
      
 
 ### Search Space
 
-- FAA attempts to find the probability $p$ and magnitude $\lambda$ for the following 16 augmentation operations.
+- FAA attempts to find the probability <img src="https://latex.codecogs.com/gif.latex?p"/> and magnitude <img src="https://latex.codecogs.com/gif.latex?\lambda"/> for the following 16 augmentation operations.
   -  ShearX, ShearY, TranslateX, TranslateY, 
     Rotate, AutoContrast, Invert, Equalize, 
     Solarize, Posterize, Contrast, Color, 
@@ -121,23 +121,23 @@ Here are the checkpoints I made during the replication of the paper.
 ### Algorithm
 
 - Inputs
-  - $\theta$: network to train
-  - $D_{train}$: train dataset that contains 42675 images from cifar10.
-  - $K$: the number of cross validation folds. $K=5$ in FAA.
-  - $T$: search width. $T=2$ in FAA.
-  - $B$: search depth. $B = 200$ in FAA.
-  - $N$: the number of top policies to keep. $N=10$ in FAA. 
+  - <img src="https://latex.codecogs.com/gif.latex?\theta"/>: network to train
+  - <img src="https://latex.codecogs.com/gif.latex?D_{train}"/>: train dataset that contains 42675 images from cifar10.
+  - <img src="https://latex.codecogs.com/gif.latex?K"/>: the number of cross validation folds. <img src="https://latex.codecogs.com/gif.latex?K=5"/> in FAA.
+  - <img src="https://latex.codecogs.com/gif.latex?T"/>: search width. <img src="https://latex.codecogs.com/gif.latex?T=2"/> in FAA.
+  - <img src="https://latex.codecogs.com/gif.latex?B"/>: search depth. <img src="https://latex.codecogs.com/gif.latex?B = 200"/> in FAA.
+  - <img src="https://latex.codecogs.com/gif.latex?N"/>: the number of top policies to keep. <img src="https://latex.codecogs.com/gif.latex?N=10"/> in FAA. 
 - Step 1: Shuffle
-  - Split $D_{train}$ into $K$ sets of $D_M$ and $D_A$ using the target labels.
+  - Split <img src="https://latex.codecogs.com/gif.latex?D_{train}"/> into <img src="https://latex.codecogs.com/gif.latex?K"/> sets of <img src="https://latex.codecogs.com/gif.latex?D_M"/> and <img src="https://latex.codecogs.com/gif.latex?D_A"/> using the target labels.
 - Step 2: Train
-  - Train $\theta$ on each $D_M$. FAA implemented Step 2 in parallel. In my implementation, it is done sequentially in a for loop.
+  - Train <img src="https://latex.codecogs.com/gif.latex?\theta"/> on each <img src="https://latex.codecogs.com/gif.latex?D_M"/>. FAA implemented Step 2 in parallel. In my implementation, it is done sequentially in a for loop.
     - Each model is trained from scratch without data augmentation.
     - I added `TF.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))`. 
 - Step 3:  Explore-and-Exploit
   - Find the optimal set of sub-policies and probabilities and magnitudes of their operations. 
-    FAA employs <a href="[http://hyperopt.github.io/hyperopt/](http://hyperopt.github.io/hyperopt/)">HyperOpt</a> for this step. I saved the sub-policies and their corresponding validation error in `Trials` for Step 4.
+    FAA employs <a href="[http://hyperopt.github.io/hyperopt/](http://hyperopt.github.io/hyperopt/)">HyperOpt</a> for this step. I saved the sub-policies and their corresponding validation error on augmented <img src="https://latex.codecogs.com/gif.latex?D_A"/> in `Trials` for Step 4.
 - Step 4. Merge
-  - Select top $N$ policies for each $k$ split. Combined the top policies into the final set policies that are used for re-training $\theta$ on $D_{train}$
+  - Select top <img src="https://latex.codecogs.com/gif.latex?N"/> policies for each <img src="https://latex.codecogs.com/gif.latex?K"/> split. Combined the top policies into the final set policies that are used for re-training <img src="https://latex.codecogs.com/gif.latex?\theta"/> on <img src="https://latex.codecogs.com/gif.latex?D_{train}"/>
 
 
 
@@ -180,7 +180,7 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
 ## Discrepencies between Paper and my Implementation
 
 - I did not include SamplePairing from the set of augmentation operations to optimize.
-- I did not use GradualWarmupScheduler for training $\theta$ on $D_M$. 
+- I did not use GradualWarmupScheduler for training <img src="https://latex.codecogs.com/gif.latex?\theta"/> on <img src="https://latex.codecogs.com/gif.latex?D_M"/>. 
   (I did for training Baseline and FAA final model) 
 - I did not use parallel or distributed training using ray or horovod. 
 
@@ -195,7 +195,7 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
     - ![validloader](/assets/validloader.png)
 - On FAA paper, Algorithm 1 decribed on page 5 can be somewhat misleading.
   - ![excerpt_1](/assets/excerpt_1.png)
-  - For the number of search width $T$, we select top $N$ policies in $B$. Hence with $T=2$ and $N=10$, we end up with 20(2x10) top policies each split. However, on page 6, the paper says "Select the top N best policies for each split". Either one of these explanations should be corrected.
+  - For the number of search width <img src="https://latex.codecogs.com/gif.latex?T"/>, we select top <img src="https://latex.codecogs.com/gif.latex?N"/> policies in <img src="https://latex.codecogs.com/gif.latex?B"/>. Hence with <img src="https://latex.codecogs.com/gif.latex?T=2"/> and <img src="https://latex.codecogs.com/gif.latex?N=10"/>, we end up with 20(2x10) top policies each split. However, on page 6, the paper says "Select the top N best policies for each split". Either one of these explanations should be corrected.
 
 <br>
 
