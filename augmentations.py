@@ -332,21 +332,25 @@ class CustomCompose(TF.Compose):
         self.transforms = None
         self.transforms = self.base
 
-    def build(self, sub_policy):
+    def build(self, policy):
         """
         Method that parse the input sub_policy
         and insert them into the base transform function
-        :param sub_policy: dictionary of a sub_policy
+        :param policy: a chosen set of sub_policies to evaluate
         """
-        print(sub_policy)
-        for op_dict in sub_policy['sub_policy']:
-            op_key = list(op_dict.keys())[0]
-            if op_dict[op_key][op_key + "_v"] is not None:
-                aug_fn = (eval(op_key)(op_dict[op_key][op_key + "_p"], op_dict[op_key][op_key + "_v"]))
-            else:
-                aug_fn = (eval(op_key)(op_dict[op_key][op_key + "_p"], 0))
 
-            self.transforms.insert(0, aug_fn)
+        # random choose a sub_policy
+
+        random.choice()
+        #
+        # for op_dict in sub_policy['sub_policy']:
+        #     op_key = list(op_dict.keys())[0]
+        #     if op_dict[op_key][op_key + "_v"] is not None:
+        #         aug_fn = (eval(op_key)(op_dict[op_key][op_key + "_p"], op_dict[op_key][op_key + "_v"]))
+        #     else:
+        #         aug_fn = (eval(op_key)(op_dict[op_key][op_key + "_p"], 0))
+        #
+        #     self.transforms.insert(0, aug_fn)
 
 
 class FAAaugmentation(object):
@@ -359,12 +363,19 @@ class FAAaugmentation(object):
 
     def __call__(self, img):
         img_copied = img.copy()
-        policy_idx_list = (list(self.policies.keys()))
-        policy_idx = random.choice(policy_idx_list)
-        chosen_policy = self.policies[policy_idx]
+        chosen_sub_policy = random.choice(self.policies['policy'])
 
-        for op_name, op_vals in chosen_policy.items():
-            aug_fn = (eval(op_name)(op_vals[0], op_vals[1]))
+        for op in chosen_sub_policy:
+
+            # op_key: 2-0_Rotate
+            op_key = list(op.keys())[0]
+
+            # op_name: Rotate
+            op_name = op_key.split("_")[1]
+
+            op_p, op_v = op[op_key]
+            aug_fn = (eval(op_name)(op_p, op_v))
             img_copied = aug_fn(img_copied)
+
 
         return img_copied

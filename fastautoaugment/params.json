@@ -4,6 +4,7 @@
   "cv_folds": 5,
   "search_width": 2,
   "search_depth": 200,
+  "number_of_sub_policies": 5,
   "number_of_ops": 2,
   "topN": 10,
 
