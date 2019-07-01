@@ -195,9 +195,7 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
 
 - Fixed a serious implementation mistake with the bayesian optimization part.
   - The original implementation passes a sub_policy to the function `bayesian_optimization`. 
-    <img src="https://latex.codecogs.com/gif.latex?{BayesOptim(\tau, \mathcal{L}(\theta | \tau(D_A)), B)}"/>
   - The revision_1 implementation passes a list of augmentations to the function, and let it compose a policy that has 5 sub-policies.
-    <img src="https://latex.codecogs.com/gif.latex?{BayesOptim(\mathcal{T}, \mathcal{L}(\theta | \mathcal{T}(D_A)), B)}"/>
 - Simplified the use of HyperOpt and several helper functions.
 - Added `SamplePairing` to `augmentation.py` (not used in revision_1 but might do in the future revisions).
 - revision_1 took one day.
