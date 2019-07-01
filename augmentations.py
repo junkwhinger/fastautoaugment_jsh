@@ -6,6 +6,7 @@ import numpy as np
 import random
 from PIL import Image, ImageOps, ImageEnhance, ImageDraw
 import torchvision.transforms as TF
+from torchvision import datasets as vdatasets
 
 # flips lambda(v)
 random_mirror = True
@@ -313,6 +314,37 @@ def CutoutAbs(img, v):  # [0, 60] => percentage: [0, 0.2]
     ImageDraw.Draw(img).rectangle(xy, color)
     return img
 
+
+class SamplePairing(object):
+    def __init__(self, p, v):
+        self.p = p
+        self.v = v
+        self.pool = self.load_dataset()
+
+    def load_dataset(self):
+        dataset_train_raw = vdatasets.CIFAR10(root="../data_cifar10/",
+                                              train=True,
+                                              transform=None,
+                                              download=True)
+        return dataset_train_raw
+
+    def __call__(self, img):
+
+        toss = np.random.choice([1, 0], p=[self.p, 1 - self.p])
+
+        if toss:
+            img_a_array = np.asarray(img)
+
+            # pick one image from the pool
+            img_b, _ = random.choice(self.pool)
+            img_b_array = np.asarray(img_b)
+
+            # mix two images
+            mean_img = np.mean([img_a_array, img_b_array], axis=(0))
+
+            return Image.fromarray(np.uint8(mean_img))
+        else:
+            return img
 
 class CustomCompose(TF.Compose):
     """

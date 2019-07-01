@@ -184,8 +184,6 @@ def evaluate_error(network, loader, loss_function, header, device, transform_fn=
                               correct_batch,
                               input_batch.size(0))
 
-        #### DEBUGGGG
-        # break
 
     metric_watcher.calculate()
     avg_loss, accuracy, error, data_points = metric_watcher()
@@ -245,10 +243,9 @@ def bayesian_optimization(dataset, model, args, device, aug_space, header, txwri
     Method to run bayesian optimization
     :param dataset: dataset
     :param model: network to evaluate
-    :param batch_size: batch_size for evaluation
+    :param args: hyper-parameters
     :param device: cpu or cuda
     :param aug_space: list of augmentations to explore
-    :param max_iter: search depth for optimization
     :param header: header to log
     :param txwriter: tensorboard writer
     :return:
@@ -302,6 +299,11 @@ def bayesian_optimization(dataset, model, args, device, aug_space, header, txwri
 
 
 def parse_policy(found_policy):
+    """
+    Method to put a found policy into a nice format
+    :param found_policy:
+    :return: a parsed policy
+    """
     raw_df = pd.DataFrame(found_policy).T.reset_index()
     raw_df.columns = ['raw_key', 'aug_val']
     raw_df['sp_idx'], raw_df['op_idx'] = zip(*raw_df.raw_key.map(lambda x: x.split("_")[0].split("-")))
@@ -330,12 +332,12 @@ def parse_policy(found_policy):
 
 def extract_best_policies(search_results_folder, cv_folds, search_width, topN):
     """
-    Method that returns the best augmentation policies from deciphered trials
+    Method that returns the total optimal policies from the trials
     :param search_results_folder: where the trials are saved
     :param cv_folds: number of splits
     :param search_width: search width
     :param topN: top N policies to select at each fold
-    :return: the final set of best policies
+    :return: the final collection of best policies
     """
 
     T_star = []
