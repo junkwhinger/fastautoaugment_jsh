@@ -182,6 +182,8 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
   - Contrast, Sharpness, Rotate, TranslateX, TranslateY magnitudes are around 0.5 that rarely modifies the original image.
   - Equalize and Invert functions are given near zero probabilities.
 - However, the reported tendency is weaker than the one reported in the original and revision_1.
+  - The red lines mark the probabilities and magnitudes of each operation found via Fast Autoaugment.
+  - The blue dots represent the values tried during the search.
   - ![trials_visualized](assets/trials_visualized_vlines.png)
 - The official implementation of FAA by Kakao seemed to have found wider ranges of probabilities and magnitudes than my implementation.
   - i.e. Equalize, Invert, Rotate, ShearX, ShearY, etc.
