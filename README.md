@@ -179,12 +179,10 @@ Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
 
 - The optimal policies  of revision_3 still show a tendency to keep the original image.
 
-  - Brightness, Contrast, Sharpness, Rotate, TranslateX, TranslateY magnitudes are around 0.5 that rarely modifies the original image.
+  - Contrast, Sharpness, Rotate, TranslateX, TranslateY magnitudes are around 0.5 that rarely modifies the original image.
   - Equalize and Invert functions are given near zero probabilities.
 - However, the reported tendency is weaker than the one reported in the original and revision_1.
-
   - ![trials_visualized](assets/trials_visualized_vlines.png)
-  
 - The official implementation of FAA by Kakao seemed to have found wider ranges of probabilities and magnitudes than my implementation.
   - i.e. Equalize, Invert, Rotate, ShearX, ShearY, etc.
   - ![vs kakao](assets/trials_visualized_revision_3_vs_official.png)
