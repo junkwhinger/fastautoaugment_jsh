@@ -317,40 +317,12 @@ def CutoutAbs(img, v):  # [0, 60] => percentage: [0, 0.2]
 class CustomCompose(TF.Compose):
     """
     CustomCompose Class for Bayesian Optimization
+    Now it's out of use, but ... keeping it out of convenience
     """
     def __init__(self, base):
         super(CustomCompose, self).__init__(base)
         self.base = base
         self.transforms = base.copy()
-
-    def reset(self):
-        """
-        Method that resets self.transforms
-        so that it can take new extra augmentation options
-        :return:
-        """
-        self.transforms = None
-        self.transforms = self.base
-
-    def build(self, policy):
-        """
-        Method that parse the input sub_policy
-        and insert them into the base transform function
-        :param policy: a chosen set of sub_policies to evaluate
-        """
-
-        # random choose a sub_policy
-
-        random.choice()
-        #
-        # for op_dict in sub_policy['sub_policy']:
-        #     op_key = list(op_dict.keys())[0]
-        #     if op_dict[op_key][op_key + "_v"] is not None:
-        #         aug_fn = (eval(op_key)(op_dict[op_key][op_key + "_p"], op_dict[op_key][op_key + "_v"]))
-        #     else:
-        #         aug_fn = (eval(op_key)(op_dict[op_key][op_key + "_p"], 0))
-        #
-        #     self.transforms.insert(0, aug_fn)
 
 
 class FAAaugmentation(object):
@@ -365,17 +337,16 @@ class FAAaugmentation(object):
         img_copied = img.copy()
         chosen_sub_policy = random.choice(self.policies['policy'])
 
-        for op in chosen_sub_policy:
+        if isinstance(chosen_sub_policy, list):
+            chosen_sub_policy_parsed = chosen_sub_policy
+        elif isinstance(chosen_sub_policy, dict):
+            chosen_sub_policy_parsed = list(chosen_sub_policy.values())[0]
+        for op in chosen_sub_policy_parsed:
 
-            # op_key: 2-0_Rotate
-            op_key = list(op.keys())[0]
-
-            # op_name: Rotate
-            op_name = op_key.split("_")[1]
-
-            op_p, op_v = op[op_key]
+            # op: {'ShearY': (0.99, 0.22)}
+            op_name = op[0]
+            op_p, op_v = op[1], op[2]
             aug_fn = (eval(op_name)(op_p, op_v))
             img_copied = aug_fn(img_copied)
-
 
         return img_copied

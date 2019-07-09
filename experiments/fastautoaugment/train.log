@@ -1,1019 +1,1042 @@
 --------------------------------
-2019-07-01 01:24:01,844:INFO: experiment_title: fastautoaugment
-2019-07-01 01:24:01,844:INFO: num_epochs: 200
-2019-07-01 01:24:01,844:INFO: batch_size: 512
-2019-07-01 01:24:01,845:INFO: WRN_depth: 40
-2019-07-01 01:24:01,845:INFO: WRN_widen_factor: 2
-2019-07-01 01:24:01,845:INFO: WRN_dropout_rate: 0.0
-2019-07-01 01:24:01,845:INFO: WRN_num_classes: 10
-2019-07-01 01:24:01,845:INFO: SGD_lr: 0.1
-2019-07-01 01:24:01,845:INFO: SGD_momentum: 0.9
-2019-07-01 01:24:01,845:INFO: SGD_weight_decay: 0.0002
-2019-07-01 01:24:01,845:INFO: SGD_nesterov: True
-2019-07-01 01:24:01,846:INFO: LRS_multiplier: 4
-2019-07-01 01:24:01,846:INFO: LRS_epoch: 5
-2019-07-01 01:24:01,846:INFO: cuda: True
-2019-07-01 01:24:01,848:INFO: -- loading datasets
-2019-07-01 01:26:33,323:INFO: -- start_training for 200 epochs
-2019-07-01 01:26:33,323:INFO: Epoch - 001 learning_rate: 0.1
-2019-07-01 01:26:54,713:INFO:   TRAIN: 	loss: 1.84493 	accuracy: 31.2% 	error: 68.8% 	data: 42675
-2019-07-01 01:26:57,359:INFO:   VALID: 	loss: 1.92941 	accuracy: 31.2% 	error: 68.8% 	data: 7325
-2019-07-01 01:26:57,359:INFO: 
-
-2019-07-01 01:26:57,363:INFO: Epoch - 002 learning_rate: 0.16000000000000003
-2019-07-01 01:27:17,203:INFO:   TRAIN: 	loss: 1.39356 	accuracy: 49.1% 	error: 50.9% 	data: 42675
-2019-07-01 01:27:19,889:INFO:   VALID: 	loss: 1.35487 	accuracy: 51.7% 	error: 48.3% 	data: 7325
-2019-07-01 01:27:19,890:INFO: 
-
-2019-07-01 01:27:19,891:INFO: Epoch - 003 learning_rate: 0.22000000000000003
-2019-07-01 01:27:39,731:INFO:   TRAIN: 	loss: 1.02068 	accuracy: 63.6% 	error: 36.4% 	data: 42675
-2019-07-01 01:27:42,409:INFO:   VALID: 	loss: 1.29510 	accuracy: 56.8% 	error: 43.2% 	data: 7325
-2019-07-01 01:27:42,409:INFO: 
-
-2019-07-01 01:27:42,411:INFO: Epoch - 004 learning_rate: 0.27999999999999997
-2019-07-01 01:28:02,294:INFO:   TRAIN: 	loss: 0.81734 	accuracy: 71.3% 	error: 28.7% 	data: 42675
-2019-07-01 01:28:05,011:INFO:   VALID: 	loss: 1.18234 	accuracy: 62.5% 	error: 37.5% 	data: 7325
-2019-07-01 01:28:05,011:INFO: 
-
-2019-07-01 01:28:05,013:INFO: Epoch - 005 learning_rate: 0.34
-2019-07-01 01:28:24,900:INFO:   TRAIN: 	loss: 0.71126 	accuracy: 75.4% 	error: 24.6% 	data: 42675
-2019-07-01 01:28:27,588:INFO:   VALID: 	loss: 0.91605 	accuracy: 69.5% 	error: 30.5% 	data: 7325
-2019-07-01 01:28:27,588:INFO: 
-
-2019-07-01 01:28:27,590:INFO: Epoch - 006 learning_rate: 0.4
-2019-07-01 01:28:47,467:INFO:   TRAIN: 	loss: 0.64134 	accuracy: 77.9% 	error: 22.1% 	data: 42675
-2019-07-01 01:28:50,199:INFO:   VALID: 	loss: 0.78225 	accuracy: 73.6% 	error: 26.4% 	data: 7325
-2019-07-01 01:28:50,199:INFO: 
-
-2019-07-01 01:28:50,200:INFO: Epoch - 007 learning_rate: 0.39997532649633216
-2019-07-01 01:29:10,112:INFO:   TRAIN: 	loss: 0.57209 	accuracy: 80.5% 	error: 19.5% 	data: 42675
-2019-07-01 01:29:12,833:INFO:   VALID: 	loss: 0.58777 	accuracy: 79.7% 	error: 20.3% 	data: 7325
-2019-07-01 01:29:12,834:INFO: 
-
-2019-07-01 01:29:12,835:INFO: Epoch - 008 learning_rate: 0.4
-2019-07-01 01:29:32,740:INFO:   TRAIN: 	loss: 0.52656 	accuracy: 81.8% 	error: 18.2% 	data: 42675
-2019-07-01 01:29:35,461:INFO:   VALID: 	loss: 0.71026 	accuracy: 75.8% 	error: 24.2% 	data: 7325
-2019-07-01 01:29:35,462:INFO: 
-
-2019-07-01 01:29:35,463:INFO: Epoch - 009 learning_rate: 0.39997532649633216
-2019-07-01 01:29:55,362:INFO:   TRAIN: 	loss: 0.50566 	accuracy: 82.5% 	error: 17.5% 	data: 42675
-2019-07-01 01:29:58,110:INFO:   VALID: 	loss: 0.63193 	accuracy: 77.7% 	error: 22.3% 	data: 7325
-2019-07-01 01:29:58,110:INFO: 
-
-2019-07-01 01:29:58,112:INFO: Epoch - 010 learning_rate: 0.39990131207314633
-2019-07-01 01:30:18,000:INFO:   TRAIN: 	loss: 0.46516 	accuracy: 84.1% 	error: 15.9% 	data: 42675
-2019-07-01 01:30:20,715:INFO:   VALID: 	loss: 0.55587 	accuracy: 81.0% 	error: 19.0% 	data: 7325
-2019-07-01 01:30:20,715:INFO: 
-
-2019-07-01 01:30:20,716:INFO: Epoch - 011 learning_rate: 0.39977797499239404
-2019-07-01 01:30:40,586:INFO:   TRAIN: 	loss: 0.44668 	accuracy: 84.6% 	error: 15.4% 	data: 42675
-2019-07-01 01:30:43,335:INFO:   VALID: 	loss: 0.58989 	accuracy: 79.9% 	error: 20.1% 	data: 7325
-2019-07-01 01:30:43,335:INFO: 
-
-2019-07-01 01:30:43,336:INFO: Epoch - 012 learning_rate: 0.3996053456856543
-2019-07-01 01:31:03,218:INFO:   TRAIN: 	loss: 0.43218 	accuracy: 85.0% 	error: 15.0% 	data: 42675
-2019-07-01 01:31:05,952:INFO:   VALID: 	loss: 0.70621 	accuracy: 76.4% 	error: 23.6% 	data: 7325
-2019-07-01 01:31:05,953:INFO: 
-
-2019-07-01 01:31:05,954:INFO: Epoch - 013 learning_rate: 0.3993834667466256
-2019-07-01 01:31:25,812:INFO:   TRAIN: 	loss: 0.41877 	accuracy: 85.5% 	error: 14.5% 	data: 42675
-2019-07-01 01:31:28,531:INFO:   VALID: 	loss: 0.53178 	accuracy: 81.9% 	error: 18.1% 	data: 7325
-2019-07-01 01:31:28,531:INFO: 
-
-2019-07-01 01:31:28,533:INFO: Epoch - 014 learning_rate: 0.399112392920616
-2019-07-01 01:31:48,399:INFO:   TRAIN: 	loss: 0.39744 	accuracy: 86.5% 	error: 13.5% 	data: 42675
-2019-07-01 01:31:51,112:INFO:   VALID: 	loss: 0.50027 	accuracy: 83.5% 	error: 16.5% 	data: 7325
-2019-07-01 01:31:51,112:INFO: 
-
-2019-07-01 01:31:51,114:INFO: Epoch - 015 learning_rate: 0.398792191091036
-2019-07-01 01:32:10,993:INFO:   TRAIN: 	loss: 0.39141 	accuracy: 86.5% 	error: 13.5% 	data: 42675
-2019-07-01 01:32:13,704:INFO:   VALID: 	loss: 0.58355 	accuracy: 80.4% 	error: 19.6% 	data: 7325
-2019-07-01 01:32:13,704:INFO: 
-
-2019-07-01 01:32:13,706:INFO: Epoch - 016 learning_rate: 0.3984229402628956
-2019-07-01 01:32:33,607:INFO:   TRAIN: 	loss: 0.37310 	accuracy: 87.0% 	error: 13.0% 	data: 42675
-2019-07-01 01:32:36,355:INFO:   VALID: 	loss: 0.53614 	accuracy: 81.4% 	error: 18.6% 	data: 7325
-2019-07-01 01:32:36,355:INFO: 
-
-2019-07-01 01:32:36,356:INFO: Epoch - 017 learning_rate: 0.3980047315433115
-2019-07-01 01:32:56,249:INFO:   TRAIN: 	loss: 0.36838 	accuracy: 87.4% 	error: 12.6% 	data: 42675
-2019-07-01 01:32:58,965:INFO:   VALID: 	loss: 0.49218 	accuracy: 83.4% 	error: 16.6% 	data: 7325
-2019-07-01 01:32:58,965:INFO: 
-
-2019-07-01 01:32:58,966:INFO: Epoch - 018 learning_rate: 0.3975376681190276
-2019-07-01 01:33:18,822:INFO:   TRAIN: 	loss: 0.35820 	accuracy: 87.5% 	error: 12.5% 	data: 42675
-2019-07-01 01:33:21,555:INFO:   VALID: 	loss: 0.43847 	accuracy: 85.1% 	error: 14.9% 	data: 7325
-2019-07-01 01:33:21,555:INFO: 
-
-2019-07-01 01:33:21,556:INFO: Epoch - 019 learning_rate: 0.3970218652309548
-2019-07-01 01:33:41,401:INFO:   TRAIN: 	loss: 0.34809 	accuracy: 88.0% 	error: 12.0% 	data: 42675
-2019-07-01 01:33:44,106:INFO:   VALID: 	loss: 0.47420 	accuracy: 83.2% 	error: 16.8% 	data: 7325
-2019-07-01 01:33:44,107:INFO: 
-
-2019-07-01 01:33:44,108:INFO: Epoch - 020 learning_rate: 0.3964574501457378
-2019-07-01 01:34:03,967:INFO:   TRAIN: 	loss: 0.33943 	accuracy: 88.2% 	error: 11.8% 	data: 42675
-2019-07-01 01:34:06,693:INFO:   VALID: 	loss: 0.49621 	accuracy: 83.5% 	error: 16.5% 	data: 7325
-2019-07-01 01:34:06,693:INFO: 
-
-2019-07-01 01:34:06,694:INFO: Epoch - 021 learning_rate: 0.39584456212435315
-2019-07-01 01:34:26,565:INFO:   TRAIN: 	loss: 0.33534 	accuracy: 88.5% 	error: 11.5% 	data: 42675
-2019-07-01 01:34:29,270:INFO:   VALID: 	loss: 0.52261 	accuracy: 81.7% 	error: 18.3% 	data: 7325
-2019-07-01 01:34:29,271:INFO: 
-
-2019-07-01 01:34:29,272:INFO: Epoch - 022 learning_rate: 0.3951833523877495
-2019-07-01 01:34:49,175:INFO:   TRAIN: 	loss: 0.32651 	accuracy: 88.7% 	error: 11.3% 	data: 42675
-2019-07-01 01:34:51,885:INFO:   VALID: 	loss: 0.58161 	accuracy: 81.1% 	error: 18.9% 	data: 7325
-2019-07-01 01:34:51,886:INFO: 
-
-2019-07-01 01:34:51,887:INFO: Epoch - 023 learning_rate: 0.3944739840795353
-2019-07-01 01:35:11,803:INFO:   TRAIN: 	loss: 0.32656 	accuracy: 88.7% 	error: 11.3% 	data: 42675
-2019-07-01 01:35:14,508:INFO:   VALID: 	loss: 0.53935 	accuracy: 82.4% 	error: 17.6% 	data: 7325
-2019-07-01 01:35:14,509:INFO: 
-
-2019-07-01 01:35:14,510:INFO: Epoch - 024 learning_rate: 0.3937166322257262
-2019-07-01 01:35:34,407:INFO:   TRAIN: 	loss: 0.31983 	accuracy: 89.0% 	error: 11.0% 	data: 42675
-2019-07-01 01:35:37,151:INFO:   VALID: 	loss: 0.59141 	accuracy: 80.9% 	error: 19.1% 	data: 7325
-2019-07-01 01:35:37,152:INFO: 
-
-2019-07-01 01:35:37,153:INFO: Epoch - 025 learning_rate: 0.39291148369155965
-2019-07-01 01:35:57,006:INFO:   TRAIN: 	loss: 0.31015 	accuracy: 89.3% 	error: 10.7% 	data: 42675
-2019-07-01 01:35:59,680:INFO:   VALID: 	loss: 0.58559 	accuracy: 81.5% 	error: 18.5% 	data: 7325
-2019-07-01 01:35:59,680:INFO: 
-
-2019-07-01 01:35:59,681:INFO: Epoch - 026 learning_rate: 0.39205873713538864
-2019-07-01 01:36:19,533:INFO:   TRAIN: 	loss: 0.30631 	accuracy: 89.5% 	error: 10.5% 	data: 42675
-2019-07-01 01:36:22,231:INFO:   VALID: 	loss: 0.45466 	accuracy: 84.7% 	error: 15.3% 	data: 7325
-2019-07-01 01:36:22,232:INFO: 
-
-2019-07-01 01:36:22,233:INFO: Epoch - 027 learning_rate: 0.39115860295966604
-2019-07-01 01:36:42,103:INFO:   TRAIN: 	loss: 0.30255 	accuracy: 89.7% 	error: 10.3% 	data: 42675
-2019-07-01 01:36:44,776:INFO:   VALID: 	loss: 0.45163 	accuracy: 85.4% 	error: 14.6% 	data: 7325
-2019-07-01 01:36:44,776:INFO: 
-
-2019-07-01 01:36:44,777:INFO: Epoch - 028 learning_rate: 0.39021130325903075
-2019-07-01 01:37:04,658:INFO:   TRAIN: 	loss: 0.29184 	accuracy: 90.0% 	error: 10.0% 	data: 42675
-2019-07-01 01:37:07,371:INFO:   VALID: 	loss: 0.45581 	accuracy: 84.4% 	error: 15.6% 	data: 7325
-2019-07-01 01:37:07,371:INFO: 
-
-2019-07-01 01:37:07,373:INFO: Epoch - 029 learning_rate: 0.38921707176550907
-2019-07-01 01:37:27,289:INFO:   TRAIN: 	loss: 0.29562 	accuracy: 89.7% 	error: 10.3% 	data: 42675
-2019-07-01 01:37:29,976:INFO:   VALID: 	loss: 0.50676 	accuracy: 83.1% 	error: 16.9% 	data: 7325
-2019-07-01 01:37:29,977:INFO: 
-
-2019-07-01 01:37:29,978:INFO: Epoch - 030 learning_rate: 0.38817615379084514
-2019-07-01 01:37:49,887:INFO:   TRAIN: 	loss: 0.28335 	accuracy: 90.2% 	error: 9.8% 	data: 42675
-2019-07-01 01:37:52,577:INFO:   VALID: 	loss: 0.45981 	accuracy: 85.1% 	error: 14.9% 	data: 7325
-2019-07-01 01:37:52,578:INFO: 
-
-2019-07-01 01:37:52,579:INFO: Epoch - 031 learning_rate: 0.3870888061659735
-2019-07-01 01:38:12,460:INFO:   TRAIN: 	loss: 0.28698 	accuracy: 90.1% 	error: 9.9% 	data: 42675
-2019-07-01 01:38:15,150:INFO:   VALID: 	loss: 0.54289 	accuracy: 82.1% 	error: 17.9% 	data: 7325
-2019-07-01 01:38:15,150:INFO: 
-
-2019-07-01 01:38:15,152:INFO: Epoch - 032 learning_rate: 0.3859552971776503
-2019-07-01 01:38:35,053:INFO:   TRAIN: 	loss: 0.27872 	accuracy: 90.4% 	error: 9.6% 	data: 42675
-2019-07-01 01:38:37,720:INFO:   VALID: 	loss: 0.48720 	accuracy: 83.9% 	error: 16.1% 	data: 7325
-2019-07-01 01:38:37,720:INFO: 
-
-2019-07-01 01:38:37,722:INFO: Epoch - 033 learning_rate: 0.38477590650225735
-2019-07-01 01:38:57,596:INFO:   TRAIN: 	loss: 0.27825 	accuracy: 90.4% 	error: 9.6% 	data: 42675
-2019-07-01 01:39:00,259:INFO:   VALID: 	loss: 0.47958 	accuracy: 84.1% 	error: 15.9% 	data: 7325
-2019-07-01 01:39:00,260:INFO: 
-
-2019-07-01 01:39:00,261:INFO: Epoch - 034 learning_rate: 0.38355092513679623
-2019-07-01 01:39:20,122:INFO:   TRAIN: 	loss: 0.27578 	accuracy: 90.5% 	error: 9.5% 	data: 42675
-2019-07-01 01:39:22,788:INFO:   VALID: 	loss: 0.48929 	accuracy: 83.5% 	error: 16.5% 	data: 7325
-2019-07-01 01:39:22,789:INFO: 
-
-2019-07-01 01:39:22,790:INFO: Epoch - 035 learning_rate: 0.38228065532708905
-2019-07-01 01:39:42,675:INFO:   TRAIN: 	loss: 0.27109 	accuracy: 90.7% 	error: 9.3% 	data: 42675
-2019-07-01 01:39:45,374:INFO:   VALID: 	loss: 0.39312 	accuracy: 86.8% 	error: 13.2% 	data: 7325
-2019-07-01 01:39:45,375:INFO: 
-
-2019-07-01 01:39:45,376:INFO: Epoch - 036 learning_rate: 0.3809654104932039
-2019-07-01 01:40:05,236:INFO:   TRAIN: 	loss: 0.26785 	accuracy: 90.6% 	error: 9.4% 	data: 42675
-2019-07-01 01:40:07,941:INFO:   VALID: 	loss: 0.55080 	accuracy: 82.2% 	error: 17.8% 	data: 7325
-2019-07-01 01:40:07,942:INFO: 
-
-2019-07-01 01:40:07,943:INFO: Epoch - 037 learning_rate: 0.37960551515212315
-2019-07-01 01:40:27,885:INFO:   TRAIN: 	loss: 0.27338 	accuracy: 90.6% 	error: 9.4% 	data: 42675
-2019-07-01 01:40:30,620:INFO:   VALID: 	loss: 0.50816 	accuracy: 83.6% 	error: 16.4% 	data: 7325
-2019-07-01 01:40:30,621:INFO: 
-
-2019-07-01 01:40:30,622:INFO: Epoch - 038 learning_rate: 0.37820130483767356
-2019-07-01 01:40:50,514:INFO:   TRAIN: 	loss: 0.26616 	accuracy: 90.9% 	error: 9.1% 	data: 42675
-2019-07-01 01:40:53,212:INFO:   VALID: 	loss: 0.45065 	accuracy: 85.5% 	error: 14.5% 	data: 7325
-2019-07-01 01:40:53,212:INFO: 
-
-2019-07-01 01:40:53,213:INFO: Epoch - 039 learning_rate: 0.37675312601773875
-2019-07-01 01:41:13,077:INFO:   TRAIN: 	loss: 0.25890 	accuracy: 91.0% 	error: 9.0% 	data: 42675
-2019-07-01 01:41:15,755:INFO:   VALID: 	loss: 0.45685 	accuracy: 85.1% 	error: 14.9% 	data: 7325
-2019-07-01 01:41:15,756:INFO: 
-
-2019-07-01 01:41:15,757:INFO: Epoch - 040 learning_rate: 0.3752613360087727
-2019-07-01 01:41:35,608:INFO:   TRAIN: 	loss: 0.25202 	accuracy: 91.2% 	error: 8.8% 	data: 42675
-2019-07-01 01:41:38,307:INFO:   VALID: 	loss: 0.41627 	accuracy: 85.8% 	error: 14.2% 	data: 7325
-2019-07-01 01:41:38,308:INFO: 
-
-2019-07-01 01:41:38,309:INFO: Epoch - 041 learning_rate: 0.3737263028876383
-2019-07-01 01:41:58,178:INFO:   TRAIN: 	loss: 0.25333 	accuracy: 91.4% 	error: 8.6% 	data: 42675
-2019-07-01 01:42:00,856:INFO:   VALID: 	loss: 0.39932 	accuracy: 86.2% 	error: 13.8% 	data: 7325
-2019-07-01 01:42:00,856:INFO: 
-
-2019-07-01 01:42:00,857:INFO: Epoch - 042 learning_rate: 0.37214840540078875
-2019-07-01 01:42:20,741:INFO:   TRAIN: 	loss: 0.25187 	accuracy: 91.3% 	error: 8.7% 	data: 42675
-2019-07-01 01:42:23,439:INFO:   VALID: 	loss: 0.40939 	accuracy: 86.4% 	error: 13.6% 	data: 7325
-2019-07-01 01:42:23,440:INFO: 
-
-2019-07-01 01:42:23,441:INFO: Epoch - 043 learning_rate: 0.3705280328708185
-2019-07-01 01:42:43,335:INFO:   TRAIN: 	loss: 0.24693 	accuracy: 91.3% 	error: 8.7% 	data: 42675
-2019-07-01 01:42:45,972:INFO:   VALID: 	loss: 0.47175 	accuracy: 84.5% 	error: 15.5% 	data: 7325
-2019-07-01 01:42:45,972:INFO: 
-
-2019-07-01 01:42:45,973:INFO: Epoch - 044 learning_rate: 0.368865585100403
-2019-07-01 01:43:05,854:INFO:   TRAIN: 	loss: 0.24691 	accuracy: 91.4% 	error: 8.6% 	data: 42675
-2019-07-01 01:43:08,535:INFO:   VALID: 	loss: 0.45268 	accuracy: 84.9% 	error: 15.1% 	data: 7325
-2019-07-01 01:43:08,536:INFO: 
-
-2019-07-01 01:43:08,537:INFO: Epoch - 045 learning_rate: 0.3671614722736541
-2019-07-01 01:43:28,446:INFO:   TRAIN: 	loss: 0.24051 	accuracy: 91.6% 	error: 8.4% 	data: 42675
-2019-07-01 01:43:31,171:INFO:   VALID: 	loss: 0.38141 	accuracy: 87.5% 	error: 12.5% 	data: 7325
-2019-07-01 01:43:31,172:INFO: 
-
-2019-07-01 01:43:31,173:INFO: Epoch - 046 learning_rate: 0.3654161148549124
-2019-07-01 01:43:51,047:INFO:   TRAIN: 	loss: 0.24083 	accuracy: 91.7% 	error: 8.3% 	data: 42675
-2019-07-01 01:43:53,742:INFO:   VALID: 	loss: 0.38497 	accuracy: 87.5% 	error: 12.5% 	data: 7325
-2019-07-01 01:43:53,743:INFO: 
-
-2019-07-01 01:43:53,744:INFO: Epoch - 047 learning_rate: 0.3636299434850047
-2019-07-01 01:44:13,607:INFO:   TRAIN: 	loss: 0.23883 	accuracy: 91.8% 	error: 8.2% 	data: 42675
-2019-07-01 01:44:16,297:INFO:   VALID: 	loss: 0.39158 	accuracy: 86.9% 	error: 13.1% 	data: 7325
-2019-07-01 01:44:16,298:INFO: 
-
-2019-07-01 01:44:16,299:INFO: Epoch - 048 learning_rate: 0.3618033988749895
-2019-07-01 01:44:36,172:INFO:   TRAIN: 	loss: 0.23633 	accuracy: 92.0% 	error: 8.0% 	data: 42675
-2019-07-01 01:44:38,867:INFO:   VALID: 	loss: 0.42131 	accuracy: 85.3% 	error: 14.7% 	data: 7325
-2019-07-01 01:44:38,867:INFO: 
-
-2019-07-01 01:44:38,868:INFO: Epoch - 049 learning_rate: 0.35993693169741814
-2019-07-01 01:44:58,749:INFO:   TRAIN: 	loss: 0.23356 	accuracy: 92.1% 	error: 7.9% 	data: 42675
-2019-07-01 01:45:01,459:INFO:   VALID: 	loss: 0.35996 	accuracy: 88.3% 	error: 11.7% 	data: 7325
-2019-07-01 01:45:01,459:INFO: 
-
-2019-07-01 01:45:01,461:INFO: Epoch - 050 learning_rate: 0.3580310024751381
-2019-07-01 01:45:21,341:INFO:   TRAIN: 	loss: 0.22830 	accuracy: 92.1% 	error: 7.9% 	data: 42675
-2019-07-01 01:45:24,050:INFO:   VALID: 	loss: 0.34176 	accuracy: 88.7% 	error: 11.3% 	data: 7325
-2019-07-01 01:45:24,050:INFO: 
-
-2019-07-01 01:45:24,051:INFO: Epoch - 051 learning_rate: 0.35608608146766596
-2019-07-01 01:45:43,957:INFO:   TRAIN: 	loss: 0.23157 	accuracy: 92.0% 	error: 8.0% 	data: 42675
-2019-07-01 01:45:46,638:INFO:   VALID: 	loss: 0.42760 	accuracy: 85.8% 	error: 14.2% 	data: 7325
-2019-07-01 01:45:46,639:INFO: 
-
-2019-07-01 01:45:46,640:INFO: Epoch - 052 learning_rate: 0.3541026485551579
-2019-07-01 01:46:06,541:INFO:   TRAIN: 	loss: 0.23317 	accuracy: 91.9% 	error: 8.1% 	data: 42675
-2019-07-01 01:46:09,228:INFO:   VALID: 	loss: 0.45195 	accuracy: 85.6% 	error: 14.4% 	data: 7325
-2019-07-01 01:46:09,228:INFO: 
-
-2019-07-01 01:46:09,229:INFO: Epoch - 053 learning_rate: 0.35208119312000624
-2019-07-01 01:46:29,144:INFO:   TRAIN: 	loss: 0.22425 	accuracy: 92.3% 	error: 7.7% 	data: 42675
-2019-07-01 01:46:31,834:INFO:   VALID: 	loss: 0.52247 	accuracy: 83.4% 	error: 16.6% 	data: 7325
-2019-07-01 01:46:31,835:INFO: 
-
-2019-07-01 01:46:31,836:INFO: Epoch - 054 learning_rate: 0.35002221392609195
-2019-07-01 01:46:51,725:INFO:   TRAIN: 	loss: 0.22901 	accuracy: 91.9% 	error: 8.1% 	data: 42675
-2019-07-01 01:46:54,448:INFO:   VALID: 	loss: 0.43303 	accuracy: 85.9% 	error: 14.1% 	data: 7325
-2019-07-01 01:46:54,449:INFO: 
-
-2019-07-01 01:46:54,450:INFO: Epoch - 055 learning_rate: 0.34792621899572196
-2019-07-01 01:47:14,314:INFO:   TRAIN: 	loss: 0.22083 	accuracy: 92.3% 	error: 7.7% 	data: 42675
-2019-07-01 01:47:17,015:INFO:   VALID: 	loss: 0.38094 	accuracy: 87.2% 	error: 12.8% 	data: 7325
-2019-07-01 01:47:17,016:INFO: 
-
-2019-07-01 01:47:17,017:INFO: Epoch - 056 learning_rate: 0.34579372548428233
-2019-07-01 01:47:36,875:INFO:   TRAIN: 	loss: 0.21594 	accuracy: 92.6% 	error: 7.4% 	data: 42675
-2019-07-01 01:47:39,615:INFO:   VALID: 	loss: 0.38933 	accuracy: 87.0% 	error: 13.0% 	data: 7325
-2019-07-01 01:47:39,615:INFO: 
-
-2019-07-01 01:47:39,616:INFO: Epoch - 057 learning_rate: 0.3436252595526378
-2019-07-01 01:47:59,484:INFO:   TRAIN: 	loss: 0.21849 	accuracy: 92.4% 	error: 7.6% 	data: 42675
-2019-07-01 01:48:02,210:INFO:   VALID: 	loss: 0.37731 	accuracy: 87.7% 	error: 12.3% 	data: 7325
-2019-07-01 01:48:02,211:INFO: 
-
-2019-07-01 01:48:02,212:INFO: Epoch - 058 learning_rate: 0.3414213562373095
-2019-07-01 01:48:22,082:INFO:   TRAIN: 	loss: 0.21559 	accuracy: 92.7% 	error: 7.3% 	data: 42675
-2019-07-01 01:48:24,766:INFO:   VALID: 	loss: 0.42080 	accuracy: 86.1% 	error: 13.9% 	data: 7325
-2019-07-01 01:48:24,766:INFO: 
-
-2019-07-01 01:48:24,767:INFO: Epoch - 059 learning_rate: 0.33918255931846286
-2019-07-01 01:48:44,668:INFO:   TRAIN: 	loss: 0.20982 	accuracy: 92.8% 	error: 7.2% 	data: 42675
-2019-07-01 01:48:47,385:INFO:   VALID: 	loss: 0.61572 	accuracy: 81.3% 	error: 18.7% 	data: 7325
-2019-07-01 01:48:47,386:INFO: 
-
-2019-07-01 01:48:47,387:INFO: Epoch - 060 learning_rate: 0.33690942118573775
-2019-07-01 01:49:07,290:INFO:   TRAIN: 	loss: 0.21575 	accuracy: 92.5% 	error: 7.5% 	data: 42675
-2019-07-01 01:49:09,977:INFO:   VALID: 	loss: 0.36160 	accuracy: 88.5% 	error: 11.5% 	data: 7325
-2019-07-01 01:49:09,978:INFO: 
-
-2019-07-01 01:49:09,979:INFO: Epoch - 061 learning_rate: 0.3346025027019547
-2019-07-01 01:49:29,908:INFO:   TRAIN: 	loss: 0.21156 	accuracy: 92.8% 	error: 7.2% 	data: 42675
-2019-07-01 01:49:32,614:INFO:   VALID: 	loss: 0.40964 	accuracy: 86.4% 	error: 13.6% 	data: 7325
-2019-07-01 01:49:32,614:INFO: 
-
-2019-07-01 01:49:32,615:INFO: Epoch - 062 learning_rate: 0.3322623730647304
-2019-07-01 01:49:52,513:INFO:   TRAIN: 	loss: 0.20845 	accuracy: 92.9% 	error: 7.1% 	data: 42675
-2019-07-01 01:49:55,210:INFO:   VALID: 	loss: 0.42517 	accuracy: 86.3% 	error: 13.7% 	data: 7325
-2019-07-01 01:49:55,210:INFO: 
-
-2019-07-01 01:49:55,211:INFO: Epoch - 063 learning_rate: 0.32988960966603675
-2019-07-01 01:50:15,124:INFO:   TRAIN: 	loss: 0.20825 	accuracy: 92.8% 	error: 7.2% 	data: 42675
-2019-07-01 01:50:17,813:INFO:   VALID: 	loss: 0.40782 	accuracy: 86.9% 	error: 13.1% 	data: 7325
-2019-07-01 01:50:17,813:INFO: 
-
-2019-07-01 01:50:17,815:INFO: Epoch - 064 learning_rate: 0.32748479794973795
-2019-07-01 01:50:37,672:INFO:   TRAIN: 	loss: 0.19854 	accuracy: 93.2% 	error: 6.8% 	data: 42675
-2019-07-01 01:50:40,351:INFO:   VALID: 	loss: 0.41180 	accuracy: 87.0% 	error: 13.0% 	data: 7325
-2019-07-01 01:50:40,351:INFO: 
-
-2019-07-01 01:50:40,353:INFO: Epoch - 065 learning_rate: 0.3250485312671411
-2019-07-01 01:51:00,226:INFO:   TRAIN: 	loss: 0.20024 	accuracy: 93.1% 	error: 6.9% 	data: 42675
-2019-07-01 01:51:02,927:INFO:   VALID: 	loss: 0.38491 	accuracy: 87.3% 	error: 12.7% 	data: 7325
-2019-07-01 01:51:02,927:INFO: 
-
-2019-07-01 01:51:02,928:INFO: Epoch - 066 learning_rate: 0.3225814107305953
-2019-07-01 01:51:22,837:INFO:   TRAIN: 	loss: 0.19775 	accuracy: 93.3% 	error: 6.7% 	data: 42675
-2019-07-01 01:51:25,524:INFO:   VALID: 	loss: 0.38803 	accuracy: 87.1% 	error: 12.9% 	data: 7325
-2019-07-01 01:51:25,524:INFO: 
-
-2019-07-01 01:51:25,525:INFO: Epoch - 067 learning_rate: 0.32008404506517685
-2019-07-01 01:51:45,433:INFO:   TRAIN: 	loss: 0.20079 	accuracy: 93.1% 	error: 6.9% 	data: 42675
-2019-07-01 01:51:48,115:INFO:   VALID: 	loss: 0.39351 	accuracy: 86.7% 	error: 13.3% 	data: 7325
-2019-07-01 01:51:48,115:INFO: 
-
-2019-07-01 01:51:48,116:INFO: Epoch - 068 learning_rate: 0.3175570504584947
-2019-07-01 01:52:08,026:INFO:   TRAIN: 	loss: 0.20179 	accuracy: 92.9% 	error: 7.1% 	data: 42675
-2019-07-01 01:52:10,735:INFO:   VALID: 	loss: 0.38710 	accuracy: 87.2% 	error: 12.8% 	data: 7325
-2019-07-01 01:52:10,735:INFO: 
-
-2019-07-01 01:52:10,736:INFO: Epoch - 069 learning_rate: 0.3150010504086558
-2019-07-01 01:52:30,641:INFO:   TRAIN: 	loss: 0.19255 	accuracy: 93.5% 	error: 6.5% 	data: 42675
-2019-07-01 01:52:33,314:INFO:   VALID: 	loss: 0.39769 	accuracy: 87.4% 	error: 12.6% 	data: 7325
-2019-07-01 01:52:33,315:INFO: 
-
-2019-07-01 01:52:33,316:INFO: Epoch - 070 learning_rate: 0.3124166755704262
-2019-07-01 01:52:53,227:INFO:   TRAIN: 	loss: 0.19946 	accuracy: 93.1% 	error: 6.9% 	data: 42675
-2019-07-01 01:52:55,904:INFO:   VALID: 	loss: 0.37960 	accuracy: 87.1% 	error: 12.9% 	data: 7325
-2019-07-01 01:52:55,904:INFO: 
-
-2019-07-01 01:52:55,906:INFO: Epoch - 071 learning_rate: 0.3098045635996264
-2019-07-01 01:53:15,790:INFO:   TRAIN: 	loss: 0.19647 	accuracy: 93.3% 	error: 6.7% 	data: 42675
-2019-07-01 01:53:18,497:INFO:   VALID: 	loss: 0.37388 	accuracy: 87.5% 	error: 12.5% 	data: 7325
-2019-07-01 01:53:18,497:INFO: 
-
-2019-07-01 01:53:18,499:INFO: Epoch - 072 learning_rate: 0.30716535899579933
-2019-07-01 01:53:38,417:INFO:   TRAIN: 	loss: 0.18833 	accuracy: 93.4% 	error: 6.6% 	data: 42675
-2019-07-01 01:53:41,097:INFO:   VALID: 	loss: 0.39692 	accuracy: 86.8% 	error: 13.2% 	data: 7325
-2019-07-01 01:53:41,098:INFO: 
-
-2019-07-01 01:53:41,099:INFO: Epoch - 073 learning_rate: 0.3044997129431898
-2019-07-01 01:54:00,978:INFO:   TRAIN: 	loss: 0.19348 	accuracy: 93.3% 	error: 6.7% 	data: 42675
-2019-07-01 01:54:03,672:INFO:   VALID: 	loss: 0.38029 	accuracy: 87.9% 	error: 12.1% 	data: 7325
-2019-07-01 01:54:03,673:INFO: 
-
-2019-07-01 01:54:03,674:INFO: Epoch - 074 learning_rate: 0.3018082831500743
-2019-07-01 01:54:23,543:INFO:   TRAIN: 	loss: 0.18468 	accuracy: 93.6% 	error: 6.4% 	data: 42675
-2019-07-01 01:54:26,244:INFO:   VALID: 	loss: 0.44274 	accuracy: 86.4% 	error: 13.6% 	data: 7325
-2019-07-01 01:54:26,245:INFO: 
-
-2019-07-01 01:54:26,246:INFO: Epoch - 075 learning_rate: 0.2990917336864815
-2019-07-01 01:54:46,144:INFO:   TRAIN: 	loss: 0.18859 	accuracy: 93.4% 	error: 6.6% 	data: 42675
-2019-07-01 01:54:48,821:INFO:   VALID: 	loss: 0.36479 	accuracy: 88.2% 	error: 11.8% 	data: 7325
-2019-07-01 01:54:48,821:INFO: 
-
-2019-07-01 01:54:48,822:INFO: Epoch - 076 learning_rate: 0.2963507348203431
-2019-07-01 01:55:08,746:INFO:   TRAIN: 	loss: 0.17867 	accuracy: 93.8% 	error: 6.2% 	data: 42675
-2019-07-01 01:55:11,429:INFO:   VALID: 	loss: 0.36063 	accuracy: 88.4% 	error: 11.6% 	data: 7325
-2019-07-01 01:55:11,429:INFO: 
-
-2019-07-01 01:55:11,431:INFO: Epoch - 077 learning_rate: 0.2935859628521147
-2019-07-01 01:55:31,352:INFO:   TRAIN: 	loss: 0.18011 	accuracy: 93.9% 	error: 6.1% 	data: 42675
-2019-07-01 01:55:34,048:INFO:   VALID: 	loss: 0.36020 	accuracy: 88.3% 	error: 11.7% 	data: 7325
-2019-07-01 01:55:34,049:INFO: 
-
-2019-07-01 01:55:34,050:INFO: Epoch - 078 learning_rate: 0.29079809994790934
-2019-07-01 01:55:53,968:INFO:   TRAIN: 	loss: 0.17995 	accuracy: 93.7% 	error: 6.3% 	data: 42675
-2019-07-01 01:55:56,638:INFO:   VALID: 	loss: 0.39445 	accuracy: 87.2% 	error: 12.8% 	data: 7325
-2019-07-01 01:55:56,638:INFO: 
-
-2019-07-01 01:55:56,639:INFO: Epoch - 079 learning_rate: 0.287987833971183
-2019-07-01 01:56:16,534:INFO:   TRAIN: 	loss: 0.17460 	accuracy: 94.0% 	error: 6.0% 	data: 42675
-2019-07-01 01:56:19,273:INFO:   VALID: 	loss: 0.33635 	accuracy: 89.0% 	error: 11.0% 	data: 7325
-2019-07-01 01:56:19,273:INFO: 
-
-2019-07-01 01:56:19,274:INFO: Epoch - 080 learning_rate: 0.28515585831301454
-2019-07-01 01:56:39,158:INFO:   TRAIN: 	loss: 0.16754 	accuracy: 94.3% 	error: 5.7% 	data: 42675
-2019-07-01 01:56:41,840:INFO:   VALID: 	loss: 0.33994 	accuracy: 88.9% 	error: 11.1% 	data: 7325
-2019-07-01 01:56:41,841:INFO: 
-
-2019-07-01 01:56:41,842:INFO: Epoch - 081 learning_rate: 0.2823028717210218
-2019-07-01 01:57:01,703:INFO:   TRAIN: 	loss: 0.16981 	accuracy: 94.1% 	error: 5.9% 	data: 42675
-2019-07-01 01:57:04,421:INFO:   VALID: 	loss: 0.40791 	accuracy: 87.4% 	error: 12.6% 	data: 7325
-2019-07-01 01:57:04,422:INFO: 
-
-2019-07-01 01:57:04,423:INFO: Epoch - 082 learning_rate: 0.2794295781269561
-2019-07-01 01:57:24,294:INFO:   TRAIN: 	loss: 0.16362 	accuracy: 94.3% 	error: 5.7% 	data: 42675
-2019-07-01 01:57:26,985:INFO:   VALID: 	loss: 0.37744 	accuracy: 88.6% 	error: 11.4% 	data: 7325
-2019-07-01 01:57:26,985:INFO: 
-
-2019-07-01 01:57:26,986:INFO: Epoch - 083 learning_rate: 0.276536686473018
-2019-07-01 01:57:46,904:INFO:   TRAIN: 	loss: 0.16648 	accuracy: 94.2% 	error: 5.8% 	data: 42675
-2019-07-01 01:57:49,621:INFO:   VALID: 	loss: 0.37668 	accuracy: 88.1% 	error: 11.9% 	data: 7325
-2019-07-01 01:57:49,622:INFO: 
-
-2019-07-01 01:57:49,623:INFO: Epoch - 084 learning_rate: 0.27362491053693566
-2019-07-01 01:58:09,521:INFO:   TRAIN: 	loss: 0.16691 	accuracy: 94.3% 	error: 5.7% 	data: 42675
-2019-07-01 01:58:12,222:INFO:   VALID: 	loss: 0.36038 	accuracy: 88.2% 	error: 11.8% 	data: 7325
-2019-07-01 01:58:12,223:INFO: 
-
-2019-07-01 01:58:12,224:INFO: Epoch - 085 learning_rate: 0.2706949687558515
-2019-07-01 01:58:32,133:INFO:   TRAIN: 	loss: 0.16394 	accuracy: 94.3% 	error: 5.7% 	data: 42675
-2019-07-01 01:58:34,835:INFO:   VALID: 	loss: 0.35572 	accuracy: 88.3% 	error: 11.7% 	data: 7325
-2019-07-01 01:58:34,835:INFO: 
-
-2019-07-01 01:58:34,837:INFO: Epoch - 086 learning_rate: 0.26774758404905835
-2019-07-01 01:58:54,741:INFO:   TRAIN: 	loss: 0.16491 	accuracy: 94.4% 	error: 5.6% 	data: 42675
-2019-07-01 01:58:57,450:INFO:   VALID: 	loss: 0.31381 	accuracy: 89.9% 	error: 10.1% 	data: 7325
-2019-07-01 01:58:57,450:INFO: 
-
-2019-07-01 01:58:57,452:INFO: Epoch - 087 learning_rate: 0.2647834836396299
-2019-07-01 01:59:17,345:INFO:   TRAIN: 	loss: 0.15661 	accuracy: 94.7% 	error: 5.3% 	data: 42675
-2019-07-01 01:59:20,067:INFO:   VALID: 	loss: 0.35979 	accuracy: 88.6% 	error: 11.4% 	data: 7325
-2019-07-01 01:59:20,067:INFO: 
-
-2019-07-01 01:59:20,068:INFO: Epoch - 088 learning_rate: 0.2618033988749895
-2019-07-01 01:59:39,963:INFO:   TRAIN: 	loss: 0.15910 	accuracy: 94.6% 	error: 5.4% 	data: 42675
-2019-07-01 01:59:42,634:INFO:   VALID: 	loss: 0.32450 	accuracy: 89.0% 	error: 11.0% 	data: 7325
-2019-07-01 01:59:42,635:INFO: 
-
-2019-07-01 01:59:42,636:INFO: Epoch - 089 learning_rate: 0.2588080650464608
-2019-07-01 02:00:02,515:INFO:   TRAIN: 	loss: 0.15933 	accuracy: 94.6% 	error: 5.4% 	data: 42675
-2019-07-01 02:00:05,198:INFO:   VALID: 	loss: 0.32818 	accuracy: 89.6% 	error: 10.4% 	data: 7325
-2019-07-01 02:00:05,198:INFO: 
-
-2019-07-01 02:00:05,200:INFO: Epoch - 090 learning_rate: 0.2557982212078459
-2019-07-01 02:00:25,086:INFO:   TRAIN: 	loss: 0.15810 	accuracy: 94.5% 	error: 5.5% 	data: 42675
-2019-07-01 02:00:27,778:INFO:   VALID: 	loss: 0.32349 	accuracy: 89.4% 	error: 10.6% 	data: 7325
-2019-07-01 02:00:27,778:INFO: 
-
-2019-07-01 02:00:27,779:INFO: Epoch - 091 learning_rate: 0.25277460999307455
-2019-07-01 02:00:47,673:INFO:   TRAIN: 	loss: 0.15305 	accuracy: 94.7% 	error: 5.3% 	data: 42675
-2019-07-01 02:00:50,366:INFO:   VALID: 	loss: 0.36960 	accuracy: 88.2% 	error: 11.8% 	data: 7325
-2019-07-01 02:00:50,367:INFO: 
-
-2019-07-01 02:00:50,368:INFO: Epoch - 092 learning_rate: 0.24973797743297094
-2019-07-01 02:01:10,274:INFO:   TRAIN: 	loss: 0.15425 	accuracy: 94.9% 	error: 5.1% 	data: 42675
-2019-07-01 02:01:12,968:INFO:   VALID: 	loss: 0.36810 	accuracy: 88.4% 	error: 11.6% 	data: 7325
-2019-07-01 02:01:12,968:INFO: 
-
-2019-07-01 02:01:12,969:INFO: Epoch - 093 learning_rate: 0.24668907277118113
-2019-07-01 02:01:32,876:INFO:   TRAIN: 	loss: 0.15864 	accuracy: 94.5% 	error: 5.5% 	data: 42675
-2019-07-01 02:01:35,576:INFO:   VALID: 	loss: 0.38522 	accuracy: 87.9% 	error: 12.1% 	data: 7325
-2019-07-01 02:01:35,577:INFO: 
-
-2019-07-01 02:01:35,578:INFO: Epoch - 094 learning_rate: 0.24362864827930855
-2019-07-01 02:01:55,455:INFO:   TRAIN: 	loss: 0.15025 	accuracy: 94.8% 	error: 5.2% 	data: 42675
-2019-07-01 02:01:58,121:INFO:   VALID: 	loss: 0.30756 	accuracy: 90.1% 	error: 9.9% 	data: 7325
-2019-07-01 02:01:58,121:INFO: 
-
-2019-07-01 02:01:58,123:INFO: Epoch - 095 learning_rate: 0.24055745907130255
-2019-07-01 02:02:18,010:INFO:   TRAIN: 	loss: 0.14431 	accuracy: 95.1% 	error: 4.9% 	data: 42675
-2019-07-01 02:02:20,702:INFO:   VALID: 	loss: 0.37010 	accuracy: 88.5% 	error: 11.5% 	data: 7325
-2019-07-01 02:02:20,703:INFO: 
-
-2019-07-01 02:02:20,704:INFO: Epoch - 096 learning_rate: 0.23747626291714496
-2019-07-01 02:02:40,587:INFO:   TRAIN: 	loss: 0.14800 	accuracy: 94.9% 	error: 5.1% 	data: 42675
-2019-07-01 02:02:43,366:INFO:   VALID: 	loss: 0.42301 	accuracy: 87.3% 	error: 12.7% 	data: 7325
-2019-07-01 02:02:43,366:INFO: 
-
-2019-07-01 02:02:43,368:INFO: Epoch - 097 learning_rate: 0.2343858200558819
-2019-07-01 02:03:03,249:INFO:   TRAIN: 	loss: 0.15130 	accuracy: 94.8% 	error: 5.2% 	data: 42675
-2019-07-01 02:03:05,966:INFO:   VALID: 	loss: 0.34040 	accuracy: 88.9% 	error: 11.1% 	data: 7325
-2019-07-01 02:03:05,966:INFO: 
-
-2019-07-01 02:03:05,968:INFO: Epoch - 098 learning_rate: 0.2312868930080462
-2019-07-01 02:03:25,858:INFO:   TRAIN: 	loss: 0.14251 	accuracy: 95.0% 	error: 5.0% 	data: 42675
-2019-07-01 02:03:28,546:INFO:   VALID: 	loss: 0.37849 	accuracy: 88.3% 	error: 11.7% 	data: 7325
-2019-07-01 02:03:28,546:INFO: 
-
-2019-07-01 02:03:28,548:INFO: Epoch - 099 learning_rate: 0.22818024638751658
-2019-07-01 02:03:48,436:INFO:   TRAIN: 	loss: 0.14091 	accuracy: 95.2% 	error: 4.8% 	data: 42675
-2019-07-01 02:03:51,142:INFO:   VALID: 	loss: 0.35552 	accuracy: 89.2% 	error: 10.8% 	data: 7325
-2019-07-01 02:03:51,143:INFO: 
-
-2019-07-01 02:03:51,144:INFO: Epoch - 100 learning_rate: 0.22506664671286092
-2019-07-01 02:04:11,053:INFO:   TRAIN: 	loss: 0.13738 	accuracy: 95.2% 	error: 4.8% 	data: 42675
-2019-07-01 02:04:13,737:INFO:   VALID: 	loss: 0.35845 	accuracy: 89.2% 	error: 10.8% 	data: 7325
-2019-07-01 02:04:13,737:INFO: 
-
-2019-07-01 02:04:13,738:INFO: Epoch - 101 learning_rate: 0.22194686221820908
-2019-07-01 02:04:33,648:INFO:   TRAIN: 	loss: 0.14032 	accuracy: 95.2% 	error: 4.8% 	data: 42675
-2019-07-01 02:04:36,380:INFO:   VALID: 	loss: 0.32384 	accuracy: 89.7% 	error: 10.3% 	data: 7325
-2019-07-01 02:04:36,380:INFO: 
-
-2019-07-01 02:04:36,381:INFO: Epoch - 102 learning_rate: 0.21882166266370287
-2019-07-01 02:04:56,294:INFO:   TRAIN: 	loss: 0.12895 	accuracy: 95.5% 	error: 4.5% 	data: 42675
-2019-07-01 02:04:58,956:INFO:   VALID: 	loss: 0.34362 	accuracy: 89.5% 	error: 10.5% 	data: 7325
-2019-07-01 02:04:58,956:INFO: 
-
-2019-07-01 02:04:58,958:INFO: Epoch - 103 learning_rate: 0.215691819145569
-2019-07-01 02:05:18,886:INFO:   TRAIN: 	loss: 0.12576 	accuracy: 95.8% 	error: 4.2% 	data: 42675
-2019-07-01 02:05:21,572:INFO:   VALID: 	loss: 0.35649 	accuracy: 89.3% 	error: 10.7% 	data: 7325
-2019-07-01 02:05:21,573:INFO: 
-
-2019-07-01 02:05:21,574:INFO: Epoch - 104 learning_rate: 0.21255810390586272
-2019-07-01 02:05:41,517:INFO:   TRAIN: 	loss: 0.13224 	accuracy: 95.4% 	error: 4.6% 	data: 42675
-2019-07-01 02:05:44,236:INFO:   VALID: 	loss: 0.33457 	accuracy: 90.0% 	error: 10.0% 	data: 7325
-2019-07-01 02:05:44,236:INFO: 
-
-2019-07-01 02:05:44,238:INFO: Epoch - 105 learning_rate: 0.20942129014192853
-2019-07-01 02:06:04,176:INFO:   TRAIN: 	loss: 0.11854 	accuracy: 96.0% 	error: 4.0% 	data: 42675
-2019-07-01 02:06:06,880:INFO:   VALID: 	loss: 0.35245 	accuracy: 89.1% 	error: 10.9% 	data: 7325
-2019-07-01 02:06:06,881:INFO: 
-
-2019-07-01 02:06:06,882:INFO: Epoch - 106 learning_rate: 0.20628215181562568
-2019-07-01 02:06:26,807:INFO:   TRAIN: 	loss: 0.12485 	accuracy: 95.8% 	error: 4.2% 	data: 42675
-2019-07-01 02:06:29,512:INFO:   VALID: 	loss: 0.31960 	accuracy: 90.0% 	error: 10.0% 	data: 7325
-2019-07-01 02:06:29,512:INFO: 
-
-2019-07-01 02:06:29,513:INFO: Epoch - 107 learning_rate: 0.20314146346236417
-2019-07-01 02:06:49,435:INFO:   TRAIN: 	loss: 0.13344 	accuracy: 95.4% 	error: 4.6% 	data: 42675
-2019-07-01 02:06:52,147:INFO:   VALID: 	loss: 0.34298 	accuracy: 89.2% 	error: 10.8% 	data: 7325
-2019-07-01 02:06:52,147:INFO: 
-
-2019-07-01 02:06:52,148:INFO: Epoch - 108 learning_rate: 0.2
-2019-07-01 02:07:12,092:INFO:   TRAIN: 	loss: 0.12212 	accuracy: 95.8% 	error: 4.2% 	data: 42675
-2019-07-01 02:07:14,757:INFO:   VALID: 	loss: 0.41349 	accuracy: 87.7% 	error: 12.3% 	data: 7325
-2019-07-01 02:07:14,757:INFO: 
-
-2019-07-01 02:07:14,759:INFO: Epoch - 109 learning_rate: 0.1968585365376359
-2019-07-01 02:07:34,707:INFO:   TRAIN: 	loss: 0.12045 	accuracy: 96.0% 	error: 4.0% 	data: 42675
-2019-07-01 02:07:37,416:INFO:   VALID: 	loss: 0.32917 	accuracy: 89.8% 	error: 10.2% 	data: 7325
-2019-07-01 02:07:37,416:INFO: 
-
-2019-07-01 02:07:37,417:INFO: Epoch - 110 learning_rate: 0.19371784818437435
-2019-07-01 02:07:57,351:INFO:   TRAIN: 	loss: 0.11830 	accuracy: 96.0% 	error: 4.0% 	data: 42675
-2019-07-01 02:08:00,041:INFO:   VALID: 	loss: 0.32754 	accuracy: 89.9% 	error: 10.1% 	data: 7325
-2019-07-01 02:08:00,041:INFO: 
-
-2019-07-01 02:08:00,043:INFO: Epoch - 111 learning_rate: 0.1905787098580715
-2019-07-01 02:08:19,985:INFO:   TRAIN: 	loss: 0.11573 	accuracy: 96.1% 	error: 3.9% 	data: 42675
-2019-07-01 02:08:22,660:INFO:   VALID: 	loss: 0.33522 	accuracy: 89.6% 	error: 10.4% 	data: 7325
-2019-07-01 02:08:22,661:INFO: 
-
-2019-07-01 02:08:22,663:INFO: Epoch - 112 learning_rate: 0.18744189609413733
-2019-07-01 02:08:42,595:INFO:   TRAIN: 	loss: 0.11367 	accuracy: 96.1% 	error: 3.9% 	data: 42675
-2019-07-01 02:08:45,297:INFO:   VALID: 	loss: 0.32984 	accuracy: 89.9% 	error: 10.1% 	data: 7325
-2019-07-01 02:08:45,297:INFO: 
-
-2019-07-01 02:08:45,298:INFO: Epoch - 113 learning_rate: 0.18430818085443104
-2019-07-01 02:09:05,246:INFO:   TRAIN: 	loss: 0.11530 	accuracy: 96.1% 	error: 3.9% 	data: 42675
-2019-07-01 02:09:07,940:INFO:   VALID: 	loss: 0.32542 	accuracy: 90.1% 	error: 9.9% 	data: 7325
-2019-07-01 02:09:07,940:INFO: 
-
-2019-07-01 02:09:07,941:INFO: Epoch - 114 learning_rate: 0.18117833733629715
-2019-07-01 02:09:27,864:INFO:   TRAIN: 	loss: 0.10826 	accuracy: 96.3% 	error: 3.7% 	data: 42675
-2019-07-01 02:09:30,538:INFO:   VALID: 	loss: 0.33931 	accuracy: 90.0% 	error: 10.0% 	data: 7325
-2019-07-01 02:09:30,538:INFO: 
-
-2019-07-01 02:09:30,539:INFO: Epoch - 115 learning_rate: 0.17805313778179097
-2019-07-01 02:09:50,484:INFO:   TRAIN: 	loss: 0.11311 	accuracy: 96.1% 	error: 3.9% 	data: 42675
-2019-07-01 02:09:53,180:INFO:   VALID: 	loss: 0.30690 	accuracy: 90.6% 	error: 9.4% 	data: 7325
-2019-07-01 02:09:53,181:INFO: 
-
-2019-07-01 02:09:53,182:INFO: Epoch - 116 learning_rate: 0.1749333532871392
-2019-07-01 02:10:13,113:INFO:   TRAIN: 	loss: 0.11072 	accuracy: 96.2% 	error: 3.8% 	data: 42675
-2019-07-01 02:10:15,781:INFO:   VALID: 	loss: 0.27442 	accuracy: 91.6% 	error: 8.4% 	data: 7325
-2019-07-01 02:10:15,781:INFO: 
-
-2019-07-01 02:10:15,783:INFO: Epoch - 117 learning_rate: 0.17181975361248353
-2019-07-01 02:10:35,710:INFO:   TRAIN: 	loss: 0.10216 	accuracy: 96.5% 	error: 3.5% 	data: 42675
-2019-07-01 02:10:38,373:INFO:   VALID: 	loss: 0.31417 	accuracy: 90.3% 	error: 9.7% 	data: 7325
-2019-07-01 02:10:38,374:INFO: 
-
-2019-07-01 02:10:38,375:INFO: Epoch - 118 learning_rate: 0.16871310699195385
-2019-07-01 02:10:58,303:INFO:   TRAIN: 	loss: 0.10454 	accuracy: 96.4% 	error: 3.6% 	data: 42675
-2019-07-01 02:11:01,008:INFO:   VALID: 	loss: 0.33537 	accuracy: 89.8% 	error: 10.2% 	data: 7325
-2019-07-01 02:11:01,009:INFO: 
-
-2019-07-01 02:11:01,010:INFO: Epoch - 119 learning_rate: 0.1656141799441181
-2019-07-01 02:11:20,955:INFO:   TRAIN: 	loss: 0.10269 	accuracy: 96.6% 	error: 3.4% 	data: 42675
-2019-07-01 02:11:23,645:INFO:   VALID: 	loss: 0.31105 	accuracy: 90.3% 	error: 9.7% 	data: 7325
-2019-07-01 02:11:23,646:INFO: 
-
-2019-07-01 02:11:23,647:INFO: Epoch - 120 learning_rate: 0.16252373708285509
-2019-07-01 02:11:43,574:INFO:   TRAIN: 	loss: 0.10356 	accuracy: 96.5% 	error: 3.5% 	data: 42675
-2019-07-01 02:11:46,265:INFO:   VALID: 	loss: 0.30288 	accuracy: 90.8% 	error: 9.2% 	data: 7325
-2019-07-01 02:11:46,265:INFO: 
-
-2019-07-01 02:11:46,266:INFO: Epoch - 121 learning_rate: 0.15944254092869753
-2019-07-01 02:12:06,180:INFO:   TRAIN: 	loss: 0.10254 	accuracy: 96.5% 	error: 3.5% 	data: 42675
-2019-07-01 02:12:08,869:INFO:   VALID: 	loss: 0.34056 	accuracy: 89.9% 	error: 10.1% 	data: 7325
-2019-07-01 02:12:08,869:INFO: 
-
-2019-07-01 02:12:08,871:INFO: Epoch - 122 learning_rate: 0.15637135172069155
-2019-07-01 02:12:28,803:INFO:   TRAIN: 	loss: 0.09964 	accuracy: 96.6% 	error: 3.4% 	data: 42675
-2019-07-01 02:12:31,505:INFO:   VALID: 	loss: 0.31182 	accuracy: 90.3% 	error: 9.7% 	data: 7325
-2019-07-01 02:12:31,505:INFO: 
-
-2019-07-01 02:12:31,507:INFO: Epoch - 123 learning_rate: 0.1533109272288189
-2019-07-01 02:12:51,436:INFO:   TRAIN: 	loss: 0.09698 	accuracy: 96.7% 	error: 3.3% 	data: 42675
-2019-07-01 02:12:54,155:INFO:   VALID: 	loss: 0.30551 	accuracy: 90.7% 	error: 9.3% 	data: 7325
-2019-07-01 02:12:54,155:INFO: 
-
-2019-07-01 02:12:54,157:INFO: Epoch - 124 learning_rate: 0.15026202256702903
-2019-07-01 02:13:14,106:INFO:   TRAIN: 	loss: 0.09616 	accuracy: 96.9% 	error: 3.1% 	data: 42675
-2019-07-01 02:13:16,820:INFO:   VALID: 	loss: 0.28093 	accuracy: 91.1% 	error: 8.9% 	data: 7325
-2019-07-01 02:13:16,820:INFO: 
-
-2019-07-01 02:13:16,822:INFO: Epoch - 125 learning_rate: 0.14722539000692544
-2019-07-01 02:13:36,770:INFO:   TRAIN: 	loss: 0.08831 	accuracy: 97.1% 	error: 2.9% 	data: 42675
-2019-07-01 02:13:39,468:INFO:   VALID: 	loss: 0.30174 	accuracy: 90.8% 	error: 9.2% 	data: 7325
-2019-07-01 02:13:39,468:INFO: 
-
-2019-07-01 02:13:39,469:INFO: Epoch - 126 learning_rate: 0.14420177879215418
-2019-07-01 02:13:59,408:INFO:   TRAIN: 	loss: 0.08151 	accuracy: 97.4% 	error: 2.6% 	data: 42675
-2019-07-01 02:14:02,113:INFO:   VALID: 	loss: 0.33423 	accuracy: 90.2% 	error: 9.8% 	data: 7325
-2019-07-01 02:14:02,114:INFO: 
-
-2019-07-01 02:14:02,115:INFO: Epoch - 127 learning_rate: 0.14119193495353924
-2019-07-01 02:14:22,051:INFO:   TRAIN: 	loss: 0.08958 	accuracy: 97.0% 	error: 3.0% 	data: 42675
-2019-07-01 02:14:24,755:INFO:   VALID: 	loss: 0.28110 	accuracy: 91.3% 	error: 8.7% 	data: 7325
-2019-07-01 02:14:24,756:INFO: 
-
-2019-07-01 02:14:24,757:INFO: Epoch - 128 learning_rate: 0.1381966011250106
-2019-07-01 02:14:44,701:INFO:   TRAIN: 	loss: 0.08158 	accuracy: 97.3% 	error: 2.7% 	data: 42675
-2019-07-01 02:14:47,426:INFO:   VALID: 	loss: 0.28988 	accuracy: 91.5% 	error: 8.5% 	data: 7325
-2019-07-01 02:14:47,426:INFO: 
-
-2019-07-01 02:14:47,428:INFO: Epoch - 129 learning_rate: 0.1352165163603701
-2019-07-01 02:15:07,357:INFO:   TRAIN: 	loss: 0.08198 	accuracy: 97.3% 	error: 2.7% 	data: 42675
-2019-07-01 02:15:10,047:INFO:   VALID: 	loss: 0.29161 	accuracy: 90.7% 	error: 9.3% 	data: 7325
-2019-07-01 02:15:10,048:INFO: 
-
-2019-07-01 02:15:10,049:INFO: Epoch - 130 learning_rate: 0.13225241595094173
-2019-07-01 02:15:30,001:INFO:   TRAIN: 	loss: 0.07756 	accuracy: 97.5% 	error: 2.5% 	data: 42675
-2019-07-01 02:15:32,674:INFO:   VALID: 	loss: 0.29215 	accuracy: 91.4% 	error: 8.6% 	data: 7325
-2019-07-01 02:15:32,675:INFO: 
-
-2019-07-01 02:15:32,676:INFO: Epoch - 131 learning_rate: 0.1293050312441486
-2019-07-01 02:15:52,610:INFO:   TRAIN: 	loss: 0.08015 	accuracy: 97.3% 	error: 2.7% 	data: 42675
-2019-07-01 02:15:55,294:INFO:   VALID: 	loss: 0.30810 	accuracy: 91.3% 	error: 8.7% 	data: 7325
-2019-07-01 02:15:55,294:INFO: 
-
-2019-07-01 02:15:55,295:INFO: Epoch - 132 learning_rate: 0.12637508946306447
-2019-07-01 02:16:15,253:INFO:   TRAIN: 	loss: 0.08161 	accuracy: 97.3% 	error: 2.7% 	data: 42675
-2019-07-01 02:16:17,954:INFO:   VALID: 	loss: 0.27497 	accuracy: 91.7% 	error: 8.3% 	data: 7325
-2019-07-01 02:16:17,954:INFO: 
-
-2019-07-01 02:16:17,956:INFO: Epoch - 133 learning_rate: 0.1234633135269821
-2019-07-01 02:16:37,870:INFO:   TRAIN: 	loss: 0.07639 	accuracy: 97.4% 	error: 2.6% 	data: 42675
-2019-07-01 02:16:40,551:INFO:   VALID: 	loss: 0.28708 	accuracy: 91.5% 	error: 8.5% 	data: 7325
-2019-07-01 02:16:40,551:INFO: 
-
-2019-07-01 02:16:40,553:INFO: Epoch - 134 learning_rate: 0.12057042187304386
-2019-07-01 02:17:00,488:INFO:   TRAIN: 	loss: 0.07620 	accuracy: 97.5% 	error: 2.5% 	data: 42675
-2019-07-01 02:17:03,240:INFO:   VALID: 	loss: 0.27682 	accuracy: 91.7% 	error: 8.3% 	data: 7325
-2019-07-01 02:17:03,240:INFO: 
-
-2019-07-01 02:17:03,242:INFO: Epoch - 135 learning_rate: 0.11769712827897826
-2019-07-01 02:17:23,167:INFO:   TRAIN: 	loss: 0.06987 	accuracy: 97.7% 	error: 2.3% 	data: 42675
-2019-07-01 02:17:25,842:INFO:   VALID: 	loss: 0.27019 	accuracy: 91.8% 	error: 8.2% 	data: 7325
-2019-07-01 02:17:25,842:INFO: 
-
-2019-07-01 02:17:25,844:INFO: Epoch - 136 learning_rate: 0.11484414168698548
-2019-07-01 02:17:45,813:INFO:   TRAIN: 	loss: 0.07001 	accuracy: 97.8% 	error: 2.2% 	data: 42675
-2019-07-01 02:17:48,530:INFO:   VALID: 	loss: 0.31174 	accuracy: 91.1% 	error: 8.9% 	data: 7325
-2019-07-01 02:17:48,531:INFO: 
-
-2019-07-01 02:17:48,532:INFO: Epoch - 137 learning_rate: 0.11201216602881697
-2019-07-01 02:18:08,471:INFO:   TRAIN: 	loss: 0.06454 	accuracy: 97.8% 	error: 2.2% 	data: 42675
-2019-07-01 02:18:11,161:INFO:   VALID: 	loss: 0.28402 	accuracy: 92.1% 	error: 7.9% 	data: 7325
-2019-07-01 02:18:11,161:INFO: 
-
-2019-07-01 02:18:11,162:INFO: Epoch - 138 learning_rate: 0.10920190005209066
-2019-07-01 02:18:31,123:INFO:   TRAIN: 	loss: 0.07100 	accuracy: 97.6% 	error: 2.4% 	data: 42675
-2019-07-01 02:18:33,871:INFO:   VALID: 	loss: 0.28340 	accuracy: 91.7% 	error: 8.3% 	data: 7325
-2019-07-01 02:18:33,872:INFO: 
-
-2019-07-01 02:18:33,873:INFO: Epoch - 139 learning_rate: 0.10641403714788536
-2019-07-01 02:18:53,798:INFO:   TRAIN: 	loss: 0.06331 	accuracy: 98.0% 	error: 2.0% 	data: 42675
-2019-07-01 02:18:56,480:INFO:   VALID: 	loss: 0.26808 	accuracy: 91.8% 	error: 8.2% 	data: 7325
-2019-07-01 02:18:56,480:INFO: 
-
-2019-07-01 02:18:56,482:INFO: Epoch - 140 learning_rate: 0.10364926517965692
-2019-07-01 02:19:16,436:INFO:   TRAIN: 	loss: 0.06071 	accuracy: 98.0% 	error: 2.0% 	data: 42675
-2019-07-01 02:19:19,118:INFO:   VALID: 	loss: 0.30871 	accuracy: 91.4% 	error: 8.6% 	data: 7325
-2019-07-01 02:19:19,119:INFO: 
-
-2019-07-01 02:19:19,120:INFO: Epoch - 141 learning_rate: 0.10090826631351849
-2019-07-01 02:19:39,044:INFO:   TRAIN: 	loss: 0.06311 	accuracy: 97.9% 	error: 2.1% 	data: 42675
-2019-07-01 02:19:41,734:INFO:   VALID: 	loss: 0.30945 	accuracy: 91.1% 	error: 8.9% 	data: 7325
-2019-07-01 02:19:41,735:INFO: 
-
-2019-07-01 02:19:41,736:INFO: Epoch - 142 learning_rate: 0.09819171684992574
-2019-07-01 02:20:01,676:INFO:   TRAIN: 	loss: 0.06149 	accuracy: 98.0% 	error: 2.0% 	data: 42675
-2019-07-01 02:20:04,417:INFO:   VALID: 	loss: 0.29091 	accuracy: 91.5% 	error: 8.5% 	data: 7325
-2019-07-01 02:20:04,418:INFO: 
-
-2019-07-01 02:20:04,419:INFO: Epoch - 143 learning_rate: 0.09550028705681024
-2019-07-01 02:20:24,351:INFO:   TRAIN: 	loss: 0.05875 	accuracy: 98.1% 	error: 1.9% 	data: 42675
-2019-07-01 02:20:27,036:INFO:   VALID: 	loss: 0.28296 	accuracy: 92.1% 	error: 7.9% 	data: 7325
-2019-07-01 02:20:27,037:INFO: 
-
-2019-07-01 02:20:27,038:INFO: Epoch - 144 learning_rate: 0.09283464100420064
-2019-07-01 02:20:46,989:INFO:   TRAIN: 	loss: 0.05510 	accuracy: 98.2% 	error: 1.8% 	data: 42675
-2019-07-01 02:20:49,728:INFO:   VALID: 	loss: 0.29426 	accuracy: 91.7% 	error: 8.3% 	data: 7325
-2019-07-01 02:20:49,728:INFO: 
-
-2019-07-01 02:20:49,729:INFO: Epoch - 145 learning_rate: 0.09019543640037363
-2019-07-01 02:21:09,672:INFO:   TRAIN: 	loss: 0.05249 	accuracy: 98.3% 	error: 1.7% 	data: 42675
-2019-07-01 02:21:12,357:INFO:   VALID: 	loss: 0.25757 	accuracy: 92.5% 	error: 7.5% 	data: 7325
-2019-07-01 02:21:12,357:INFO: 
-
-2019-07-01 02:21:12,359:INFO: Epoch - 146 learning_rate: 0.08758332442957387
-2019-07-01 02:21:32,317:INFO:   TRAIN: 	loss: 0.05219 	accuracy: 98.3% 	error: 1.7% 	data: 42675
-2019-07-01 02:21:35,068:INFO:   VALID: 	loss: 0.29290 	accuracy: 92.0% 	error: 8.0% 	data: 7325
-2019-07-01 02:21:35,069:INFO: 
-
-2019-07-01 02:21:35,070:INFO: Epoch - 147 learning_rate: 0.0849989495913443
-2019-07-01 02:21:55,008:INFO:   TRAIN: 	loss: 0.05029 	accuracy: 98.4% 	error: 1.6% 	data: 42675
-2019-07-01 02:21:57,705:INFO:   VALID: 	loss: 0.29863 	accuracy: 91.8% 	error: 8.2% 	data: 7325
-2019-07-01 02:21:57,705:INFO: 
-
-2019-07-01 02:21:57,707:INFO: Epoch - 148 learning_rate: 0.0824429495415054
-2019-07-01 02:22:17,644:INFO:   TRAIN: 	loss: 0.05269 	accuracy: 98.3% 	error: 1.7% 	data: 42675
-2019-07-01 02:22:20,331:INFO:   VALID: 	loss: 0.27831 	accuracy: 92.2% 	error: 7.8% 	data: 7325
-2019-07-01 02:22:20,331:INFO: 
-
-2019-07-01 02:22:20,332:INFO: Epoch - 149 learning_rate: 0.07991595493482323
-2019-07-01 02:22:40,281:INFO:   TRAIN: 	loss: 0.05036 	accuracy: 98.4% 	error: 1.6% 	data: 42675
-2019-07-01 02:22:42,983:INFO:   VALID: 	loss: 0.26930 	accuracy: 92.4% 	error: 7.6% 	data: 7325
-2019-07-01 02:22:42,983:INFO: 
-
-2019-07-01 02:22:42,984:INFO: Epoch - 150 learning_rate: 0.07741858926940469
-2019-07-01 02:23:02,922:INFO:   TRAIN: 	loss: 0.04538 	accuracy: 98.5% 	error: 1.5% 	data: 42675
-2019-07-01 02:23:05,664:INFO:   VALID: 	loss: 0.25610 	accuracy: 92.5% 	error: 7.5% 	data: 7325
-2019-07-01 02:23:05,665:INFO: 
-
-2019-07-01 02:23:05,666:INFO: Epoch - 151 learning_rate: 0.07495146873285896
-2019-07-01 02:23:25,618:INFO:   TRAIN: 	loss: 0.03994 	accuracy: 98.8% 	error: 1.2% 	data: 42675
-2019-07-01 02:23:28,327:INFO:   VALID: 	loss: 0.26508 	accuracy: 92.2% 	error: 7.8% 	data: 7325
-2019-07-01 02:23:28,328:INFO: 
-
-2019-07-01 02:23:28,329:INFO: Epoch - 152 learning_rate: 0.07251520205026206
-2019-07-01 02:23:48,250:INFO:   TRAIN: 	loss: 0.04357 	accuracy: 98.6% 	error: 1.4% 	data: 42675
-2019-07-01 02:23:50,992:INFO:   VALID: 	loss: 0.25564 	accuracy: 92.7% 	error: 7.3% 	data: 7325
-2019-07-01 02:23:50,993:INFO: 
-
-2019-07-01 02:23:50,994:INFO: Epoch - 153 learning_rate: 0.0701103903339633
-2019-07-01 02:24:10,928:INFO:   TRAIN: 	loss: 0.03794 	accuracy: 98.8% 	error: 1.2% 	data: 42675
-2019-07-01 02:24:13,674:INFO:   VALID: 	loss: 0.27035 	accuracy: 92.9% 	error: 7.1% 	data: 7325
-2019-07-01 02:24:13,674:INFO: 
-
-2019-07-01 02:24:13,676:INFO: Epoch - 154 learning_rate: 0.06773762693526966
-2019-07-01 02:24:33,618:INFO:   TRAIN: 	loss: 0.04016 	accuracy: 98.7% 	error: 1.3% 	data: 42675
-2019-07-01 02:24:36,374:INFO:   VALID: 	loss: 0.26184 	accuracy: 92.4% 	error: 7.6% 	data: 7325
-2019-07-01 02:24:36,375:INFO: 
-
-2019-07-01 02:24:36,376:INFO: Epoch - 155 learning_rate: 0.06539749729804532
-2019-07-01 02:24:56,318:INFO:   TRAIN: 	loss: 0.03865 	accuracy: 98.8% 	error: 1.2% 	data: 42675
-2019-07-01 02:24:59,030:INFO:   VALID: 	loss: 0.28758 	accuracy: 92.2% 	error: 7.8% 	data: 7325
-2019-07-01 02:24:59,030:INFO: 
-
-2019-07-01 02:24:59,031:INFO: Epoch - 156 learning_rate: 0.06309057881426226
-2019-07-01 02:25:18,983:INFO:   TRAIN: 	loss: 0.03802 	accuracy: 98.8% 	error: 1.2% 	data: 42675
-2019-07-01 02:25:21,705:INFO:   VALID: 	loss: 0.27317 	accuracy: 92.6% 	error: 7.4% 	data: 7325
-2019-07-01 02:25:21,705:INFO: 
-
-2019-07-01 02:25:21,707:INFO: Epoch - 157 learning_rate: 0.06081744068153714
-2019-07-01 02:25:41,634:INFO:   TRAIN: 	loss: 0.03835 	accuracy: 98.8% 	error: 1.2% 	data: 42675
-2019-07-01 02:25:44,320:INFO:   VALID: 	loss: 0.27381 	accuracy: 92.9% 	error: 7.1% 	data: 7325
-2019-07-01 02:25:44,320:INFO: 
-
-2019-07-01 02:25:44,322:INFO: Epoch - 158 learning_rate: 0.05857864376269051
-2019-07-01 02:26:04,240:INFO:   TRAIN: 	loss: 0.03203 	accuracy: 99.1% 	error: 0.9% 	data: 42675
-2019-07-01 02:26:06,932:INFO:   VALID: 	loss: 0.25743 	accuracy: 93.0% 	error: 7.0% 	data: 7325
-2019-07-01 02:26:06,932:INFO: 
-
-2019-07-01 02:26:06,934:INFO: Epoch - 159 learning_rate: 0.056374740447362265
-2019-07-01 02:26:26,873:INFO:   TRAIN: 	loss: 0.03276 	accuracy: 99.0% 	error: 1.0% 	data: 42675
-2019-07-01 02:26:29,560:INFO:   VALID: 	loss: 0.26580 	accuracy: 92.9% 	error: 7.1% 	data: 7325
-2019-07-01 02:26:29,561:INFO: 
-
-2019-07-01 02:26:29,562:INFO: Epoch - 160 learning_rate: 0.05420627451571774
-2019-07-01 02:26:49,495:INFO:   TRAIN: 	loss: 0.03259 	accuracy: 99.1% 	error: 0.9% 	data: 42675
-2019-07-01 02:26:52,191:INFO:   VALID: 	loss: 0.25160 	accuracy: 93.2% 	error: 6.8% 	data: 7325
-2019-07-01 02:26:52,191:INFO: 
-
-2019-07-01 02:26:52,193:INFO: Epoch - 161 learning_rate: 0.05207378100427804
-2019-07-01 02:27:12,140:INFO:   TRAIN: 	loss: 0.02923 	accuracy: 99.1% 	error: 0.9% 	data: 42675
-2019-07-01 02:27:14,872:INFO:   VALID: 	loss: 0.28448 	accuracy: 92.5% 	error: 7.5% 	data: 7325
-2019-07-01 02:27:14,872:INFO: 
-
-2019-07-01 02:27:14,874:INFO: Epoch - 162 learning_rate: 0.049977786073908084
-2019-07-01 02:27:34,808:INFO:   TRAIN: 	loss: 0.03049 	accuracy: 99.0% 	error: 1.0% 	data: 42675
-2019-07-01 02:27:37,519:INFO:   VALID: 	loss: 0.26225 	accuracy: 92.7% 	error: 7.3% 	data: 7325
-2019-07-01 02:27:37,519:INFO: 
-
-2019-07-01 02:27:37,520:INFO: Epoch - 163 learning_rate: 0.047918806879993815
-2019-07-01 02:27:57,461:INFO:   TRAIN: 	loss: 0.03069 	accuracy: 99.1% 	error: 0.9% 	data: 42675
-2019-07-01 02:28:00,174:INFO:   VALID: 	loss: 0.24503 	accuracy: 93.3% 	error: 6.7% 	data: 7325
-2019-07-01 02:28:00,175:INFO: 
-
-2019-07-01 02:28:00,176:INFO: Epoch - 164 learning_rate: 0.04589735144484217
-2019-07-01 02:28:20,134:INFO:   TRAIN: 	loss: 0.02771 	accuracy: 99.2% 	error: 0.8% 	data: 42675
-2019-07-01 02:28:22,856:INFO:   VALID: 	loss: 0.25890 	accuracy: 92.9% 	error: 7.1% 	data: 7325
-2019-07-01 02:28:22,857:INFO: 
-
-2019-07-01 02:28:22,858:INFO: Epoch - 165 learning_rate: 0.04391391853233409
-2019-07-01 02:28:42,777:INFO:   TRAIN: 	loss: 0.02679 	accuracy: 99.2% 	error: 0.8% 	data: 42675
-2019-07-01 02:28:45,468:INFO:   VALID: 	loss: 0.27719 	accuracy: 92.6% 	error: 7.4% 	data: 7325
-2019-07-01 02:28:45,468:INFO: 
-
-2019-07-01 02:28:45,470:INFO: Epoch - 166 learning_rate: 0.04196899752486192
-2019-07-01 02:29:05,377:INFO:   TRAIN: 	loss: 0.02589 	accuracy: 99.2% 	error: 0.8% 	data: 42675
-2019-07-01 02:29:08,078:INFO:   VALID: 	loss: 0.25236 	accuracy: 93.2% 	error: 6.8% 	data: 7325
-2019-07-01 02:29:08,078:INFO: 
-
-2019-07-01 02:29:08,079:INFO: Epoch - 167 learning_rate: 0.04006306830258188
-2019-07-01 02:29:28,017:INFO:   TRAIN: 	loss: 0.02331 	accuracy: 99.4% 	error: 0.6% 	data: 42675
-2019-07-01 02:29:30,743:INFO:   VALID: 	loss: 0.25193 	accuracy: 92.9% 	error: 7.1% 	data: 7325
-2019-07-01 02:29:30,743:INFO: 
-
-2019-07-01 02:29:30,744:INFO: Epoch - 168 learning_rate: 0.03819660112501053
-2019-07-01 02:29:50,673:INFO:   TRAIN: 	loss: 0.02176 	accuracy: 99.4% 	error: 0.6% 	data: 42675
-2019-07-01 02:29:53,366:INFO:   VALID: 	loss: 0.23939 	accuracy: 93.5% 	error: 6.5% 	data: 7325
-2019-07-01 02:29:53,366:INFO: 
-
-2019-07-01 02:29:53,368:INFO: Epoch - 169 learning_rate: 0.03637005651499534
-2019-07-01 02:30:13,314:INFO:   TRAIN: 	loss: 0.02248 	accuracy: 99.4% 	error: 0.6% 	data: 42675
-2019-07-01 02:30:16,003:INFO:   VALID: 	loss: 0.22756 	accuracy: 93.7% 	error: 6.3% 	data: 7325
-2019-07-01 02:30:16,004:INFO: 
-
-2019-07-01 02:30:16,005:INFO: Epoch - 170 learning_rate: 0.03458388514508766
-2019-07-01 02:30:35,911:INFO:   TRAIN: 	loss: 0.02117 	accuracy: 99.4% 	error: 0.6% 	data: 42675
-2019-07-01 02:30:38,639:INFO:   VALID: 	loss: 0.23995 	accuracy: 93.4% 	error: 6.6% 	data: 7325
-2019-07-01 02:30:38,639:INFO: 
-
-2019-07-01 02:30:38,640:INFO: Epoch - 171 learning_rate: 0.03283852772634599
-2019-07-01 02:30:58,578:INFO:   TRAIN: 	loss: 0.02021 	accuracy: 99.4% 	error: 0.6% 	data: 42675
-2019-07-01 02:31:01,289:INFO:   VALID: 	loss: 0.22360 	accuracy: 93.6% 	error: 6.4% 	data: 7325
-2019-07-01 02:31:01,290:INFO: 
-
-2019-07-01 02:31:01,291:INFO: Epoch - 172 learning_rate: 0.03113441489959703
-2019-07-01 02:31:21,242:INFO:   TRAIN: 	loss: 0.02105 	accuracy: 99.4% 	error: 0.6% 	data: 42675
-2019-07-01 02:31:23,928:INFO:   VALID: 	loss: 0.23078 	accuracy: 93.5% 	error: 6.5% 	data: 7325
-2019-07-01 02:31:23,928:INFO: 
-
-2019-07-01 02:31:23,929:INFO: Epoch - 173 learning_rate: 0.02947196712918161
-2019-07-01 02:31:43,857:INFO:   TRAIN: 	loss: 0.01856 	accuracy: 99.5% 	error: 0.5% 	data: 42675
-2019-07-01 02:31:46,587:INFO:   VALID: 	loss: 0.22002 	accuracy: 94.1% 	error: 5.9% 	data: 7325
-2019-07-01 02:31:46,587:INFO: 
-
-2019-07-01 02:31:46,589:INFO: Epoch - 174 learning_rate: 0.02785159459921125
-2019-07-01 02:32:06,515:INFO:   TRAIN: 	loss: 0.01784 	accuracy: 99.5% 	error: 0.5% 	data: 42675
-2019-07-01 02:32:09,241:INFO:   VALID: 	loss: 0.25551 	accuracy: 93.2% 	error: 6.8% 	data: 7325
-2019-07-01 02:32:09,242:INFO: 
-
-2019-07-01 02:32:09,243:INFO: Epoch - 175 learning_rate: 0.02627369711236174
-2019-07-01 02:32:29,169:INFO:   TRAIN: 	loss: 0.01925 	accuracy: 99.4% 	error: 0.6% 	data: 42675
-2019-07-01 02:32:31,850:INFO:   VALID: 	loss: 0.25953 	accuracy: 93.2% 	error: 6.8% 	data: 7325
-2019-07-01 02:32:31,850:INFO: 
-
-2019-07-01 02:32:31,852:INFO: Epoch - 176 learning_rate: 0.024738663991227285
-2019-07-01 02:32:51,784:INFO:   TRAIN: 	loss: 0.01700 	accuracy: 99.5% 	error: 0.5% 	data: 42675
-2019-07-01 02:32:54,459:INFO:   VALID: 	loss: 0.23153 	accuracy: 93.9% 	error: 6.1% 	data: 7325
-2019-07-01 02:32:54,459:INFO: 
-
-2019-07-01 02:32:54,460:INFO: Epoch - 177 learning_rate: 0.023246873982261308
-2019-07-01 02:33:14,373:INFO:   TRAIN: 	loss: 0.01666 	accuracy: 99.5% 	error: 0.5% 	data: 42675
-2019-07-01 02:33:17,079:INFO:   VALID: 	loss: 0.23929 	accuracy: 93.5% 	error: 6.5% 	data: 7325
-2019-07-01 02:33:17,080:INFO: 
-
-2019-07-01 02:33:17,081:INFO: Epoch - 178 learning_rate: 0.021798695162326444
-2019-07-01 02:33:37,020:INFO:   TRAIN: 	loss: 0.01662 	accuracy: 99.5% 	error: 0.5% 	data: 42675
-2019-07-01 02:33:39,693:INFO:   VALID: 	loss: 0.23364 	accuracy: 94.0% 	error: 6.0% 	data: 7325
-2019-07-01 02:33:39,693:INFO: 
-
-2019-07-01 02:33:39,695:INFO: Epoch - 179 learning_rate: 0.020394484847876895
-2019-07-01 02:33:59,612:INFO:   TRAIN: 	loss: 0.01542 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:34:02,324:INFO:   VALID: 	loss: 0.22345 	accuracy: 94.3% 	error: 5.7% 	data: 7325
-2019-07-01 02:34:02,324:INFO: 
-
-2019-07-01 02:34:02,325:INFO: Epoch - 180 learning_rate: 0.01903458950679613
-2019-07-01 02:34:22,293:INFO:   TRAIN: 	loss: 0.01498 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:34:24,987:INFO:   VALID: 	loss: 0.21270 	accuracy: 94.0% 	error: 6.0% 	data: 7325
-2019-07-01 02:34:24,988:INFO: 
-
-2019-07-01 02:34:24,989:INFO: Epoch - 181 learning_rate: 0.017719344672910985
-2019-07-01 02:34:44,923:INFO:   TRAIN: 	loss: 0.01342 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:34:47,653:INFO:   VALID: 	loss: 0.23533 	accuracy: 93.5% 	error: 6.5% 	data: 7325
-2019-07-01 02:34:47,654:INFO: 
-
-2019-07-01 02:34:47,655:INFO: Epoch - 182 learning_rate: 0.01644907486320382
-2019-07-01 02:35:07,577:INFO:   TRAIN: 	loss: 0.01363 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:35:10,308:INFO:   VALID: 	loss: 0.24305 	accuracy: 93.5% 	error: 6.5% 	data: 7325
-2019-07-01 02:35:10,308:INFO: 
-
-2019-07-01 02:35:10,309:INFO: Epoch - 183 learning_rate: 0.015224093497742697
-2019-07-01 02:35:30,244:INFO:   TRAIN: 	loss: 0.01410 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:35:32,940:INFO:   VALID: 	loss: 0.22226 	accuracy: 94.1% 	error: 5.9% 	data: 7325
-2019-07-01 02:35:32,940:INFO: 
-
-2019-07-01 02:35:32,941:INFO: Epoch - 184 learning_rate: 0.014044702822349731
-2019-07-01 02:35:52,866:INFO:   TRAIN: 	loss: 0.01251 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:35:55,555:INFO:   VALID: 	loss: 0.23451 	accuracy: 93.8% 	error: 6.2% 	data: 7325
-2019-07-01 02:35:55,556:INFO: 
-
-2019-07-01 02:35:55,557:INFO: Epoch - 185 learning_rate: 0.012911193834026525
-2019-07-01 02:36:15,497:INFO:   TRAIN: 	loss: 0.01255 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:36:18,207:INFO:   VALID: 	loss: 0.22085 	accuracy: 93.9% 	error: 6.1% 	data: 7325
-2019-07-01 02:36:18,207:INFO: 
-
-2019-07-01 02:36:18,208:INFO: Epoch - 186 learning_rate: 0.01182384620915491
-2019-07-01 02:36:38,130:INFO:   TRAIN: 	loss: 0.01044 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:36:40,879:INFO:   VALID: 	loss: 0.22604 	accuracy: 94.0% 	error: 6.0% 	data: 7325
-2019-07-01 02:36:40,880:INFO: 
-
-2019-07-01 02:36:40,881:INFO: Epoch - 187 learning_rate: 0.010782928234490941
-2019-07-01 02:37:00,801:INFO:   TRAIN: 	loss: 0.01264 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:37:03,507:INFO:   VALID: 	loss: 0.23291 	accuracy: 94.0% 	error: 6.0% 	data: 7325
-2019-07-01 02:37:03,507:INFO: 
-
-2019-07-01 02:37:03,509:INFO: Epoch - 188 learning_rate: 0.009788696740969294
-2019-07-01 02:37:23,453:INFO:   TRAIN: 	loss: 0.01318 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:37:26,146:INFO:   VALID: 	loss: 0.21633 	accuracy: 94.3% 	error: 5.7% 	data: 7325
-2019-07-01 02:37:26,146:INFO: 
-
-2019-07-01 02:37:26,148:INFO: Epoch - 189 learning_rate: 0.008841397040333977
-2019-07-01 02:37:46,079:INFO:   TRAIN: 	loss: 0.01155 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:37:48,775:INFO:   VALID: 	loss: 0.22479 	accuracy: 93.8% 	error: 6.2% 	data: 7325
-2019-07-01 02:37:48,775:INFO: 
-
-2019-07-01 02:37:48,777:INFO: Epoch - 190 learning_rate: 0.00794126286461141
-2019-07-01 02:38:08,712:INFO:   TRAIN: 	loss: 0.01003 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:38:11,442:INFO:   VALID: 	loss: 0.21081 	accuracy: 94.2% 	error: 5.8% 	data: 7325
-2019-07-01 02:38:11,442:INFO: 
-
-2019-07-01 02:38:11,444:INFO: Epoch - 191 learning_rate: 0.007088516308440407
-2019-07-01 02:38:31,381:INFO:   TRAIN: 	loss: 0.01242 	accuracy: 99.6% 	error: 0.4% 	data: 42675
-2019-07-01 02:38:34,110:INFO:   VALID: 	loss: 0.20878 	accuracy: 94.3% 	error: 5.7% 	data: 7325
-2019-07-01 02:38:34,110:INFO: 
-
-2019-07-01 02:38:34,112:INFO: Epoch - 192 learning_rate: 0.006283367774273807
-2019-07-01 02:38:54,070:INFO:   TRAIN: 	loss: 0.01051 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:38:56,816:INFO:   VALID: 	loss: 0.22208 	accuracy: 94.1% 	error: 5.9% 	data: 7325
-2019-07-01 02:38:56,817:INFO: 
-
-2019-07-01 02:38:56,818:INFO: Epoch - 193 learning_rate: 0.005526015920464689
-2019-07-01 02:39:16,751:INFO:   TRAIN: 	loss: 0.01029 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:39:19,476:INFO:   VALID: 	loss: 0.22422 	accuracy: 94.1% 	error: 5.9% 	data: 7325
-2019-07-01 02:39:19,476:INFO: 
-
-2019-07-01 02:39:19,477:INFO: Epoch - 194 learning_rate: 0.004816647612250535
-2019-07-01 02:39:39,413:INFO:   TRAIN: 	loss: 0.01069 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:39:42,094:INFO:   VALID: 	loss: 0.23322 	accuracy: 93.9% 	error: 6.1% 	data: 7325
-2019-07-01 02:39:42,095:INFO: 
-
-2019-07-01 02:39:42,096:INFO: Epoch - 195 learning_rate: 0.004155437875646828
-2019-07-01 02:40:02,014:INFO:   TRAIN: 	loss: 0.01124 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:40:04,758:INFO:   VALID: 	loss: 0.21560 	accuracy: 94.4% 	error: 5.6% 	data: 7325
-2019-07-01 02:40:04,758:INFO: 
-
-2019-07-01 02:40:04,760:INFO: Epoch - 196 learning_rate: 0.003542549854262256
-2019-07-01 02:40:24,684:INFO:   TRAIN: 	loss: 0.01069 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:40:27,373:INFO:   VALID: 	loss: 0.22317 	accuracy: 94.2% 	error: 5.8% 	data: 7325
-2019-07-01 02:40:27,374:INFO: 
-
-2019-07-01 02:40:27,375:INFO: Epoch - 197 learning_rate: 0.0029781347690452267
-2019-07-01 02:40:47,313:INFO:   TRAIN: 	loss: 0.01102 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:40:50,015:INFO:   VALID: 	loss: 0.21664 	accuracy: 94.2% 	error: 5.8% 	data: 7325
-2019-07-01 02:40:50,015:INFO: 
-
-2019-07-01 02:40:50,016:INFO: Epoch - 198 learning_rate: 0.0024623318809724685
-2019-07-01 02:41:09,961:INFO:   TRAIN: 	loss: 0.01030 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:41:12,652:INFO:   VALID: 	loss: 0.21176 	accuracy: 94.1% 	error: 5.9% 	data: 7325
-2019-07-01 02:41:12,653:INFO: 
-
-2019-07-01 02:41:12,654:INFO: Epoch - 199 learning_rate: 0.0019952684566884927
-2019-07-01 02:41:32,574:INFO:   TRAIN: 	loss: 0.00939 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:41:35,293:INFO:   VALID: 	loss: 0.23290 	accuracy: 93.8% 	error: 6.2% 	data: 7325
-2019-07-01 02:41:35,293:INFO: 
-
-2019-07-01 02:41:35,294:INFO: Epoch - 200 learning_rate: 0.0015770597371044472
-2019-07-01 02:41:55,205:INFO:   TRAIN: 	loss: 0.00975 	accuracy: 99.7% 	error: 0.3% 	data: 42675
-2019-07-01 02:41:57,952:INFO:   VALID: 	loss: 0.20688 	accuracy: 94.5% 	error: 5.5% 	data: 7325
-2019-07-01 02:41:57,953:INFO: 
-
-2019-07-01 02:41:57,984:INFO: -- start testing on test set
-2019-07-01 02:42:00,003:INFO: TEST: 	loss: 0.21851 	accuracy: 94.9% 	error: 5.1% 	data: 10000
+2019-07-09 20:56:07,672:INFO: experiment_title: fastautoaugment
+2019-07-09 20:56:07,672:INFO: num_epochs: 200
+2019-07-09 20:56:07,672:INFO: batch_size: 512
+2019-07-09 20:56:07,672:INFO: WRN_depth: 40
+2019-07-09 20:56:07,672:INFO: WRN_widen_factor: 2
+2019-07-09 20:56:07,672:INFO: WRN_dropout_rate: 0.0
+2019-07-09 20:56:07,672:INFO: WRN_num_classes: 10
+2019-07-09 20:56:07,673:INFO: SGD_lr: 0.1
+2019-07-09 20:56:07,673:INFO: SGD_momentum: 0.9
+2019-07-09 20:56:07,673:INFO: SGD_weight_decay: 0.0002
+2019-07-09 20:56:07,673:INFO: SGD_nesterov: True
+2019-07-09 20:56:07,673:INFO: LRS_multiplier: 4
+2019-07-09 20:56:07,673:INFO: LRS_epoch: 5
+2019-07-09 20:56:07,673:INFO: cuda: True
+2019-07-09 20:56:07,674:INFO: -- loading datasets
+2019-07-09 20:58:01,539:INFO: -- start_training for 200 epochs
+2019-07-09 20:58:01,539:INFO: Epoch - 001 learning_rate: 0.1
+2019-07-09 20:58:22,811:INFO:   TRAIN: 	loss: 1.75505 	accuracy: 34.4% 	error: 65.6% 	data: 42675
+2019-07-09 20:58:25,644:INFO:   VALID: 	loss: 1.64537 	accuracy: 39.5% 	error: 60.5% 	data: 7325
+2019-07-09 20:58:25,645:INFO: 
+
+2019-07-09 20:58:25,647:INFO: Epoch - 002 learning_rate: 0.16000000000000003
+2019-07-09 20:58:45,542:INFO:   TRAIN: 	loss: 1.20859 	accuracy: 56.2% 	error: 43.8% 	data: 42675
+2019-07-09 20:58:48,396:INFO:   VALID: 	loss: 1.22452 	accuracy: 56.1% 	error: 43.9% 	data: 7325
+2019-07-09 20:58:48,397:INFO: 
+
+2019-07-09 20:58:48,398:INFO: Epoch - 003 learning_rate: 0.22000000000000003
+2019-07-09 20:59:08,301:INFO:   TRAIN: 	loss: 0.92769 	accuracy: 67.0% 	error: 33.0% 	data: 42675
+2019-07-09 20:59:11,078:INFO:   VALID: 	loss: 1.20955 	accuracy: 61.2% 	error: 38.8% 	data: 7325
+2019-07-09 20:59:11,078:INFO: 
+
+2019-07-09 20:59:11,079:INFO: Epoch - 004 learning_rate: 0.27999999999999997
+2019-07-09 20:59:31,005:INFO:   TRAIN: 	loss: 0.76964 	accuracy: 72.9% 	error: 27.1% 	data: 42675
+2019-07-09 20:59:33,801:INFO:   VALID: 	loss: 0.89601 	accuracy: 69.2% 	error: 30.8% 	data: 7325
+2019-07-09 20:59:33,801:INFO: 
+
+2019-07-09 20:59:33,802:INFO: Epoch - 005 learning_rate: 0.34
+2019-07-09 20:59:53,738:INFO:   TRAIN: 	loss: 0.67999 	accuracy: 76.5% 	error: 23.5% 	data: 42675
+2019-07-09 20:59:56,556:INFO:   VALID: 	loss: 0.74826 	accuracy: 74.1% 	error: 25.9% 	data: 7325
+2019-07-09 20:59:56,557:INFO: 
+
+2019-07-09 20:59:56,558:INFO: Epoch - 006 learning_rate: 0.4
+2019-07-09 21:00:16,477:INFO:   TRAIN: 	loss: 0.62076 	accuracy: 78.5% 	error: 21.5% 	data: 42675
+2019-07-09 21:00:19,382:INFO:   VALID: 	loss: 0.69346 	accuracy: 76.6% 	error: 23.4% 	data: 7325
+2019-07-09 21:00:19,382:INFO: 
+
+2019-07-09 21:00:19,383:INFO: Epoch - 007 learning_rate: 0.39997532649633216
+2019-07-09 21:00:39,337:INFO:   TRAIN: 	loss: 0.55773 	accuracy: 80.6% 	error: 19.4% 	data: 42675
+2019-07-09 21:00:42,228:INFO:   VALID: 	loss: 0.63284 	accuracy: 77.8% 	error: 22.2% 	data: 7325
+2019-07-09 21:00:42,229:INFO: 
+
+2019-07-09 21:00:42,230:INFO: Epoch - 008 learning_rate: 0.4
+2019-07-09 21:01:02,204:INFO:   TRAIN: 	loss: 0.52075 	accuracy: 82.0% 	error: 18.0% 	data: 42675
+2019-07-09 21:01:04,985:INFO:   VALID: 	loss: 0.67722 	accuracy: 77.2% 	error: 22.8% 	data: 7325
+2019-07-09 21:01:04,986:INFO: 
+
+2019-07-09 21:01:04,987:INFO: Epoch - 009 learning_rate: 0.39997532649633216
+2019-07-09 21:01:24,990:INFO:   TRAIN: 	loss: 0.49571 	accuracy: 83.0% 	error: 17.0% 	data: 42675
+2019-07-09 21:01:27,833:INFO:   VALID: 	loss: 0.57382 	accuracy: 80.3% 	error: 19.7% 	data: 7325
+2019-07-09 21:01:27,833:INFO: 
+
+2019-07-09 21:01:27,834:INFO: Epoch - 010 learning_rate: 0.39990131207314633
+2019-07-09 21:01:47,796:INFO:   TRAIN: 	loss: 0.46078 	accuracy: 84.2% 	error: 15.8% 	data: 42675
+2019-07-09 21:01:50,729:INFO:   VALID: 	loss: 0.53767 	accuracy: 81.4% 	error: 18.6% 	data: 7325
+2019-07-09 21:01:50,730:INFO: 
+
+2019-07-09 21:01:50,731:INFO: Epoch - 011 learning_rate: 0.39977797499239404
+2019-07-09 21:02:10,756:INFO:   TRAIN: 	loss: 0.44123 	accuracy: 84.9% 	error: 15.1% 	data: 42675
+2019-07-09 21:02:13,748:INFO:   VALID: 	loss: 0.59808 	accuracy: 79.5% 	error: 20.5% 	data: 7325
+2019-07-09 21:02:13,748:INFO: 
+
+2019-07-09 21:02:13,749:INFO: Epoch - 012 learning_rate: 0.3996053456856543
+2019-07-09 21:02:33,762:INFO:   TRAIN: 	loss: 0.42075 	accuracy: 85.6% 	error: 14.4% 	data: 42675
+2019-07-09 21:02:36,739:INFO:   VALID: 	loss: 0.56145 	accuracy: 80.9% 	error: 19.1% 	data: 7325
+2019-07-09 21:02:36,740:INFO: 
+
+2019-07-09 21:02:36,741:INFO: Epoch - 013 learning_rate: 0.3993834667466256
+2019-07-09 21:02:56,772:INFO:   TRAIN: 	loss: 0.40252 	accuracy: 86.0% 	error: 14.0% 	data: 42675
+2019-07-09 21:02:59,725:INFO:   VALID: 	loss: 0.61472 	accuracy: 79.5% 	error: 20.5% 	data: 7325
+2019-07-09 21:02:59,726:INFO: 
+
+2019-07-09 21:02:59,727:INFO: Epoch - 014 learning_rate: 0.399112392920616
+2019-07-09 21:03:19,758:INFO:   TRAIN: 	loss: 0.39167 	accuracy: 86.5% 	error: 13.5% 	data: 42675
+2019-07-09 21:03:22,685:INFO:   VALID: 	loss: 0.63747 	accuracy: 79.5% 	error: 20.5% 	data: 7325
+2019-07-09 21:03:22,685:INFO: 
+
+2019-07-09 21:03:22,686:INFO: Epoch - 015 learning_rate: 0.398792191091036
+2019-07-09 21:03:42,721:INFO:   TRAIN: 	loss: 0.38413 	accuracy: 86.8% 	error: 13.2% 	data: 42675
+2019-07-09 21:03:45,705:INFO:   VALID: 	loss: 0.52245 	accuracy: 81.8% 	error: 18.2% 	data: 7325
+2019-07-09 21:03:45,706:INFO: 
+
+2019-07-09 21:03:45,707:INFO: Epoch - 016 learning_rate: 0.3984229402628956
+2019-07-09 21:04:05,710:INFO:   TRAIN: 	loss: 0.36918 	accuracy: 87.3% 	error: 12.7% 	data: 42675
+2019-07-09 21:04:08,658:INFO:   VALID: 	loss: 0.55329 	accuracy: 81.4% 	error: 18.6% 	data: 7325
+2019-07-09 21:04:08,658:INFO: 
+
+2019-07-09 21:04:08,659:INFO: Epoch - 017 learning_rate: 0.3980047315433115
+2019-07-09 21:04:28,638:INFO:   TRAIN: 	loss: 0.35311 	accuracy: 87.8% 	error: 12.2% 	data: 42675
+2019-07-09 21:04:31,650:INFO:   VALID: 	loss: 0.55244 	accuracy: 81.9% 	error: 18.1% 	data: 7325
+2019-07-09 21:04:31,651:INFO: 
+
+2019-07-09 21:04:31,652:INFO: Epoch - 018 learning_rate: 0.3975376681190276
+2019-07-09 21:04:51,610:INFO:   TRAIN: 	loss: 0.35191 	accuracy: 88.0% 	error: 12.0% 	data: 42675
+2019-07-09 21:04:54,612:INFO:   VALID: 	loss: 0.48395 	accuracy: 83.2% 	error: 16.8% 	data: 7325
+2019-07-09 21:04:54,612:INFO: 
+
+2019-07-09 21:04:54,614:INFO: Epoch - 019 learning_rate: 0.3970218652309548
+2019-07-09 21:05:14,616:INFO:   TRAIN: 	loss: 0.34404 	accuracy: 88.2% 	error: 11.8% 	data: 42675
+2019-07-09 21:05:17,654:INFO:   VALID: 	loss: 0.48971 	accuracy: 83.8% 	error: 16.2% 	data: 7325
+2019-07-09 21:05:17,655:INFO: 
+
+2019-07-09 21:05:17,656:INFO: Epoch - 020 learning_rate: 0.3964574501457378
+2019-07-09 21:05:37,644:INFO:   TRAIN: 	loss: 0.33291 	accuracy: 88.7% 	error: 11.3% 	data: 42675
+2019-07-09 21:05:40,507:INFO:   VALID: 	loss: 0.46141 	accuracy: 84.4% 	error: 15.6% 	data: 7325
+2019-07-09 21:05:40,507:INFO: 
+
+2019-07-09 21:05:40,508:INFO: Epoch - 021 learning_rate: 0.39584456212435315
+2019-07-09 21:06:00,528:INFO:   TRAIN: 	loss: 0.32898 	accuracy: 88.6% 	error: 11.4% 	data: 42675
+2019-07-09 21:06:03,441:INFO:   VALID: 	loss: 0.41696 	accuracy: 85.7% 	error: 14.3% 	data: 7325
+2019-07-09 21:06:03,442:INFO: 
+
+2019-07-09 21:06:03,443:INFO: Epoch - 022 learning_rate: 0.3951833523877495
+2019-07-09 21:06:23,416:INFO:   TRAIN: 	loss: 0.32566 	accuracy: 88.8% 	error: 11.2% 	data: 42675
+2019-07-09 21:06:26,475:INFO:   VALID: 	loss: 0.51019 	accuracy: 83.1% 	error: 16.9% 	data: 7325
+2019-07-09 21:06:26,475:INFO: 
+
+2019-07-09 21:06:26,476:INFO: Epoch - 023 learning_rate: 0.3944739840795353
+2019-07-09 21:06:46,489:INFO:   TRAIN: 	loss: 0.36874 	accuracy: 87.4% 	error: 12.6% 	data: 42675
+2019-07-09 21:06:49,524:INFO:   VALID: 	loss: 0.57824 	accuracy: 81.6% 	error: 18.4% 	data: 7325
+2019-07-09 21:06:49,524:INFO: 
+
+2019-07-09 21:06:49,526:INFO: Epoch - 024 learning_rate: 0.3937166322257262
+2019-07-09 21:07:09,529:INFO:   TRAIN: 	loss: 0.30780 	accuracy: 89.5% 	error: 10.5% 	data: 42675
+2019-07-09 21:07:12,410:INFO:   VALID: 	loss: 0.51175 	accuracy: 83.1% 	error: 16.9% 	data: 7325
+2019-07-09 21:07:12,410:INFO: 
+
+2019-07-09 21:07:12,411:INFO: Epoch - 025 learning_rate: 0.39291148369155965
+2019-07-09 21:07:32,425:INFO:   TRAIN: 	loss: 0.31030 	accuracy: 89.2% 	error: 10.8% 	data: 42675
+2019-07-09 21:07:35,320:INFO:   VALID: 	loss: 0.54507 	accuracy: 82.4% 	error: 17.6% 	data: 7325
+2019-07-09 21:07:35,321:INFO: 
+
+2019-07-09 21:07:35,322:INFO: Epoch - 026 learning_rate: 0.39205873713538864
+2019-07-09 21:07:55,337:INFO:   TRAIN: 	loss: 0.29903 	accuracy: 89.6% 	error: 10.4% 	data: 42675
+2019-07-09 21:07:58,220:INFO:   VALID: 	loss: 0.68842 	accuracy: 78.2% 	error: 21.8% 	data: 7325
+2019-07-09 21:07:58,221:INFO: 
+
+2019-07-09 21:07:58,222:INFO: Epoch - 027 learning_rate: 0.39115860295966604
+2019-07-09 21:08:18,257:INFO:   TRAIN: 	loss: 0.29907 	accuracy: 89.7% 	error: 10.3% 	data: 42675
+2019-07-09 21:08:21,200:INFO:   VALID: 	loss: 0.42641 	accuracy: 85.8% 	error: 14.2% 	data: 7325
+2019-07-09 21:08:21,201:INFO: 
+
+2019-07-09 21:08:21,202:INFO: Epoch - 028 learning_rate: 0.39021130325903075
+2019-07-09 21:08:41,210:INFO:   TRAIN: 	loss: 0.29095 	accuracy: 90.0% 	error: 10.0% 	data: 42675
+2019-07-09 21:08:44,158:INFO:   VALID: 	loss: 0.43369 	accuracy: 85.7% 	error: 14.3% 	data: 7325
+2019-07-09 21:08:44,158:INFO: 
+
+2019-07-09 21:08:44,159:INFO: Epoch - 029 learning_rate: 0.38921707176550907
+2019-07-09 21:09:04,170:INFO:   TRAIN: 	loss: 0.28624 	accuracy: 90.1% 	error: 9.9% 	data: 42675
+2019-07-09 21:09:07,120:INFO:   VALID: 	loss: 0.53076 	accuracy: 82.5% 	error: 17.5% 	data: 7325
+2019-07-09 21:09:07,121:INFO: 
+
+2019-07-09 21:09:07,122:INFO: Epoch - 030 learning_rate: 0.38817615379084514
+2019-07-09 21:09:27,150:INFO:   TRAIN: 	loss: 0.28109 	accuracy: 90.3% 	error: 9.7% 	data: 42675
+2019-07-09 21:09:30,207:INFO:   VALID: 	loss: 0.44930 	accuracy: 84.6% 	error: 15.4% 	data: 7325
+2019-07-09 21:09:30,207:INFO: 
+
+2019-07-09 21:09:30,208:INFO: Epoch - 031 learning_rate: 0.3870888061659735
+2019-07-09 21:09:50,197:INFO:   TRAIN: 	loss: 0.27632 	accuracy: 90.4% 	error: 9.6% 	data: 42675
+2019-07-09 21:09:53,234:INFO:   VALID: 	loss: 0.42817 	accuracy: 85.7% 	error: 14.3% 	data: 7325
+2019-07-09 21:09:53,235:INFO: 
+
+2019-07-09 21:09:53,236:INFO: Epoch - 032 learning_rate: 0.3859552971776503
+2019-07-09 21:10:13,227:INFO:   TRAIN: 	loss: 0.27144 	accuracy: 90.4% 	error: 9.6% 	data: 42675
+2019-07-09 21:10:16,204:INFO:   VALID: 	loss: 0.41007 	accuracy: 86.2% 	error: 13.8% 	data: 7325
+2019-07-09 21:10:16,205:INFO: 
+
+2019-07-09 21:10:16,206:INFO: Epoch - 033 learning_rate: 0.38477590650225735
+2019-07-09 21:10:36,193:INFO:   TRAIN: 	loss: 0.27264 	accuracy: 90.6% 	error: 9.4% 	data: 42675
+2019-07-09 21:10:39,183:INFO:   VALID: 	loss: 0.46806 	accuracy: 85.2% 	error: 14.8% 	data: 7325
+2019-07-09 21:10:39,183:INFO: 
+
+2019-07-09 21:10:39,184:INFO: Epoch - 034 learning_rate: 0.38355092513679623
+2019-07-09 21:10:59,124:INFO:   TRAIN: 	loss: 0.27545 	accuracy: 90.5% 	error: 9.5% 	data: 42675
+2019-07-09 21:11:02,132:INFO:   VALID: 	loss: 0.43455 	accuracy: 85.6% 	error: 14.4% 	data: 7325
+2019-07-09 21:11:02,133:INFO: 
+
+2019-07-09 21:11:02,134:INFO: Epoch - 035 learning_rate: 0.38228065532708905
+2019-07-09 21:11:22,118:INFO:   TRAIN: 	loss: 0.26181 	accuracy: 91.0% 	error: 9.0% 	data: 42675
+2019-07-09 21:11:25,045:INFO:   VALID: 	loss: 0.48786 	accuracy: 83.9% 	error: 16.1% 	data: 7325
+2019-07-09 21:11:25,045:INFO: 
+
+2019-07-09 21:11:25,046:INFO: Epoch - 036 learning_rate: 0.3809654104932039
+2019-07-09 21:11:45,062:INFO:   TRAIN: 	loss: 0.26373 	accuracy: 90.8% 	error: 9.2% 	data: 42675
+2019-07-09 21:11:48,010:INFO:   VALID: 	loss: 0.48332 	accuracy: 84.5% 	error: 15.5% 	data: 7325
+2019-07-09 21:11:48,010:INFO: 
+
+2019-07-09 21:11:48,011:INFO: Epoch - 037 learning_rate: 0.37960551515212315
+2019-07-09 21:12:07,998:INFO:   TRAIN: 	loss: 0.25938 	accuracy: 91.0% 	error: 9.0% 	data: 42675
+2019-07-09 21:12:10,880:INFO:   VALID: 	loss: 0.40946 	accuracy: 87.1% 	error: 12.9% 	data: 7325
+2019-07-09 21:12:10,881:INFO: 
+
+2019-07-09 21:12:10,882:INFO: Epoch - 038 learning_rate: 0.37820130483767356
+2019-07-09 21:12:30,899:INFO:   TRAIN: 	loss: 0.26256 	accuracy: 90.9% 	error: 9.1% 	data: 42675
+2019-07-09 21:12:33,841:INFO:   VALID: 	loss: 0.49364 	accuracy: 84.2% 	error: 15.8% 	data: 7325
+2019-07-09 21:12:33,841:INFO: 
+
+2019-07-09 21:12:33,842:INFO: Epoch - 039 learning_rate: 0.37675312601773875
+2019-07-09 21:12:53,794:INFO:   TRAIN: 	loss: 0.25454 	accuracy: 91.2% 	error: 8.8% 	data: 42675
+2019-07-09 21:12:56,784:INFO:   VALID: 	loss: 0.40416 	accuracy: 86.6% 	error: 13.4% 	data: 7325
+2019-07-09 21:12:56,785:INFO: 
+
+2019-07-09 21:12:56,786:INFO: Epoch - 040 learning_rate: 0.3752613360087727
+2019-07-09 21:13:16,780:INFO:   TRAIN: 	loss: 0.25462 	accuracy: 91.2% 	error: 8.8% 	data: 42675
+2019-07-09 21:13:19,692:INFO:   VALID: 	loss: 0.48213 	accuracy: 84.7% 	error: 15.3% 	data: 7325
+2019-07-09 21:13:19,692:INFO: 
+
+2019-07-09 21:13:19,693:INFO: Epoch - 041 learning_rate: 0.3737263028876383
+2019-07-09 21:13:39,676:INFO:   TRAIN: 	loss: 0.24834 	accuracy: 91.4% 	error: 8.6% 	data: 42675
+2019-07-09 21:13:42,608:INFO:   VALID: 	loss: 0.37272 	accuracy: 87.5% 	error: 12.5% 	data: 7325
+2019-07-09 21:13:42,609:INFO: 
+
+2019-07-09 21:13:42,610:INFO: Epoch - 042 learning_rate: 0.37214840540078875
+2019-07-09 21:14:02,571:INFO:   TRAIN: 	loss: 0.24463 	accuracy: 91.6% 	error: 8.4% 	data: 42675
+2019-07-09 21:14:05,479:INFO:   VALID: 	loss: 0.42925 	accuracy: 85.7% 	error: 14.3% 	data: 7325
+2019-07-09 21:14:05,480:INFO: 
+
+2019-07-09 21:14:05,481:INFO: Epoch - 043 learning_rate: 0.3705280328708185
+2019-07-09 21:14:25,458:INFO:   TRAIN: 	loss: 0.24050 	accuracy: 91.8% 	error: 8.2% 	data: 42675
+2019-07-09 21:14:28,415:INFO:   VALID: 	loss: 0.42634 	accuracy: 85.6% 	error: 14.4% 	data: 7325
+2019-07-09 21:14:28,416:INFO: 
+
+2019-07-09 21:14:28,417:INFO: Epoch - 044 learning_rate: 0.368865585100403
+2019-07-09 21:14:48,394:INFO:   TRAIN: 	loss: 0.24307 	accuracy: 91.6% 	error: 8.4% 	data: 42675
+2019-07-09 21:14:51,434:INFO:   VALID: 	loss: 0.44409 	accuracy: 85.5% 	error: 14.5% 	data: 7325
+2019-07-09 21:14:51,434:INFO: 
+
+2019-07-09 21:14:51,435:INFO: Epoch - 045 learning_rate: 0.3671614722736541
+2019-07-09 21:15:11,427:INFO:   TRAIN: 	loss: 0.24117 	accuracy: 91.6% 	error: 8.4% 	data: 42675
+2019-07-09 21:15:14,436:INFO:   VALID: 	loss: 0.44390 	accuracy: 85.3% 	error: 14.7% 	data: 7325
+2019-07-09 21:15:14,437:INFO: 
+
+2019-07-09 21:15:14,438:INFO: Epoch - 046 learning_rate: 0.3654161148549124
+2019-07-09 21:15:34,413:INFO:   TRAIN: 	loss: 0.23753 	accuracy: 91.9% 	error: 8.1% 	data: 42675
+2019-07-09 21:15:37,470:INFO:   VALID: 	loss: 0.40279 	accuracy: 86.5% 	error: 13.5% 	data: 7325
+2019-07-09 21:15:37,470:INFO: 
+
+2019-07-09 21:15:37,471:INFO: Epoch - 047 learning_rate: 0.3636299434850047
+2019-07-09 21:15:57,432:INFO:   TRAIN: 	loss: 0.22760 	accuracy: 92.1% 	error: 7.9% 	data: 42675
+2019-07-09 21:16:00,238:INFO:   VALID: 	loss: 0.44464 	accuracy: 85.3% 	error: 14.7% 	data: 7325
+2019-07-09 21:16:00,238:INFO: 
+
+2019-07-09 21:16:00,239:INFO: Epoch - 048 learning_rate: 0.3618033988749895
+2019-07-09 21:16:20,220:INFO:   TRAIN: 	loss: 0.22759 	accuracy: 92.1% 	error: 7.9% 	data: 42675
+2019-07-09 21:16:23,218:INFO:   VALID: 	loss: 0.39993 	accuracy: 86.8% 	error: 13.2% 	data: 7325
+2019-07-09 21:16:23,219:INFO: 
+
+2019-07-09 21:16:23,220:INFO: Epoch - 049 learning_rate: 0.35993693169741814
+2019-07-09 21:16:43,217:INFO:   TRAIN: 	loss: 0.23379 	accuracy: 92.0% 	error: 8.0% 	data: 42675
+2019-07-09 21:16:46,154:INFO:   VALID: 	loss: 0.41433 	accuracy: 86.0% 	error: 14.0% 	data: 7325
+2019-07-09 21:16:46,155:INFO: 
+
+2019-07-09 21:16:46,156:INFO: Epoch - 050 learning_rate: 0.3580310024751381
+2019-07-09 21:17:06,113:INFO:   TRAIN: 	loss: 0.22838 	accuracy: 92.1% 	error: 7.9% 	data: 42675
+2019-07-09 21:17:09,078:INFO:   VALID: 	loss: 0.38544 	accuracy: 87.4% 	error: 12.6% 	data: 7325
+2019-07-09 21:17:09,078:INFO: 
+
+2019-07-09 21:17:09,079:INFO: Epoch - 051 learning_rate: 0.35608608146766596
+2019-07-09 21:17:29,076:INFO:   TRAIN: 	loss: 0.22284 	accuracy: 92.4% 	error: 7.6% 	data: 42675
+2019-07-09 21:17:32,070:INFO:   VALID: 	loss: 0.43283 	accuracy: 86.1% 	error: 13.9% 	data: 7325
+2019-07-09 21:17:32,070:INFO: 
+
+2019-07-09 21:17:32,071:INFO: Epoch - 052 learning_rate: 0.3541026485551579
+2019-07-09 21:17:52,079:INFO:   TRAIN: 	loss: 0.22523 	accuracy: 92.2% 	error: 7.8% 	data: 42675
+2019-07-09 21:17:55,107:INFO:   VALID: 	loss: 0.39012 	accuracy: 87.4% 	error: 12.6% 	data: 7325
+2019-07-09 21:17:55,107:INFO: 
+
+2019-07-09 21:17:55,108:INFO: Epoch - 053 learning_rate: 0.35208119312000624
+2019-07-09 21:18:15,138:INFO:   TRAIN: 	loss: 0.22525 	accuracy: 92.2% 	error: 7.8% 	data: 42675
+2019-07-09 21:18:18,014:INFO:   VALID: 	loss: 0.89558 	accuracy: 75.5% 	error: 24.5% 	data: 7325
+2019-07-09 21:18:18,014:INFO: 
+
+2019-07-09 21:18:18,015:INFO: Epoch - 054 learning_rate: 0.35002221392609195
+2019-07-09 21:18:38,019:INFO:   TRAIN: 	loss: 0.22126 	accuracy: 92.4% 	error: 7.6% 	data: 42675
+2019-07-09 21:18:40,974:INFO:   VALID: 	loss: 0.38349 	accuracy: 87.5% 	error: 12.5% 	data: 7325
+2019-07-09 21:18:40,974:INFO: 
+
+2019-07-09 21:18:40,976:INFO: Epoch - 055 learning_rate: 0.34792621899572196
+2019-07-09 21:19:00,964:INFO:   TRAIN: 	loss: 0.21899 	accuracy: 92.4% 	error: 7.6% 	data: 42675
+2019-07-09 21:19:03,857:INFO:   VALID: 	loss: 0.43302 	accuracy: 86.1% 	error: 13.9% 	data: 7325
+2019-07-09 21:19:03,858:INFO: 
+
+2019-07-09 21:19:03,859:INFO: Epoch - 056 learning_rate: 0.34579372548428233
+2019-07-09 21:19:23,835:INFO:   TRAIN: 	loss: 0.21793 	accuracy: 92.4% 	error: 7.6% 	data: 42675
+2019-07-09 21:19:26,847:INFO:   VALID: 	loss: 0.45168 	accuracy: 85.4% 	error: 14.6% 	data: 7325
+2019-07-09 21:19:26,847:INFO: 
+
+2019-07-09 21:19:26,848:INFO: Epoch - 057 learning_rate: 0.3436252595526378
+2019-07-09 21:19:46,629:INFO:   TRAIN: 	loss: 0.21250 	accuracy: 92.7% 	error: 7.3% 	data: 42675
+2019-07-09 21:19:49,606:INFO:   VALID: 	loss: 0.41140 	accuracy: 86.3% 	error: 13.7% 	data: 7325
+2019-07-09 21:19:49,606:INFO: 
+
+2019-07-09 21:19:49,607:INFO: Epoch - 058 learning_rate: 0.3414213562373095
+2019-07-09 21:20:09,537:INFO:   TRAIN: 	loss: 0.21886 	accuracy: 92.4% 	error: 7.6% 	data: 42675
+2019-07-09 21:20:12,569:INFO:   VALID: 	loss: 0.36820 	accuracy: 87.8% 	error: 12.2% 	data: 7325
+2019-07-09 21:20:12,569:INFO: 
+
+2019-07-09 21:20:12,570:INFO: Epoch - 059 learning_rate: 0.33918255931846286
+2019-07-09 21:20:32,554:INFO:   TRAIN: 	loss: 0.20805 	accuracy: 92.9% 	error: 7.1% 	data: 42675
+2019-07-09 21:20:35,564:INFO:   VALID: 	loss: 0.35048 	accuracy: 88.9% 	error: 11.1% 	data: 7325
+2019-07-09 21:20:35,564:INFO: 
+
+2019-07-09 21:20:35,565:INFO: Epoch - 060 learning_rate: 0.33690942118573775
+2019-07-09 21:20:55,606:INFO:   TRAIN: 	loss: 0.20203 	accuracy: 92.9% 	error: 7.1% 	data: 42675
+2019-07-09 21:20:58,665:INFO:   VALID: 	loss: 0.46755 	accuracy: 85.3% 	error: 14.7% 	data: 7325
+2019-07-09 21:20:58,666:INFO: 
+
+2019-07-09 21:20:58,667:INFO: Epoch - 061 learning_rate: 0.3346025027019547
+2019-07-09 21:21:18,683:INFO:   TRAIN: 	loss: 0.20027 	accuracy: 92.9% 	error: 7.1% 	data: 42675
+2019-07-09 21:21:21,582:INFO:   VALID: 	loss: 0.53691 	accuracy: 83.3% 	error: 16.7% 	data: 7325
+2019-07-09 21:21:21,583:INFO: 
+
+2019-07-09 21:21:21,584:INFO: Epoch - 062 learning_rate: 0.3322623730647304
+2019-07-09 21:21:41,585:INFO:   TRAIN: 	loss: 0.20538 	accuracy: 92.8% 	error: 7.2% 	data: 42675
+2019-07-09 21:21:44,403:INFO:   VALID: 	loss: 0.41046 	accuracy: 86.2% 	error: 13.8% 	data: 7325
+2019-07-09 21:21:44,403:INFO: 
+
+2019-07-09 21:21:44,404:INFO: Epoch - 063 learning_rate: 0.32988960966603675
+2019-07-09 21:22:04,398:INFO:   TRAIN: 	loss: 0.20172 	accuracy: 92.9% 	error: 7.1% 	data: 42675
+2019-07-09 21:22:07,362:INFO:   VALID: 	loss: 0.41660 	accuracy: 86.9% 	error: 13.1% 	data: 7325
+2019-07-09 21:22:07,362:INFO: 
+
+2019-07-09 21:22:07,363:INFO: Epoch - 064 learning_rate: 0.32748479794973795
+2019-07-09 21:22:27,307:INFO:   TRAIN: 	loss: 0.19960 	accuracy: 93.1% 	error: 6.9% 	data: 42675
+2019-07-09 21:22:30,318:INFO:   VALID: 	loss: 0.39059 	accuracy: 87.2% 	error: 12.8% 	data: 7325
+2019-07-09 21:22:30,319:INFO: 
+
+2019-07-09 21:22:30,320:INFO: Epoch - 065 learning_rate: 0.3250485312671411
+2019-07-09 21:22:50,322:INFO:   TRAIN: 	loss: 0.19417 	accuracy: 93.3% 	error: 6.7% 	data: 42675
+2019-07-09 21:22:53,254:INFO:   VALID: 	loss: 0.33837 	accuracy: 88.9% 	error: 11.1% 	data: 7325
+2019-07-09 21:22:53,254:INFO: 
+
+2019-07-09 21:22:53,255:INFO: Epoch - 066 learning_rate: 0.3225814107305953
+2019-07-09 21:23:13,234:INFO:   TRAIN: 	loss: 0.19979 	accuracy: 93.0% 	error: 7.0% 	data: 42675
+2019-07-09 21:23:16,220:INFO:   VALID: 	loss: 0.38625 	accuracy: 87.6% 	error: 12.4% 	data: 7325
+2019-07-09 21:23:16,220:INFO: 
+
+2019-07-09 21:23:16,221:INFO: Epoch - 067 learning_rate: 0.32008404506517685
+2019-07-09 21:23:36,242:INFO:   TRAIN: 	loss: 0.18703 	accuracy: 93.5% 	error: 6.5% 	data: 42675
+2019-07-09 21:23:39,230:INFO:   VALID: 	loss: 0.40276 	accuracy: 87.2% 	error: 12.8% 	data: 7325
+2019-07-09 21:23:39,231:INFO: 
+
+2019-07-09 21:23:39,232:INFO: Epoch - 068 learning_rate: 0.3175570504584947
+2019-07-09 21:23:59,252:INFO:   TRAIN: 	loss: 0.19305 	accuracy: 93.3% 	error: 6.7% 	data: 42675
+2019-07-09 21:24:02,277:INFO:   VALID: 	loss: 0.36918 	accuracy: 87.9% 	error: 12.1% 	data: 7325
+2019-07-09 21:24:02,278:INFO: 
+
+2019-07-09 21:24:02,279:INFO: Epoch - 069 learning_rate: 0.3150010504086558
+2019-07-09 21:24:22,285:INFO:   TRAIN: 	loss: 0.19886 	accuracy: 93.2% 	error: 6.8% 	data: 42675
+2019-07-09 21:24:25,292:INFO:   VALID: 	loss: 0.37345 	accuracy: 87.8% 	error: 12.2% 	data: 7325
+2019-07-09 21:24:25,293:INFO: 
+
+2019-07-09 21:24:25,294:INFO: Epoch - 070 learning_rate: 0.3124166755704262
+2019-07-09 21:24:45,235:INFO:   TRAIN: 	loss: 0.18728 	accuracy: 93.5% 	error: 6.5% 	data: 42675
+2019-07-09 21:24:48,166:INFO:   VALID: 	loss: 0.34883 	accuracy: 88.9% 	error: 11.1% 	data: 7325
+2019-07-09 21:24:48,167:INFO: 
+
+2019-07-09 21:24:48,168:INFO: Epoch - 071 learning_rate: 0.3098045635996264
+2019-07-09 21:25:08,137:INFO:   TRAIN: 	loss: 0.18053 	accuracy: 93.7% 	error: 6.3% 	data: 42675
+2019-07-09 21:25:11,021:INFO:   VALID: 	loss: 0.44853 	accuracy: 84.8% 	error: 15.2% 	data: 7325
+2019-07-09 21:25:11,021:INFO: 
+
+2019-07-09 21:25:11,022:INFO: Epoch - 072 learning_rate: 0.30716535899579933
+2019-07-09 21:25:31,010:INFO:   TRAIN: 	loss: 0.18335 	accuracy: 93.8% 	error: 6.2% 	data: 42675
+2019-07-09 21:25:34,051:INFO:   VALID: 	loss: 0.39313 	accuracy: 87.0% 	error: 13.0% 	data: 7325
+2019-07-09 21:25:34,051:INFO: 
+
+2019-07-09 21:25:34,052:INFO: Epoch - 073 learning_rate: 0.3044997129431898
+2019-07-09 21:25:54,051:INFO:   TRAIN: 	loss: 0.17884 	accuracy: 93.8% 	error: 6.2% 	data: 42675
+2019-07-09 21:25:57,070:INFO:   VALID: 	loss: 0.37204 	accuracy: 87.8% 	error: 12.2% 	data: 7325
+2019-07-09 21:25:57,071:INFO: 
+
+2019-07-09 21:25:57,072:INFO: Epoch - 074 learning_rate: 0.3018082831500743
+2019-07-09 21:26:17,074:INFO:   TRAIN: 	loss: 0.18844 	accuracy: 93.5% 	error: 6.5% 	data: 42675
+2019-07-09 21:26:20,129:INFO:   VALID: 	loss: 0.42046 	accuracy: 86.2% 	error: 13.8% 	data: 7325
+2019-07-09 21:26:20,130:INFO: 
+
+2019-07-09 21:26:20,131:INFO: Epoch - 075 learning_rate: 0.2990917336864815
+2019-07-09 21:26:40,120:INFO:   TRAIN: 	loss: 0.18552 	accuracy: 93.7% 	error: 6.3% 	data: 42675
+2019-07-09 21:26:43,027:INFO:   VALID: 	loss: 0.37283 	accuracy: 88.1% 	error: 11.9% 	data: 7325
+2019-07-09 21:26:43,027:INFO: 
+
+2019-07-09 21:26:43,028:INFO: Epoch - 076 learning_rate: 0.2963507348203431
+2019-07-09 21:27:02,982:INFO:   TRAIN: 	loss: 0.17656 	accuracy: 93.9% 	error: 6.1% 	data: 42675
+2019-07-09 21:27:05,915:INFO:   VALID: 	loss: 0.36356 	accuracy: 88.3% 	error: 11.7% 	data: 7325
+2019-07-09 21:27:05,915:INFO: 
+
+2019-07-09 21:27:05,916:INFO: Epoch - 077 learning_rate: 0.2935859628521147
+2019-07-09 21:27:25,900:INFO:   TRAIN: 	loss: 0.17177 	accuracy: 94.1% 	error: 5.9% 	data: 42675
+2019-07-09 21:27:28,856:INFO:   VALID: 	loss: 0.37866 	accuracy: 88.2% 	error: 11.8% 	data: 7325
+2019-07-09 21:27:28,857:INFO: 
+
+2019-07-09 21:27:28,858:INFO: Epoch - 078 learning_rate: 0.29079809994790934
+2019-07-09 21:27:48,805:INFO:   TRAIN: 	loss: 0.17389 	accuracy: 94.0% 	error: 6.0% 	data: 42675
+2019-07-09 21:27:51,847:INFO:   VALID: 	loss: 0.37208 	accuracy: 88.0% 	error: 12.0% 	data: 7325
+2019-07-09 21:27:51,848:INFO: 
+
+2019-07-09 21:27:51,849:INFO: Epoch - 079 learning_rate: 0.287987833971183
+2019-07-09 21:28:11,861:INFO:   TRAIN: 	loss: 0.16575 	accuracy: 94.4% 	error: 5.6% 	data: 42675
+2019-07-09 21:28:14,890:INFO:   VALID: 	loss: 0.33093 	accuracy: 89.3% 	error: 10.7% 	data: 7325
+2019-07-09 21:28:14,890:INFO: 
+
+2019-07-09 21:28:14,891:INFO: Epoch - 080 learning_rate: 0.28515585831301454
+2019-07-09 21:28:34,919:INFO:   TRAIN: 	loss: 0.17083 	accuracy: 94.1% 	error: 5.9% 	data: 42675
+2019-07-09 21:28:37,845:INFO:   VALID: 	loss: 0.34776 	accuracy: 88.6% 	error: 11.4% 	data: 7325
+2019-07-09 21:28:37,845:INFO: 
+
+2019-07-09 21:28:37,847:INFO: Epoch - 081 learning_rate: 0.2823028717210218
+2019-07-09 21:28:57,807:INFO:   TRAIN: 	loss: 0.16940 	accuracy: 94.2% 	error: 5.8% 	data: 42675
+2019-07-09 21:29:00,725:INFO:   VALID: 	loss: 0.35269 	accuracy: 88.9% 	error: 11.1% 	data: 7325
+2019-07-09 21:29:00,726:INFO: 
+
+2019-07-09 21:29:00,727:INFO: Epoch - 082 learning_rate: 0.2794295781269561
+2019-07-09 21:29:20,710:INFO:   TRAIN: 	loss: 0.16405 	accuracy: 94.3% 	error: 5.7% 	data: 42675
+2019-07-09 21:29:23,602:INFO:   VALID: 	loss: 0.35908 	accuracy: 88.5% 	error: 11.5% 	data: 7325
+2019-07-09 21:29:23,602:INFO: 
+
+2019-07-09 21:29:23,603:INFO: Epoch - 083 learning_rate: 0.276536686473018
+2019-07-09 21:29:43,541:INFO:   TRAIN: 	loss: 0.16609 	accuracy: 94.2% 	error: 5.8% 	data: 42675
+2019-07-09 21:29:46,538:INFO:   VALID: 	loss: 0.34217 	accuracy: 89.4% 	error: 10.6% 	data: 7325
+2019-07-09 21:29:46,538:INFO: 
+
+2019-07-09 21:29:46,539:INFO: Epoch - 084 learning_rate: 0.27362491053693566
+2019-07-09 21:30:06,502:INFO:   TRAIN: 	loss: 0.15848 	accuracy: 94.5% 	error: 5.5% 	data: 42675
+2019-07-09 21:30:09,419:INFO:   VALID: 	loss: 0.34451 	accuracy: 88.7% 	error: 11.3% 	data: 7325
+2019-07-09 21:30:09,419:INFO: 
+
+2019-07-09 21:30:09,421:INFO: Epoch - 085 learning_rate: 0.2706949687558515
+2019-07-09 21:30:29,402:INFO:   TRAIN: 	loss: 0.16086 	accuracy: 94.4% 	error: 5.6% 	data: 42675
+2019-07-09 21:30:32,394:INFO:   VALID: 	loss: 0.33283 	accuracy: 88.8% 	error: 11.2% 	data: 7325
+2019-07-09 21:30:32,394:INFO: 
+
+2019-07-09 21:30:32,395:INFO: Epoch - 086 learning_rate: 0.26774758404905835
+2019-07-09 21:30:52,388:INFO:   TRAIN: 	loss: 0.15717 	accuracy: 94.5% 	error: 5.5% 	data: 42675
+2019-07-09 21:30:55,370:INFO:   VALID: 	loss: 0.32399 	accuracy: 89.5% 	error: 10.5% 	data: 7325
+2019-07-09 21:30:55,370:INFO: 
+
+2019-07-09 21:30:55,371:INFO: Epoch - 087 learning_rate: 0.2647834836396299
+2019-07-09 21:31:15,374:INFO:   TRAIN: 	loss: 0.15378 	accuracy: 94.6% 	error: 5.4% 	data: 42675
+2019-07-09 21:31:18,357:INFO:   VALID: 	loss: 0.33924 	accuracy: 89.4% 	error: 10.6% 	data: 7325
+2019-07-09 21:31:18,358:INFO: 
+
+2019-07-09 21:31:18,359:INFO: Epoch - 088 learning_rate: 0.2618033988749895
+2019-07-09 21:31:38,325:INFO:   TRAIN: 	loss: 0.15657 	accuracy: 94.6% 	error: 5.4% 	data: 42675
+2019-07-09 21:31:41,295:INFO:   VALID: 	loss: 0.31642 	accuracy: 89.9% 	error: 10.1% 	data: 7325
+2019-07-09 21:31:41,295:INFO: 
+
+2019-07-09 21:31:41,296:INFO: Epoch - 089 learning_rate: 0.2588080650464608
+2019-07-09 21:32:01,289:INFO:   TRAIN: 	loss: 0.14885 	accuracy: 94.8% 	error: 5.2% 	data: 42675
+2019-07-09 21:32:04,324:INFO:   VALID: 	loss: 0.35047 	accuracy: 89.0% 	error: 11.0% 	data: 7325
+2019-07-09 21:32:04,324:INFO: 
+
+2019-07-09 21:32:04,325:INFO: Epoch - 090 learning_rate: 0.2557982212078459
+2019-07-09 21:32:24,289:INFO:   TRAIN: 	loss: 0.15239 	accuracy: 94.7% 	error: 5.3% 	data: 42675
+2019-07-09 21:32:27,226:INFO:   VALID: 	loss: 0.39126 	accuracy: 88.0% 	error: 12.0% 	data: 7325
+2019-07-09 21:32:27,226:INFO: 
+
+2019-07-09 21:32:27,227:INFO: Epoch - 091 learning_rate: 0.25277460999307455
+2019-07-09 21:32:47,217:INFO:   TRAIN: 	loss: 0.15311 	accuracy: 94.7% 	error: 5.3% 	data: 42675
+2019-07-09 21:32:50,225:INFO:   VALID: 	loss: 0.29702 	accuracy: 90.4% 	error: 9.6% 	data: 7325
+2019-07-09 21:32:50,226:INFO: 
+
+2019-07-09 21:32:50,227:INFO: Epoch - 092 learning_rate: 0.24973797743297094
+2019-07-09 21:33:10,240:INFO:   TRAIN: 	loss: 0.14276 	accuracy: 95.1% 	error: 4.9% 	data: 42675
+2019-07-09 21:33:13,194:INFO:   VALID: 	loss: 0.39946 	accuracy: 88.3% 	error: 11.7% 	data: 7325
+2019-07-09 21:33:13,194:INFO: 
+
+2019-07-09 21:33:13,195:INFO: Epoch - 093 learning_rate: 0.24668907277118113
+2019-07-09 21:33:33,143:INFO:   TRAIN: 	loss: 0.14833 	accuracy: 94.8% 	error: 5.2% 	data: 42675
+2019-07-09 21:33:36,053:INFO:   VALID: 	loss: 0.30164 	accuracy: 90.4% 	error: 9.6% 	data: 7325
+2019-07-09 21:33:36,054:INFO: 
+
+2019-07-09 21:33:36,055:INFO: Epoch - 094 learning_rate: 0.24362864827930855
+2019-07-09 21:33:56,024:INFO:   TRAIN: 	loss: 0.14412 	accuracy: 94.9% 	error: 5.1% 	data: 42675
+2019-07-09 21:33:58,958:INFO:   VALID: 	loss: 0.35864 	accuracy: 89.0% 	error: 11.0% 	data: 7325
+2019-07-09 21:33:58,959:INFO: 
+
+2019-07-09 21:33:58,960:INFO: Epoch - 095 learning_rate: 0.24055745907130255
+2019-07-09 21:34:18,909:INFO:   TRAIN: 	loss: 0.14202 	accuracy: 95.0% 	error: 5.0% 	data: 42675
+2019-07-09 21:34:21,846:INFO:   VALID: 	loss: 0.32221 	accuracy: 90.3% 	error: 9.7% 	data: 7325
+2019-07-09 21:34:21,847:INFO: 
+
+2019-07-09 21:34:21,848:INFO: Epoch - 096 learning_rate: 0.23747626291714496
+2019-07-09 21:34:41,842:INFO:   TRAIN: 	loss: 0.14364 	accuracy: 95.1% 	error: 4.9% 	data: 42675
+2019-07-09 21:34:44,759:INFO:   VALID: 	loss: 0.42545 	accuracy: 86.9% 	error: 13.1% 	data: 7325
+2019-07-09 21:34:44,760:INFO: 
+
+2019-07-09 21:34:44,761:INFO: Epoch - 097 learning_rate: 0.2343858200558819
+2019-07-09 21:35:04,736:INFO:   TRAIN: 	loss: 0.13748 	accuracy: 95.2% 	error: 4.8% 	data: 42675
+2019-07-09 21:35:07,778:INFO:   VALID: 	loss: 0.31820 	accuracy: 90.3% 	error: 9.7% 	data: 7325
+2019-07-09 21:35:07,778:INFO: 
+
+2019-07-09 21:35:07,780:INFO: Epoch - 098 learning_rate: 0.2312868930080462
+2019-07-09 21:35:27,756:INFO:   TRAIN: 	loss: 0.12987 	accuracy: 95.5% 	error: 4.5% 	data: 42675
+2019-07-09 21:35:30,692:INFO:   VALID: 	loss: 0.40536 	accuracy: 87.8% 	error: 12.2% 	data: 7325
+2019-07-09 21:35:30,693:INFO: 
+
+2019-07-09 21:35:30,694:INFO: Epoch - 099 learning_rate: 0.22818024638751658
+2019-07-09 21:35:50,639:INFO:   TRAIN: 	loss: 0.13756 	accuracy: 95.2% 	error: 4.8% 	data: 42675
+2019-07-09 21:35:53,520:INFO:   VALID: 	loss: 0.30846 	accuracy: 90.1% 	error: 9.9% 	data: 7325
+2019-07-09 21:35:53,521:INFO: 
+
+2019-07-09 21:35:53,522:INFO: Epoch - 100 learning_rate: 0.22506664671286092
+2019-07-09 21:36:13,512:INFO:   TRAIN: 	loss: 0.12945 	accuracy: 95.6% 	error: 4.4% 	data: 42675
+2019-07-09 21:36:16,492:INFO:   VALID: 	loss: 0.34128 	accuracy: 89.2% 	error: 10.8% 	data: 7325
+2019-07-09 21:36:16,493:INFO: 
+
+2019-07-09 21:36:16,494:INFO: Epoch - 101 learning_rate: 0.22194686221820908
+2019-07-09 21:36:36,447:INFO:   TRAIN: 	loss: 0.12869 	accuracy: 95.6% 	error: 4.4% 	data: 42675
+2019-07-09 21:36:39,452:INFO:   VALID: 	loss: 0.34530 	accuracy: 89.5% 	error: 10.5% 	data: 7325
+2019-07-09 21:36:39,452:INFO: 
+
+2019-07-09 21:36:39,453:INFO: Epoch - 102 learning_rate: 0.21882166266370287
+2019-07-09 21:36:59,446:INFO:   TRAIN: 	loss: 0.12405 	accuracy: 95.6% 	error: 4.4% 	data: 42675
+2019-07-09 21:37:02,436:INFO:   VALID: 	loss: 0.31299 	accuracy: 90.1% 	error: 9.9% 	data: 7325
+2019-07-09 21:37:02,437:INFO: 
+
+2019-07-09 21:37:02,438:INFO: Epoch - 103 learning_rate: 0.215691819145569
+2019-07-09 21:37:22,390:INFO:   TRAIN: 	loss: 0.11898 	accuracy: 95.9% 	error: 4.1% 	data: 42675
+2019-07-09 21:37:25,349:INFO:   VALID: 	loss: 0.37380 	accuracy: 88.7% 	error: 11.3% 	data: 7325
+2019-07-09 21:37:25,350:INFO: 
+
+2019-07-09 21:37:25,351:INFO: Epoch - 104 learning_rate: 0.21255810390586272
+2019-07-09 21:37:45,348:INFO:   TRAIN: 	loss: 0.13315 	accuracy: 95.4% 	error: 4.6% 	data: 42675
+2019-07-09 21:37:48,263:INFO:   VALID: 	loss: 0.34343 	accuracy: 89.6% 	error: 10.4% 	data: 7325
+2019-07-09 21:37:48,264:INFO: 
+
+2019-07-09 21:37:48,265:INFO: Epoch - 105 learning_rate: 0.20942129014192853
+2019-07-09 21:38:08,270:INFO:   TRAIN: 	loss: 0.12232 	accuracy: 95.7% 	error: 4.3% 	data: 42675
+2019-07-09 21:38:11,193:INFO:   VALID: 	loss: 0.32735 	accuracy: 90.0% 	error: 10.0% 	data: 7325
+2019-07-09 21:38:11,193:INFO: 
+
+2019-07-09 21:38:11,195:INFO: Epoch - 106 learning_rate: 0.20628215181562568
+2019-07-09 21:38:31,171:INFO:   TRAIN: 	loss: 0.11363 	accuracy: 96.1% 	error: 3.9% 	data: 42675
+2019-07-09 21:38:34,176:INFO:   VALID: 	loss: 0.34436 	accuracy: 89.6% 	error: 10.4% 	data: 7325
+2019-07-09 21:38:34,176:INFO: 
+
+2019-07-09 21:38:34,177:INFO: Epoch - 107 learning_rate: 0.20314146346236417
+2019-07-09 21:38:54,103:INFO:   TRAIN: 	loss: 0.11972 	accuracy: 95.9% 	error: 4.1% 	data: 42675
+2019-07-09 21:38:57,032:INFO:   VALID: 	loss: 0.35066 	accuracy: 89.5% 	error: 10.5% 	data: 7325
+2019-07-09 21:38:57,033:INFO: 
+
+2019-07-09 21:38:57,034:INFO: Epoch - 108 learning_rate: 0.2
+2019-07-09 21:39:16,994:INFO:   TRAIN: 	loss: 0.11913 	accuracy: 95.9% 	error: 4.1% 	data: 42675
+2019-07-09 21:39:20,019:INFO:   VALID: 	loss: 0.35743 	accuracy: 89.0% 	error: 11.0% 	data: 7325
+2019-07-09 21:39:20,019:INFO: 
+
+2019-07-09 21:39:20,020:INFO: Epoch - 109 learning_rate: 0.1968585365376359
+2019-07-09 21:39:39,974:INFO:   TRAIN: 	loss: 0.11496 	accuracy: 96.1% 	error: 3.9% 	data: 42675
+2019-07-09 21:39:42,987:INFO:   VALID: 	loss: 0.29002 	accuracy: 91.1% 	error: 8.9% 	data: 7325
+2019-07-09 21:39:42,987:INFO: 
+
+2019-07-09 21:39:42,988:INFO: Epoch - 110 learning_rate: 0.19371784818437435
+2019-07-09 21:40:03,000:INFO:   TRAIN: 	loss: 0.10913 	accuracy: 96.2% 	error: 3.8% 	data: 42675
+2019-07-09 21:40:05,954:INFO:   VALID: 	loss: 0.29434 	accuracy: 90.7% 	error: 9.3% 	data: 7325
+2019-07-09 21:40:05,954:INFO: 
+
+2019-07-09 21:40:05,955:INFO: Epoch - 111 learning_rate: 0.1905787098580715
+2019-07-09 21:40:25,974:INFO:   TRAIN: 	loss: 0.10563 	accuracy: 96.4% 	error: 3.6% 	data: 42675
+2019-07-09 21:40:28,915:INFO:   VALID: 	loss: 0.30907 	accuracy: 90.4% 	error: 9.6% 	data: 7325
+2019-07-09 21:40:28,915:INFO: 
+
+2019-07-09 21:40:28,917:INFO: Epoch - 112 learning_rate: 0.18744189609413733
+2019-07-09 21:40:48,977:INFO:   TRAIN: 	loss: 0.10702 	accuracy: 96.3% 	error: 3.7% 	data: 42675
+2019-07-09 21:40:51,881:INFO:   VALID: 	loss: 0.33521 	accuracy: 90.0% 	error: 10.0% 	data: 7325
+2019-07-09 21:40:51,881:INFO: 
+
+2019-07-09 21:40:51,882:INFO: Epoch - 113 learning_rate: 0.18430818085443104
+2019-07-09 21:41:11,870:INFO:   TRAIN: 	loss: 0.11036 	accuracy: 96.2% 	error: 3.8% 	data: 42675
+2019-07-09 21:41:14,790:INFO:   VALID: 	loss: 0.32508 	accuracy: 90.5% 	error: 9.5% 	data: 7325
+2019-07-09 21:41:14,791:INFO: 
+
+2019-07-09 21:41:14,792:INFO: Epoch - 114 learning_rate: 0.18117833733629715
+2019-07-09 21:41:34,789:INFO:   TRAIN: 	loss: 0.11283 	accuracy: 96.2% 	error: 3.8% 	data: 42675
+2019-07-09 21:41:37,795:INFO:   VALID: 	loss: 0.31075 	accuracy: 90.6% 	error: 9.4% 	data: 7325
+2019-07-09 21:41:37,795:INFO: 
+
+2019-07-09 21:41:37,796:INFO: Epoch - 115 learning_rate: 0.17805313778179097
+2019-07-09 21:41:57,829:INFO:   TRAIN: 	loss: 0.10503 	accuracy: 96.4% 	error: 3.6% 	data: 42675
+2019-07-09 21:42:00,778:INFO:   VALID: 	loss: 0.28269 	accuracy: 91.2% 	error: 8.8% 	data: 7325
+2019-07-09 21:42:00,778:INFO: 
+
+2019-07-09 21:42:00,779:INFO: Epoch - 116 learning_rate: 0.1749333532871392
+2019-07-09 21:42:20,824:INFO:   TRAIN: 	loss: 0.09921 	accuracy: 96.6% 	error: 3.4% 	data: 42675
+2019-07-09 21:42:23,855:INFO:   VALID: 	loss: 0.29955 	accuracy: 90.9% 	error: 9.1% 	data: 7325
+2019-07-09 21:42:23,855:INFO: 
+
+2019-07-09 21:42:23,856:INFO: Epoch - 117 learning_rate: 0.17181975361248353
+2019-07-09 21:42:43,895:INFO:   TRAIN: 	loss: 0.10028 	accuracy: 96.5% 	error: 3.5% 	data: 42675
+2019-07-09 21:42:46,897:INFO:   VALID: 	loss: 0.31546 	accuracy: 90.7% 	error: 9.3% 	data: 7325
+2019-07-09 21:42:46,898:INFO: 
+
+2019-07-09 21:42:46,899:INFO: Epoch - 118 learning_rate: 0.16871310699195385
+2019-07-09 21:43:06,937:INFO:   TRAIN: 	loss: 0.09164 	accuracy: 96.9% 	error: 3.1% 	data: 42675
+2019-07-09 21:43:09,936:INFO:   VALID: 	loss: 0.30251 	accuracy: 90.8% 	error: 9.2% 	data: 7325
+2019-07-09 21:43:09,936:INFO: 
+
+2019-07-09 21:43:09,937:INFO: Epoch - 119 learning_rate: 0.1656141799441181
+2019-07-09 21:43:29,944:INFO:   TRAIN: 	loss: 0.10285 	accuracy: 96.5% 	error: 3.5% 	data: 42675
+2019-07-09 21:43:32,903:INFO:   VALID: 	loss: 0.30880 	accuracy: 90.7% 	error: 9.3% 	data: 7325
+2019-07-09 21:43:32,903:INFO: 
+
+2019-07-09 21:43:32,905:INFO: Epoch - 120 learning_rate: 0.16252373708285509
+2019-07-09 21:43:52,904:INFO:   TRAIN: 	loss: 0.09398 	accuracy: 96.8% 	error: 3.2% 	data: 42675
+2019-07-09 21:43:55,926:INFO:   VALID: 	loss: 0.30347 	accuracy: 90.9% 	error: 9.1% 	data: 7325
+2019-07-09 21:43:55,926:INFO: 
+
+2019-07-09 21:43:55,928:INFO: Epoch - 121 learning_rate: 0.15944254092869753
+2019-07-09 21:44:15,943:INFO:   TRAIN: 	loss: 0.08965 	accuracy: 96.9% 	error: 3.1% 	data: 42675
+2019-07-09 21:44:18,887:INFO:   VALID: 	loss: 0.35918 	accuracy: 90.4% 	error: 9.6% 	data: 7325
+2019-07-09 21:44:18,887:INFO: 
+
+2019-07-09 21:44:18,889:INFO: Epoch - 122 learning_rate: 0.15637135172069155
+2019-07-09 21:44:38,869:INFO:   TRAIN: 	loss: 0.08819 	accuracy: 97.0% 	error: 3.0% 	data: 42675
+2019-07-09 21:44:41,853:INFO:   VALID: 	loss: 0.30789 	accuracy: 90.9% 	error: 9.1% 	data: 7325
+2019-07-09 21:44:41,854:INFO: 
+
+2019-07-09 21:44:41,855:INFO: Epoch - 123 learning_rate: 0.1533109272288189
+2019-07-09 21:45:01,839:INFO:   TRAIN: 	loss: 0.09295 	accuracy: 96.9% 	error: 3.1% 	data: 42675
+2019-07-09 21:45:04,896:INFO:   VALID: 	loss: 0.26798 	accuracy: 91.8% 	error: 8.2% 	data: 7325
+2019-07-09 21:45:04,896:INFO: 
+
+2019-07-09 21:45:04,897:INFO: Epoch - 124 learning_rate: 0.15026202256702903
+2019-07-09 21:45:24,930:INFO:   TRAIN: 	loss: 0.08436 	accuracy: 97.2% 	error: 2.8% 	data: 42675
+2019-07-09 21:45:27,931:INFO:   VALID: 	loss: 0.29168 	accuracy: 91.2% 	error: 8.8% 	data: 7325
+2019-07-09 21:45:27,931:INFO: 
+
+2019-07-09 21:45:27,933:INFO: Epoch - 125 learning_rate: 0.14722539000692544
+2019-07-09 21:45:47,919:INFO:   TRAIN: 	loss: 0.08671 	accuracy: 97.0% 	error: 3.0% 	data: 42675
+2019-07-09 21:45:50,912:INFO:   VALID: 	loss: 0.29982 	accuracy: 91.0% 	error: 9.0% 	data: 7325
+2019-07-09 21:45:50,912:INFO: 
+
+2019-07-09 21:45:50,913:INFO: Epoch - 126 learning_rate: 0.14420177879215418
+2019-07-09 21:46:10,887:INFO:   TRAIN: 	loss: 0.07882 	accuracy: 97.3% 	error: 2.7% 	data: 42675
+2019-07-09 21:46:13,868:INFO:   VALID: 	loss: 0.29971 	accuracy: 90.9% 	error: 9.1% 	data: 7325
+2019-07-09 21:46:13,868:INFO: 
+
+2019-07-09 21:46:13,869:INFO: Epoch - 127 learning_rate: 0.14119193495353924
+2019-07-09 21:46:33,890:INFO:   TRAIN: 	loss: 0.08320 	accuracy: 97.2% 	error: 2.8% 	data: 42675
+2019-07-09 21:46:36,782:INFO:   VALID: 	loss: 0.28352 	accuracy: 92.0% 	error: 8.0% 	data: 7325
+2019-07-09 21:46:36,783:INFO: 
+
+2019-07-09 21:46:36,784:INFO: Epoch - 128 learning_rate: 0.1381966011250106
+2019-07-09 21:46:56,795:INFO:   TRAIN: 	loss: 0.07426 	accuracy: 97.5% 	error: 2.5% 	data: 42675
+2019-07-09 21:46:59,774:INFO:   VALID: 	loss: 0.26795 	accuracy: 92.2% 	error: 7.8% 	data: 7325
+2019-07-09 21:46:59,775:INFO: 
+
+2019-07-09 21:46:59,776:INFO: Epoch - 129 learning_rate: 0.1352165163603701
+2019-07-09 21:47:19,788:INFO:   TRAIN: 	loss: 0.08090 	accuracy: 97.3% 	error: 2.7% 	data: 42675
+2019-07-09 21:47:22,810:INFO:   VALID: 	loss: 0.27616 	accuracy: 91.7% 	error: 8.3% 	data: 7325
+2019-07-09 21:47:22,810:INFO: 
+
+2019-07-09 21:47:22,811:INFO: Epoch - 130 learning_rate: 0.13225241595094173
+2019-07-09 21:47:42,788:INFO:   TRAIN: 	loss: 0.07043 	accuracy: 97.7% 	error: 2.3% 	data: 42675
+2019-07-09 21:47:45,707:INFO:   VALID: 	loss: 0.30526 	accuracy: 91.4% 	error: 8.6% 	data: 7325
+2019-07-09 21:47:45,708:INFO: 
+
+2019-07-09 21:47:45,709:INFO: Epoch - 131 learning_rate: 0.1293050312441486
+2019-07-09 21:48:05,634:INFO:   TRAIN: 	loss: 0.06555 	accuracy: 97.8% 	error: 2.2% 	data: 42675
+2019-07-09 21:48:08,584:INFO:   VALID: 	loss: 0.30957 	accuracy: 91.2% 	error: 8.8% 	data: 7325
+2019-07-09 21:48:08,584:INFO: 
+
+2019-07-09 21:48:08,585:INFO: Epoch - 132 learning_rate: 0.12637508946306447
+2019-07-09 21:48:28,565:INFO:   TRAIN: 	loss: 0.07741 	accuracy: 97.4% 	error: 2.6% 	data: 42675
+2019-07-09 21:48:31,580:INFO:   VALID: 	loss: 0.26990 	accuracy: 91.7% 	error: 8.3% 	data: 7325
+2019-07-09 21:48:31,580:INFO: 
+
+2019-07-09 21:48:31,581:INFO: Epoch - 133 learning_rate: 0.1234633135269821
+2019-07-09 21:48:51,564:INFO:   TRAIN: 	loss: 0.06724 	accuracy: 97.8% 	error: 2.2% 	data: 42675
+2019-07-09 21:48:54,578:INFO:   VALID: 	loss: 0.29222 	accuracy: 91.6% 	error: 8.4% 	data: 7325
+2019-07-09 21:48:54,579:INFO: 
+
+2019-07-09 21:48:54,580:INFO: Epoch - 134 learning_rate: 0.12057042187304386
+2019-07-09 21:49:14,571:INFO:   TRAIN: 	loss: 0.06305 	accuracy: 97.9% 	error: 2.1% 	data: 42675
+2019-07-09 21:49:17,486:INFO:   VALID: 	loss: 0.29873 	accuracy: 91.5% 	error: 8.5% 	data: 7325
+2019-07-09 21:49:17,486:INFO: 
+
+2019-07-09 21:49:17,487:INFO: Epoch - 135 learning_rate: 0.11769712827897826
+2019-07-09 21:49:37,481:INFO:   TRAIN: 	loss: 0.06498 	accuracy: 97.9% 	error: 2.1% 	data: 42675
+2019-07-09 21:49:40,491:INFO:   VALID: 	loss: 0.26444 	accuracy: 92.1% 	error: 7.9% 	data: 7325
+2019-07-09 21:49:40,492:INFO: 
+
+2019-07-09 21:49:40,493:INFO: Epoch - 136 learning_rate: 0.11484414168698548
+2019-07-09 21:50:00,516:INFO:   TRAIN: 	loss: 0.06484 	accuracy: 97.8% 	error: 2.2% 	data: 42675
+2019-07-09 21:50:03,522:INFO:   VALID: 	loss: 0.31827 	accuracy: 91.2% 	error: 8.8% 	data: 7325
+2019-07-09 21:50:03,522:INFO: 
+
+2019-07-09 21:50:03,523:INFO: Epoch - 137 learning_rate: 0.11201216602881697
+2019-07-09 21:50:23,555:INFO:   TRAIN: 	loss: 0.06521 	accuracy: 97.9% 	error: 2.1% 	data: 42675
+2019-07-09 21:50:26,488:INFO:   VALID: 	loss: 0.28576 	accuracy: 92.4% 	error: 7.6% 	data: 7325
+2019-07-09 21:50:26,488:INFO: 
+
+2019-07-09 21:50:26,489:INFO: Epoch - 138 learning_rate: 0.10920190005209066
+2019-07-09 21:50:46,507:INFO:   TRAIN: 	loss: 0.06132 	accuracy: 98.0% 	error: 2.0% 	data: 42675
+2019-07-09 21:50:49,477:INFO:   VALID: 	loss: 0.28931 	accuracy: 91.7% 	error: 8.3% 	data: 7325
+2019-07-09 21:50:49,477:INFO: 
+
+2019-07-09 21:50:49,479:INFO: Epoch - 139 learning_rate: 0.10641403714788536
+2019-07-09 21:51:09,497:INFO:   TRAIN: 	loss: 0.05870 	accuracy: 98.1% 	error: 1.9% 	data: 42675
+2019-07-09 21:51:12,524:INFO:   VALID: 	loss: 0.29014 	accuracy: 91.6% 	error: 8.4% 	data: 7325
+2019-07-09 21:51:12,524:INFO: 
+
+2019-07-09 21:51:12,525:INFO: Epoch - 140 learning_rate: 0.10364926517965692
+2019-07-09 21:51:32,546:INFO:   TRAIN: 	loss: 0.05939 	accuracy: 98.0% 	error: 2.0% 	data: 42675
+2019-07-09 21:51:35,458:INFO:   VALID: 	loss: 0.29062 	accuracy: 92.0% 	error: 8.0% 	data: 7325
+2019-07-09 21:51:35,458:INFO: 
+
+2019-07-09 21:51:35,460:INFO: Epoch - 141 learning_rate: 0.10090826631351849
+2019-07-09 21:51:55,495:INFO:   TRAIN: 	loss: 0.06333 	accuracy: 97.9% 	error: 2.1% 	data: 42675
+2019-07-09 21:51:58,420:INFO:   VALID: 	loss: 0.27673 	accuracy: 91.9% 	error: 8.1% 	data: 7325
+2019-07-09 21:51:58,421:INFO: 
+
+2019-07-09 21:51:58,422:INFO: Epoch - 142 learning_rate: 0.09819171684992574
+2019-07-09 21:52:18,394:INFO:   TRAIN: 	loss: 0.05118 	accuracy: 98.3% 	error: 1.7% 	data: 42675
+2019-07-09 21:52:21,364:INFO:   VALID: 	loss: 0.29519 	accuracy: 91.8% 	error: 8.2% 	data: 7325
+2019-07-09 21:52:21,365:INFO: 
+
+2019-07-09 21:52:21,366:INFO: Epoch - 143 learning_rate: 0.09550028705681024
+2019-07-09 21:52:41,394:INFO:   TRAIN: 	loss: 0.05488 	accuracy: 98.2% 	error: 1.8% 	data: 42675
+2019-07-09 21:52:44,347:INFO:   VALID: 	loss: 0.30895 	accuracy: 91.5% 	error: 8.5% 	data: 7325
+2019-07-09 21:52:44,348:INFO: 
+
+2019-07-09 21:52:44,349:INFO: Epoch - 144 learning_rate: 0.09283464100420064
+2019-07-09 21:53:04,338:INFO:   TRAIN: 	loss: 0.05234 	accuracy: 98.3% 	error: 1.7% 	data: 42675
+2019-07-09 21:53:07,257:INFO:   VALID: 	loss: 0.29131 	accuracy: 91.9% 	error: 8.1% 	data: 7325
+2019-07-09 21:53:07,258:INFO: 
+
+2019-07-09 21:53:07,259:INFO: Epoch - 145 learning_rate: 0.09019543640037363
+2019-07-09 21:53:27,242:INFO:   TRAIN: 	loss: 0.05104 	accuracy: 98.4% 	error: 1.6% 	data: 42675
+2019-07-09 21:53:30,248:INFO:   VALID: 	loss: 0.27056 	accuracy: 92.4% 	error: 7.6% 	data: 7325
+2019-07-09 21:53:30,248:INFO: 
+
+2019-07-09 21:53:30,250:INFO: Epoch - 146 learning_rate: 0.08758332442957387
+2019-07-09 21:53:50,277:INFO:   TRAIN: 	loss: 0.04903 	accuracy: 98.4% 	error: 1.6% 	data: 42675
+2019-07-09 21:53:53,243:INFO:   VALID: 	loss: 0.28897 	accuracy: 92.0% 	error: 8.0% 	data: 7325
+2019-07-09 21:53:53,243:INFO: 
+
+2019-07-09 21:53:53,245:INFO: Epoch - 147 learning_rate: 0.0849989495913443
+2019-07-09 21:54:13,246:INFO:   TRAIN: 	loss: 0.04637 	accuracy: 98.6% 	error: 1.4% 	data: 42675
+2019-07-09 21:54:16,139:INFO:   VALID: 	loss: 0.28532 	accuracy: 92.2% 	error: 7.8% 	data: 7325
+2019-07-09 21:54:16,140:INFO: 
+
+2019-07-09 21:54:16,141:INFO: Epoch - 148 learning_rate: 0.0824429495415054
+2019-07-09 21:54:36,071:INFO:   TRAIN: 	loss: 0.04186 	accuracy: 98.7% 	error: 1.3% 	data: 42675
+2019-07-09 21:54:39,120:INFO:   VALID: 	loss: 0.27582 	accuracy: 92.3% 	error: 7.7% 	data: 7325
+2019-07-09 21:54:39,121:INFO: 
+
+2019-07-09 21:54:39,122:INFO: Epoch - 149 learning_rate: 0.07991595493482323
+2019-07-09 21:54:59,072:INFO:   TRAIN: 	loss: 0.04021 	accuracy: 98.7% 	error: 1.3% 	data: 42675
+2019-07-09 21:55:02,028:INFO:   VALID: 	loss: 0.26709 	accuracy: 92.6% 	error: 7.4% 	data: 7325
+2019-07-09 21:55:02,029:INFO: 
+
+2019-07-09 21:55:02,030:INFO: Epoch - 150 learning_rate: 0.07741858926940469
+2019-07-09 21:55:21,983:INFO:   TRAIN: 	loss: 0.03762 	accuracy: 98.8% 	error: 1.2% 	data: 42675
+2019-07-09 21:55:25,015:INFO:   VALID: 	loss: 0.28242 	accuracy: 92.2% 	error: 7.8% 	data: 7325
+2019-07-09 21:55:25,016:INFO: 
+
+2019-07-09 21:55:25,017:INFO: Epoch - 151 learning_rate: 0.07495146873285896
+2019-07-09 21:55:45,000:INFO:   TRAIN: 	loss: 0.03717 	accuracy: 98.8% 	error: 1.2% 	data: 42675
+2019-07-09 21:55:47,989:INFO:   VALID: 	loss: 0.26845 	accuracy: 92.3% 	error: 7.7% 	data: 7325
+2019-07-09 21:55:47,990:INFO: 
+
+2019-07-09 21:55:47,991:INFO: Epoch - 152 learning_rate: 0.07251520205026206
+2019-07-09 21:56:07,956:INFO:   TRAIN: 	loss: 0.03755 	accuracy: 98.8% 	error: 1.2% 	data: 42675
+2019-07-09 21:56:10,951:INFO:   VALID: 	loss: 0.26967 	accuracy: 92.6% 	error: 7.4% 	data: 7325
+2019-07-09 21:56:10,952:INFO: 
+
+2019-07-09 21:56:10,953:INFO: Epoch - 153 learning_rate: 0.0701103903339633
+2019-07-09 21:56:30,942:INFO:   TRAIN: 	loss: 0.03525 	accuracy: 98.9% 	error: 1.1% 	data: 42675
+2019-07-09 21:56:33,854:INFO:   VALID: 	loss: 0.26843 	accuracy: 92.6% 	error: 7.4% 	data: 7325
+2019-07-09 21:56:33,855:INFO: 
+
+2019-07-09 21:56:33,856:INFO: Epoch - 154 learning_rate: 0.06773762693526966
+2019-07-09 21:56:53,856:INFO:   TRAIN: 	loss: 0.03253 	accuracy: 99.0% 	error: 1.0% 	data: 42675
+2019-07-09 21:56:56,819:INFO:   VALID: 	loss: 0.25766 	accuracy: 93.1% 	error: 6.9% 	data: 7325
+2019-07-09 21:56:56,819:INFO: 
+
+2019-07-09 21:56:56,821:INFO: Epoch - 155 learning_rate: 0.06539749729804532
+2019-07-09 21:57:16,789:INFO:   TRAIN: 	loss: 0.03346 	accuracy: 98.9% 	error: 1.1% 	data: 42675
+2019-07-09 21:57:19,807:INFO:   VALID: 	loss: 0.26984 	accuracy: 92.5% 	error: 7.5% 	data: 7325
+2019-07-09 21:57:19,808:INFO: 
+
+2019-07-09 21:57:19,809:INFO: Epoch - 156 learning_rate: 0.06309057881426226
+2019-07-09 21:57:39,778:INFO:   TRAIN: 	loss: 0.03061 	accuracy: 99.0% 	error: 1.0% 	data: 42675
+2019-07-09 21:57:42,766:INFO:   VALID: 	loss: 0.27476 	accuracy: 92.5% 	error: 7.5% 	data: 7325
+2019-07-09 21:57:42,766:INFO: 
+
+2019-07-09 21:57:42,768:INFO: Epoch - 157 learning_rate: 0.06081744068153714
+2019-07-09 21:58:02,731:INFO:   TRAIN: 	loss: 0.03293 	accuracy: 98.9% 	error: 1.1% 	data: 42675
+2019-07-09 21:58:05,647:INFO:   VALID: 	loss: 0.32265 	accuracy: 91.7% 	error: 8.3% 	data: 7325
+2019-07-09 21:58:05,647:INFO: 
+
+2019-07-09 21:58:05,648:INFO: Epoch - 158 learning_rate: 0.05857864376269051
+2019-07-09 21:58:25,602:INFO:   TRAIN: 	loss: 0.03354 	accuracy: 98.9% 	error: 1.1% 	data: 42675
+2019-07-09 21:58:28,611:INFO:   VALID: 	loss: 0.28089 	accuracy: 92.2% 	error: 7.8% 	data: 7325
+2019-07-09 21:58:28,611:INFO: 
+
+2019-07-09 21:58:28,613:INFO: Epoch - 159 learning_rate: 0.056374740447362265
+2019-07-09 21:58:48,613:INFO:   TRAIN: 	loss: 0.02791 	accuracy: 99.1% 	error: 0.9% 	data: 42675
+2019-07-09 21:58:51,540:INFO:   VALID: 	loss: 0.26942 	accuracy: 93.0% 	error: 7.0% 	data: 7325
+2019-07-09 21:58:51,541:INFO: 
+
+2019-07-09 21:58:51,542:INFO: Epoch - 160 learning_rate: 0.05420627451571774
+2019-07-09 21:59:11,491:INFO:   TRAIN: 	loss: 0.02656 	accuracy: 99.1% 	error: 0.9% 	data: 42675
+2019-07-09 21:59:14,400:INFO:   VALID: 	loss: 0.27477 	accuracy: 92.7% 	error: 7.3% 	data: 7325
+2019-07-09 21:59:14,400:INFO: 
+
+2019-07-09 21:59:14,401:INFO: Epoch - 161 learning_rate: 0.05207378100427804
+2019-07-09 21:59:34,402:INFO:   TRAIN: 	loss: 0.02346 	accuracy: 99.3% 	error: 0.7% 	data: 42675
+2019-07-09 21:59:37,265:INFO:   VALID: 	loss: 0.26282 	accuracy: 92.9% 	error: 7.1% 	data: 7325
+2019-07-09 21:59:37,265:INFO: 
+
+2019-07-09 21:59:37,266:INFO: Epoch - 162 learning_rate: 0.049977786073908084
+2019-07-09 21:59:57,208:INFO:   TRAIN: 	loss: 0.02033 	accuracy: 99.4% 	error: 0.6% 	data: 42675
+2019-07-09 22:00:00,198:INFO:   VALID: 	loss: 0.26627 	accuracy: 92.9% 	error: 7.1% 	data: 7325
+2019-07-09 22:00:00,199:INFO: 
+
+2019-07-09 22:00:00,200:INFO: Epoch - 163 learning_rate: 0.047918806879993815
+2019-07-09 22:00:20,183:INFO:   TRAIN: 	loss: 0.02468 	accuracy: 99.2% 	error: 0.8% 	data: 42675
+2019-07-09 22:00:23,118:INFO:   VALID: 	loss: 0.25993 	accuracy: 93.2% 	error: 6.8% 	data: 7325
+2019-07-09 22:00:23,119:INFO: 
+
+2019-07-09 22:00:23,120:INFO: Epoch - 164 learning_rate: 0.04589735144484217
+2019-07-09 22:00:43,070:INFO:   TRAIN: 	loss: 0.02089 	accuracy: 99.4% 	error: 0.6% 	data: 42675
+2019-07-09 22:00:46,071:INFO:   VALID: 	loss: 0.25839 	accuracy: 93.3% 	error: 6.7% 	data: 7325
+2019-07-09 22:00:46,071:INFO: 
+
+2019-07-09 22:00:46,072:INFO: Epoch - 165 learning_rate: 0.04391391853233409
+2019-07-09 22:01:06,065:INFO:   TRAIN: 	loss: 0.01965 	accuracy: 99.4% 	error: 0.6% 	data: 42675
+2019-07-09 22:01:09,035:INFO:   VALID: 	loss: 0.25417 	accuracy: 93.3% 	error: 6.7% 	data: 7325
+2019-07-09 22:01:09,036:INFO: 
+
+2019-07-09 22:01:09,037:INFO: Epoch - 166 learning_rate: 0.04196899752486192
+2019-07-09 22:01:29,028:INFO:   TRAIN: 	loss: 0.02079 	accuracy: 99.4% 	error: 0.6% 	data: 42675
+2019-07-09 22:01:32,016:INFO:   VALID: 	loss: 0.25821 	accuracy: 93.2% 	error: 6.8% 	data: 7325
+2019-07-09 22:01:32,016:INFO: 
+
+2019-07-09 22:01:32,017:INFO: Epoch - 167 learning_rate: 0.04006306830258188
+2019-07-09 22:01:51,982:INFO:   TRAIN: 	loss: 0.01944 	accuracy: 99.4% 	error: 0.6% 	data: 42675
+2019-07-09 22:01:54,904:INFO:   VALID: 	loss: 0.24745 	accuracy: 93.2% 	error: 6.8% 	data: 7325
+2019-07-09 22:01:54,904:INFO: 
+
+2019-07-09 22:01:54,905:INFO: Epoch - 168 learning_rate: 0.03819660112501053
+2019-07-09 22:02:14,891:INFO:   TRAIN: 	loss: 0.01775 	accuracy: 99.5% 	error: 0.5% 	data: 42675
+2019-07-09 22:02:17,793:INFO:   VALID: 	loss: 0.25336 	accuracy: 93.3% 	error: 6.7% 	data: 7325
+2019-07-09 22:02:17,794:INFO: 
+
+2019-07-09 22:02:17,795:INFO: Epoch - 169 learning_rate: 0.03637005651499534
+2019-07-09 22:02:37,758:INFO:   TRAIN: 	loss: 0.01629 	accuracy: 99.5% 	error: 0.5% 	data: 42675
+2019-07-09 22:02:40,699:INFO:   VALID: 	loss: 0.23616 	accuracy: 93.6% 	error: 6.4% 	data: 7325
+2019-07-09 22:02:40,700:INFO: 
+
+2019-07-09 22:02:40,701:INFO: Epoch - 170 learning_rate: 0.03458388514508766
+2019-07-09 22:03:00,707:INFO:   TRAIN: 	loss: 0.01716 	accuracy: 99.5% 	error: 0.5% 	data: 42675
+2019-07-09 22:03:03,660:INFO:   VALID: 	loss: 0.25444 	accuracy: 93.1% 	error: 6.9% 	data: 7325
+2019-07-09 22:03:03,661:INFO: 
+
+2019-07-09 22:03:03,662:INFO: Epoch - 171 learning_rate: 0.03283852772634599
+2019-07-09 22:03:23,655:INFO:   TRAIN: 	loss: 0.01542 	accuracy: 99.6% 	error: 0.4% 	data: 42675
+2019-07-09 22:03:26,630:INFO:   VALID: 	loss: 0.25940 	accuracy: 93.3% 	error: 6.7% 	data: 7325
+2019-07-09 22:03:26,630:INFO: 
+
+2019-07-09 22:03:26,631:INFO: Epoch - 172 learning_rate: 0.03113441489959703
+2019-07-09 22:03:46,623:INFO:   TRAIN: 	loss: 0.01454 	accuracy: 99.6% 	error: 0.4% 	data: 42675
+2019-07-09 22:03:49,603:INFO:   VALID: 	loss: 0.24521 	accuracy: 93.6% 	error: 6.4% 	data: 7325
+2019-07-09 22:03:49,604:INFO: 
+
+2019-07-09 22:03:49,605:INFO: Epoch - 173 learning_rate: 0.02947196712918161
+2019-07-09 22:04:09,578:INFO:   TRAIN: 	loss: 0.01467 	accuracy: 99.6% 	error: 0.4% 	data: 42675
+2019-07-09 22:04:12,537:INFO:   VALID: 	loss: 0.24924 	accuracy: 93.4% 	error: 6.6% 	data: 7325
+2019-07-09 22:04:12,538:INFO: 
+
+2019-07-09 22:04:12,539:INFO: Epoch - 174 learning_rate: 0.02785159459921125
+2019-07-09 22:04:32,519:INFO:   TRAIN: 	loss: 0.01447 	accuracy: 99.6% 	error: 0.4% 	data: 42675
+2019-07-09 22:04:35,424:INFO:   VALID: 	loss: 0.24960 	accuracy: 93.5% 	error: 6.5% 	data: 7325
+2019-07-09 22:04:35,425:INFO: 
+
+2019-07-09 22:04:35,426:INFO: Epoch - 175 learning_rate: 0.02627369711236174
+2019-07-09 22:04:55,420:INFO:   TRAIN: 	loss: 0.01429 	accuracy: 99.6% 	error: 0.4% 	data: 42675
+2019-07-09 22:04:58,279:INFO:   VALID: 	loss: 0.23274 	accuracy: 93.7% 	error: 6.3% 	data: 7325
+2019-07-09 22:04:58,279:INFO: 
+
+2019-07-09 22:04:58,280:INFO: Epoch - 176 learning_rate: 0.024738663991227285
+2019-07-09 22:05:18,219:INFO:   TRAIN: 	loss: 0.01322 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:05:21,211:INFO:   VALID: 	loss: 0.24283 	accuracy: 93.7% 	error: 6.3% 	data: 7325
+2019-07-09 22:05:21,212:INFO: 
+
+2019-07-09 22:05:21,213:INFO: Epoch - 177 learning_rate: 0.023246873982261308
+2019-07-09 22:05:41,185:INFO:   TRAIN: 	loss: 0.01291 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:05:44,100:INFO:   VALID: 	loss: 0.24009 	accuracy: 93.8% 	error: 6.2% 	data: 7325
+2019-07-09 22:05:44,100:INFO: 
+
+2019-07-09 22:05:44,101:INFO: Epoch - 178 learning_rate: 0.021798695162326444
+2019-07-09 22:06:04,070:INFO:   TRAIN: 	loss: 0.01097 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:06:07,053:INFO:   VALID: 	loss: 0.23023 	accuracy: 94.0% 	error: 6.0% 	data: 7325
+2019-07-09 22:06:07,053:INFO: 
+
+2019-07-09 22:06:07,054:INFO: Epoch - 179 learning_rate: 0.020394484847876895
+2019-07-09 22:06:27,060:INFO:   TRAIN: 	loss: 0.01013 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:06:29,976:INFO:   VALID: 	loss: 0.24513 	accuracy: 93.9% 	error: 6.1% 	data: 7325
+2019-07-09 22:06:29,977:INFO: 
+
+2019-07-09 22:06:29,978:INFO: Epoch - 180 learning_rate: 0.01903458950679613
+2019-07-09 22:06:49,955:INFO:   TRAIN: 	loss: 0.01163 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:06:52,941:INFO:   VALID: 	loss: 0.23502 	accuracy: 93.8% 	error: 6.2% 	data: 7325
+2019-07-09 22:06:52,941:INFO: 
+
+2019-07-09 22:06:52,942:INFO: Epoch - 181 learning_rate: 0.017719344672910985
+2019-07-09 22:07:12,959:INFO:   TRAIN: 	loss: 0.01030 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:07:15,881:INFO:   VALID: 	loss: 0.23286 	accuracy: 93.8% 	error: 6.2% 	data: 7325
+2019-07-09 22:07:15,881:INFO: 
+
+2019-07-09 22:07:15,883:INFO: Epoch - 182 learning_rate: 0.01644907486320382
+2019-07-09 22:07:35,856:INFO:   TRAIN: 	loss: 0.01004 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:07:38,792:INFO:   VALID: 	loss: 0.24868 	accuracy: 93.6% 	error: 6.4% 	data: 7325
+2019-07-09 22:07:38,792:INFO: 
+
+2019-07-09 22:07:38,793:INFO: Epoch - 183 learning_rate: 0.015224093497742697
+2019-07-09 22:07:58,784:INFO:   TRAIN: 	loss: 0.00906 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:08:01,803:INFO:   VALID: 	loss: 0.23599 	accuracy: 93.9% 	error: 6.1% 	data: 7325
+2019-07-09 22:08:01,804:INFO: 
+
+2019-07-09 22:08:01,805:INFO: Epoch - 184 learning_rate: 0.014044702822349731
+2019-07-09 22:08:21,802:INFO:   TRAIN: 	loss: 0.01056 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:08:24,733:INFO:   VALID: 	loss: 0.23079 	accuracy: 93.6% 	error: 6.4% 	data: 7325
+2019-07-09 22:08:24,734:INFO: 
+
+2019-07-09 22:08:24,735:INFO: Epoch - 185 learning_rate: 0.012911193834026525
+2019-07-09 22:08:44,724:INFO:   TRAIN: 	loss: 0.00973 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:08:47,759:INFO:   VALID: 	loss: 0.23403 	accuracy: 93.7% 	error: 6.3% 	data: 7325
+2019-07-09 22:08:47,759:INFO: 
+
+2019-07-09 22:08:47,760:INFO: Epoch - 186 learning_rate: 0.01182384620915491
+2019-07-09 22:09:07,774:INFO:   TRAIN: 	loss: 0.00928 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:09:10,680:INFO:   VALID: 	loss: 0.24540 	accuracy: 93.7% 	error: 6.3% 	data: 7325
+2019-07-09 22:09:10,681:INFO: 
+
+2019-07-09 22:09:10,682:INFO: Epoch - 187 learning_rate: 0.010782928234490941
+2019-07-09 22:09:30,706:INFO:   TRAIN: 	loss: 0.00843 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:09:33,585:INFO:   VALID: 	loss: 0.24362 	accuracy: 93.7% 	error: 6.3% 	data: 7325
+2019-07-09 22:09:33,585:INFO: 
+
+2019-07-09 22:09:33,586:INFO: Epoch - 188 learning_rate: 0.009788696740969294
+2019-07-09 22:09:53,607:INFO:   TRAIN: 	loss: 0.00738 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:09:56,514:INFO:   VALID: 	loss: 0.24048 	accuracy: 93.9% 	error: 6.1% 	data: 7325
+2019-07-09 22:09:56,514:INFO: 
+
+2019-07-09 22:09:56,515:INFO: Epoch - 189 learning_rate: 0.008841397040333977
+2019-07-09 22:10:16,526:INFO:   TRAIN: 	loss: 0.00799 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:10:19,566:INFO:   VALID: 	loss: 0.23676 	accuracy: 93.8% 	error: 6.2% 	data: 7325
+2019-07-09 22:10:19,566:INFO: 
+
+2019-07-09 22:10:19,568:INFO: Epoch - 190 learning_rate: 0.00794126286461141
+2019-07-09 22:10:39,561:INFO:   TRAIN: 	loss: 0.00939 	accuracy: 99.7% 	error: 0.3% 	data: 42675
+2019-07-09 22:10:42,604:INFO:   VALID: 	loss: 0.22361 	accuracy: 94.2% 	error: 5.8% 	data: 7325
+2019-07-09 22:10:42,604:INFO: 
+
+2019-07-09 22:10:42,605:INFO: Epoch - 191 learning_rate: 0.007088516308440407
+2019-07-09 22:11:02,587:INFO:   TRAIN: 	loss: 0.00724 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:11:05,595:INFO:   VALID: 	loss: 0.22767 	accuracy: 93.8% 	error: 6.2% 	data: 7325
+2019-07-09 22:11:05,595:INFO: 
+
+2019-07-09 22:11:05,596:INFO: Epoch - 192 learning_rate: 0.006283367774273807
+2019-07-09 22:11:25,590:INFO:   TRAIN: 	loss: 0.00875 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:11:28,590:INFO:   VALID: 	loss: 0.23275 	accuracy: 93.6% 	error: 6.4% 	data: 7325
+2019-07-09 22:11:28,590:INFO: 
+
+2019-07-09 22:11:28,592:INFO: Epoch - 193 learning_rate: 0.005526015920464689
+2019-07-09 22:11:48,582:INFO:   TRAIN: 	loss: 0.00816 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:11:51,535:INFO:   VALID: 	loss: 0.22082 	accuracy: 94.2% 	error: 5.8% 	data: 7325
+2019-07-09 22:11:51,536:INFO: 
+
+2019-07-09 22:11:51,537:INFO: Epoch - 194 learning_rate: 0.004816647612250535
+2019-07-09 22:12:11,517:INFO:   TRAIN: 	loss: 0.00891 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:12:14,372:INFO:   VALID: 	loss: 0.22670 	accuracy: 94.1% 	error: 5.9% 	data: 7325
+2019-07-09 22:12:14,372:INFO: 
+
+2019-07-09 22:12:14,373:INFO: Epoch - 195 learning_rate: 0.004155437875646828
+2019-07-09 22:12:34,362:INFO:   TRAIN: 	loss: 0.00787 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:12:37,378:INFO:   VALID: 	loss: 0.22895 	accuracy: 94.1% 	error: 5.9% 	data: 7325
+2019-07-09 22:12:37,379:INFO: 
+
+2019-07-09 22:12:37,380:INFO: Epoch - 196 learning_rate: 0.003542549854262256
+2019-07-09 22:12:57,368:INFO:   TRAIN: 	loss: 0.00769 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:13:00,263:INFO:   VALID: 	loss: 0.21984 	accuracy: 94.4% 	error: 5.6% 	data: 7325
+2019-07-09 22:13:00,263:INFO: 
+
+2019-07-09 22:13:00,264:INFO: Epoch - 197 learning_rate: 0.0029781347690452267
+2019-07-09 22:13:20,211:INFO:   TRAIN: 	loss: 0.00765 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:13:23,211:INFO:   VALID: 	loss: 0.21492 	accuracy: 94.5% 	error: 5.5% 	data: 7325
+2019-07-09 22:13:23,211:INFO: 
+
+2019-07-09 22:13:23,212:INFO: Epoch - 198 learning_rate: 0.0024623318809724685
+2019-07-09 22:13:43,190:INFO:   TRAIN: 	loss: 0.00667 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:13:46,201:INFO:   VALID: 	loss: 0.22613 	accuracy: 93.9% 	error: 6.1% 	data: 7325
+2019-07-09 22:13:46,202:INFO: 
+
+2019-07-09 22:13:46,203:INFO: Epoch - 199 learning_rate: 0.0019952684566884927
+2019-07-09 22:14:06,126:INFO:   TRAIN: 	loss: 0.00834 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:14:09,169:INFO:   VALID: 	loss: 0.22690 	accuracy: 94.2% 	error: 5.8% 	data: 7325
+2019-07-09 22:14:09,169:INFO: 
+
+2019-07-09 22:14:09,171:INFO: Epoch - 200 learning_rate: 0.0015770597371044472
+2019-07-09 22:14:29,160:INFO:   TRAIN: 	loss: 0.00759 	accuracy: 99.8% 	error: 0.2% 	data: 42675
+2019-07-09 22:14:32,109:INFO:   VALID: 	loss: 0.22297 	accuracy: 94.1% 	error: 5.9% 	data: 7325
+2019-07-09 22:14:32,109:INFO: 
+
+2019-07-09 22:14:32,138:INFO: -- start testing on test set
+2019-07-09 22:14:34,164:INFO: TEST: 	loss: 0.22003 	accuracy: 95.0% 	error: 5.0% 	data: 10000
+2019-07-10 07:27:05,403:INFO: 
+
+--------------------------------
+2019-07-10 07:27:05,403:INFO: experiment_title: fastautoaugment
+2019-07-10 07:27:05,403:INFO: num_epochs: 200
+2019-07-10 07:27:05,403:INFO: batch_size: 512
+2019-07-10 07:27:05,403:INFO: WRN_depth: 40
+2019-07-10 07:27:05,403:INFO: WRN_widen_factor: 2
+2019-07-10 07:27:05,403:INFO: WRN_dropout_rate: 0.0
+2019-07-10 07:27:05,403:INFO: WRN_num_classes: 10
+2019-07-10 07:27:05,404:INFO: SGD_lr: 0.1
+2019-07-10 07:27:05,404:INFO: SGD_momentum: 0.9
+2019-07-10 07:27:05,404:INFO: SGD_weight_decay: 0.0002
+2019-07-10 07:27:05,404:INFO: SGD_nesterov: True
+2019-07-10 07:27:05,404:INFO: LRS_multiplier: 4
+2019-07-10 07:27:05,404:INFO: LRS_epoch: 5
+2019-07-10 07:27:05,404:INFO: cuda: False
+2019-07-10 07:27:05,405:INFO: -- loading datasets
+2019-07-10 07:27:06,723:INFO: Failed to import cuda module: No module named 'caffe2.python.caffe2_pybind11_state_gpu'
+2019-07-10 07:27:06,723:INFO: Failed to import AMD hip module: No module named 'caffe2.python.caffe2_pybind11_state_hip'
+2019-07-10 07:27:06,723:WARNING: This caffe2 python run does not have GPU support. Will run in CPU only mode.
+2019-07-10 07:27:06,730:INFO: -- start testing on test set
+2019-07-10 07:27:56,996:INFO: TEST: 	loss: 0.22003 	accuracy: 95.0% 	error: 5.0% 	data: 10000

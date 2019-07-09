@@ -14,6 +14,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import Subset, DataLoader
+from torchvision import transforms as vtransforms
 from torchvision.utils import make_grid
 import torchvision.transforms as TF
 import tensorboardX
@@ -68,7 +69,7 @@ def prepare_transform_fn(experiment_title):
 
     elif experiment_title == 'fastautoaugment':
         # load pretrained recipes
-        policy_dict = json.load(open("experiments/fastautoaugment/optimal_policy.json", "rb"))
+        policy_dict = {'policy': pickle.load(open("experiments/fastautoaugment/optimal_policy.pkl", "rb"))}
         base.transforms.insert(0, FAAaugmentation(policy_dict))
         transform_train = base
     else:
@@ -132,19 +133,6 @@ def update_tranform_fn(dataset, transform_to_update):
     return dataset
 
 
-def convert_to_sub_policies(augmentation_list, num_operations=2):
-    """
-    Method that generates combinations of augmentations
-    :param augmentation_list: augmentation list
-    :param num_operations: number of operations to connect back to back
-    :return: list of sub-policies
-    """
-    comb_list = combinations(augmentation_list, num_operations)
-    sub_policies_list = []
-    for comb in comb_list:
-        sub_policies_list.append(comb)
-    return sub_policies_list
-
 def evaluate_error(network, loader, loss_function, header, device, transform_fn=None, writer=None):
     """
     Method that evaluates network with valid or test loader
@@ -164,14 +152,11 @@ def evaluate_error(network, loader, loss_function, header, device, transform_fn=
 
     metric_watcher = utils.RunningAverage()
 
-    fn_1 = transform_fn.transforms[0].__class__.__name__
-    fn_2 = transform_fn.transforms[1].__class__.__name__
-
     for idx, (input_batch, target_batch) in enumerate(loader):
         input_batch, target_batch = input_batch.to(device), target_batch.to(device)
         if header == "k0_t0":
             imgs_to_show = input_batch[:16]
-            writer.add_image("{}__{}".format(fn_1, fn_2), make_grid(imgs_to_show, nrow=4, normalize=True))
+            writer.add_image("Augmentation", make_grid(imgs_to_show, nrow=4, normalize=True))
 
         with torch.no_grad():
             output_batch = network.forward(input_batch)
@@ -222,20 +207,15 @@ def hyperopt_train_test(space):
     del space['model']
     del space['batch_size']
 
-    transform_bayesian = CustomCompose(base=[
-        # TF.RandomHorizontalFlip(0.5),
-        # TF.RandomCrop(32, padding=4),
+    transform_bayesian = vtransforms.Compose([
         TF.ToTensor(),
         TF.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
     ])
 
     transform_bayesian.transforms.insert(0, FAAaugmentation(space))
 
-
     loss_function = nn.CrossEntropyLoss()
     _, avg_loss, error = evaluate_error(net_m, loader_a, loss_function, header, device, transform_bayesian, writer)
-
-    transform_bayesian.reset()
 
     return error
 
@@ -245,10 +225,8 @@ def bayesian_optimization(dataset, model, args, device, aug_space, header, txwri
     Method to run bayesian optimization
     :param dataset: dataset
     :param model: network to evaluate
-    :param batch_size: batch_size for evaluation
     :param device: cpu or cuda
-    :param aug_space: list of augmentations to explore
-    :param max_iter: search depth for optimization
+    :param aug_space: list of augmentations to explore\
     :param header: header to log
     :param txwriter: tensorboard writer
     :return:
@@ -258,29 +236,25 @@ def bayesian_optimization(dataset, model, args, device, aug_space, header, txwri
         val_error = hyperopt_train_test(space)
         return {'loss': val_error, 'status': STATUS_OK}
 
+    sub_policies_pool = list(aug_space.keys())
     search_space = defaultdict()
 
+    # compose policy search space
     policy_to_eval = []
+    nb_sub_policies = args.number_of_sub_policies
+    nb_operations = args.number_of_ops
+    for sp_idx in range(nb_sub_policies):
+        sp = {}
 
-    # sub policy has 2 consecutive operations
-    # policy has 5 sub policies
-    for sp_idx in range(args.number_of_sub_policies):
-        sub_policy = []
-        for op_idx in range(args.number_of_ops):
-
-            chosen_op = random.choice(list(aug_space.keys()))
-            chosen_op_key = "{}-{}_{}".format(sp_idx, op_idx, chosen_op)
-
-            if aug_space[chosen_op]:
-                chosen_op_space = {chosen_op_key: [hp.uniform('{}_p'.format(chosen_op_key), 0, 1),
-                                                   hp.uniform('{}_v'.format(chosen_op_key), 0, 1)]}
-            else:
-                chosen_op_space = {chosen_op_key: [hp.uniform('{}_p'.format(chosen_op_key), 0, 1),
-                                                   None]}
-
-            sub_policy.append(chosen_op_space)
-
-        policy_to_eval.append(sub_policy)
+        op_list = []
+        for op_idx in range(nb_operations):
+            op_element = []
+            op_element.append(hp.choice("sp_{}_{}".format(sp_idx, op_idx), sub_policies_pool))
+            op_element.append(hp.uniform("sp_{}_{}_p".format(sp_idx, op_idx), 0, 1))
+            op_element.append(hp.uniform("sp_{}_{}_v".format(sp_idx, op_idx), 0, 1))
+            op_list.append(op_element)
+        sp['sp_{}'.format(sp_idx)] = op_list
+        policy_to_eval.append(sp)
 
     search_space['policy'] = policy_to_eval
     search_space['device'] = device
@@ -289,7 +263,6 @@ def bayesian_optimization(dataset, model, args, device, aug_space, header, txwri
     search_space['batch_size'] = args.batch_size * 32
     search_space['header'] = header
     search_space['writer'] = txwriter
-
 
     trials = Trials()
     best = fmin(f,
@@ -301,39 +274,48 @@ def bayesian_optimization(dataset, model, args, device, aug_space, header, txwri
     return best, trials
 
 
-def parse_policy(found_policy):
-    raw_df = pd.DataFrame(found_policy).T.reset_index()
-    raw_df.columns = ['raw_key', 'aug_val']
-    raw_df['sp_idx'], raw_df['op_idx'] = zip(*raw_df.raw_key.map(lambda x: x.split("_")[0].split("-")))
-    raw_df['op_name'], raw_df['op_type'] = zip(*raw_df.raw_key.map(lambda x: x.split("_")[1:]))
+def parse_trial_records(trial_records, nb_sub_policies, nb_operations, aug_list):
+    """
+    Method that parse hyperopt trial records
+    :param trial_records: trial_records from hyperopt
+    :param nb_sub_policies: number of sub_policies in a policy
+    :param nb_operations: number of consecutive operations in a sub_policy
+    :param aug_list: augmentation list to explore
+    :return: a list of parsed policies
+    """
+    aug_fns = list(aug_list.keys())
 
-    pivoted_df = pd.pivot_table(raw_df, index=['sp_idx', 'op_idx', 'op_name'], columns='op_type').fillna(
-        "None").reset_index()
+    parsed_policy_list = []
+    for tr in trial_records:
+        parsed_policy = []
+        for sp_idx in range(nb_sub_policies):
+            parsed_sub_policy = []
+            for op_idx in range(nb_operations):
+                parsed_operation = []
+                op_num = tr['sp_{}_{}'.format(sp_idx, op_idx)][0]
+                op_name = aug_fns[op_num]
 
-    policy = []
-    by_sp_idx = pivoted_df.groupby('sp_idx')
-    for label, data in by_sp_idx:
-        sub_policy = []
-        for idx in range(len(data)):
-            row = data.iloc[idx]
-            op_name = "{}-{}_{}".format(row.sp_idx.values[0], row.op_idx.values[0], row.op_name.values[0])
-            op_p = row.aug_val.p
-            op_v = row.aug_val.v
+                op_p = tr['sp_{}_{}_p'.format(sp_idx, op_idx)][0]
+                op_v = tr['sp_{}_{}_v'.format(sp_idx, op_idx)][0]
 
-            operation = {op_name: (op_p, op_v)}
-            sub_policy.append(operation)
-        policy.append(sub_policy)
+                parsed_operation.append(op_name)
+                parsed_operation.append(op_p)
+                parsed_operation.append(op_v)
 
-    return policy
+                parsed_sub_policy.append(parsed_operation)
+            parsed_policy.append(parsed_sub_policy)
+        parsed_policy_list.append(parsed_policy)
+    return parsed_policy_list
 
 
-
-def extract_best_policies(search_results_folder, cv_folds, search_width, topN):
+def extract_best_policies(search_results_folder, cv_folds, search_width, nb_sub_policies, nb_operations, topN, aug_list):
     """
     Method that returns the best augmentation policies from deciphered trials
     :param search_results_folder: where the trials are saved
     :param cv_folds: number of splits
     :param search_width: search width
+    :param nb_sub_policies: number of sub_policies in a policy
+    :param nb_operations: number of consecutive operations in a sub_policy
     :param topN: top N policies to select at each fold
     :return: the final set of best policies
     """
@@ -351,23 +333,19 @@ def extract_best_policies(search_results_folder, cv_folds, search_width, topN):
             val_error_list = [t['result']['loss'] for t in trials.trials]
             trial_records = [t['misc']['vals'] for t in trials.trials]
 
-            top_results = (sorted(zip(trial_records, val_error_list), key=lambda x: x[1])[:topN])
+            parsed_policies = parse_trial_records(trial_records, nb_sub_policies, nb_operations, aug_list)
+            zipped = zip(parsed_policies, val_error_list)
+            top_results = sorted(zipped, key=lambda t: t[1])[:topN]
             top_policies = [res[0] for res in top_results]
             T_star_k_idx.append(top_policies)
 
         T_star.append(T_star_k_idx)
 
     flat_K = [item for sublist in T_star for item in sublist]
-    flat_N = [item for sublist in flat_K for item in sublist]
+    flat_T = [item for sublist in flat_K for item in sublist]
+    flat_N = [item for sublist in flat_T for item in sublist]
 
-    total_policy = []
-    for idx in range(len(flat_N)):
-        parsed_policy = parse_policy(flat_N[idx])
-        total_policy.append(parsed_policy)
-
-    optimal_policies = {'policy': [item for sublist in total_policy for item in sublist]}
-
-    return optimal_policies
+    return flat_N
 
 
 if __name__ == "__main__":
@@ -526,11 +504,14 @@ if __name__ == "__main__":
     optimal_policies = extract_best_policies(args.model_dir,
                                              cv_folds=hparams.cv_folds,
                                              search_width=hparams.search_width,
-                                             topN=hparams.topN)
+                                             nb_sub_policies=hparams.number_of_sub_policies,
+                                             nb_operations=hparams.number_of_ops,
+                                             topN=hparams.topN,
+                                             aug_list=augmentation_list_to_explore)
 
-    policy_path = os.path.join(args.model_dir, "optimal_policy.json")
+    policy_path = os.path.join(args.model_dir, "optimal_policy.pkl")
 
     # save the optimal policy as a json file
-    json.dump(optimal_policies, open(policy_path, 'w'), indent=4, sort_keys=False)
+    pickle.dump(optimal_policies, open(policy_path, "wb"))
 
     logging.info("Optimal Policy saved. Done.")
