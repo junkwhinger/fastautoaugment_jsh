@@ -154,8 +154,7 @@ Here are the checkpoints I made during the replication of the paper.
 
 ### CIFAR-10 Test Error (%) - revision_3
 
-Search: 7.5 GPU Hours on a single Tesla V100 16GB Memory machine
-(FAA in paper took 3.5 GPU Hours)
+Search: 3.5 GPU Hours on a single Tesla V100 16GB Memory machine
 
 | Model(CIFAR-10)  | Baseline(paper) | Baseline(mine) | FAA(paper/direct) | FAA(mine/direct) |
 | ---------------- | --------------- | -------------- | ----------------- | ---------------- |
