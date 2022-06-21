@@ -1,6 +1,6 @@
 torch==1.0.1.post2
 torchvision==0.2.2
-numpy==1.16.4
+numpy==1.22.0
 hyperopt==0.1.2
 Pillow==6.0.0
 scikit_learn==0.21.2
